@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <script src="/__prepros.js"></script>
+    <meta charset="UTF-8" />
+    <title>TMarket - Giáo viên</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
+    <!-- logo  -->
+    <link rel="shortcut icon" href="images/logo.svg" />
+    <!--CSS-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="assets/uikit-3.9.4/css/uikit.min.css" />
+    <link rel="stylesheet" href="style.css?v=1640401490" />
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- UIkit JS -->
+    <script src="assets/uikit-3.9.4/js/uikit.min.js"></script>
+    <script src="assets/uikit-3.9.4/js/uikit-icons.min.js"></script>
+    <script src="js/app.js?v=1640401490"></script>
+    <!-- CSS  -->
+    <link rel="stylesheet" href="css/style_giaovien.css" />
+  </head>
+  <body class="">
+    <div
+      id="app"
+      class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative"
+    >
+      <div class="header uk-background-default" uk-sticky>
+        <div class="uk-container uk-padding-remove">
+          <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+            <div class="uk-navbar-left">
+              <a href="" class="uk-navbar-item uk-logo"
+                ><img src="images/logo-market2.png" alt=""
+              /></a>
+            </div>
+
+            <div class="uk-navbar-right">
+              <ul class="uk-navbar-nav uk-visible@m">
+                <li class="uk-active"><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Tìm giáo viên</a></li>
+                <li><a href="#">Trở thành giáo viên</a></li>
+                <li><a href="#">Hướng dẫn</a></li>
+              </ul>
+              <div class="uk-navbar-item uk-visible@m">
+                <div
+                  class="header__lang"
+                  style="--background: url('images/vi_flag.png')"
+                >
+                  <span>Tiếng Việt - Vnđ</span>
+                  <span
+                    class="uk-position-center-right"
+                    uk-icon="icon: chevron-down"
+                  ></span>
+                </div>
+                <div
+                  class="header__lang__dropdown uk-form-stacked"
+                  uk-dropdown="mode: hover;pos: bottom-center;"
+                >
+                  <div class="header__lang__dropdown__item">
+                    <label
+                      class="uk-form-label header__lang__dropdown__label"
+                      for="form-stacked-text"
+                      >Ngôn ngữ</label
+                    >
+                    <div class="uk-form-controls">
+                      <div
+                        class="uk-width-1-1"
+                        uk-form-custom="target: > * > span:first-child"
+                      >
+                        <select>
+                          <option value="">Tiếng Việt</option>
+                          <option value="1">Option 01</option>
+                          <option value="2">Option 02</option>
+                          <option value="3">Option 03</option>
+                          <option value="4">Option 04</option>
+                        </select>
+                        <button
+                          style="--background: url('images/vi_flag.png')"
+                          class="header__lang__dropdown__btnSelect header__lang__dropdown__btnSelect--lang uk-width-1-1 uk-button uk-button-default"
+                          type="button"
+                          tabindex="-1"
+                        >
+                          <span></span>
+                          <span
+                            class="uk-position-center-right"
+                            uk-icon="icon: chevron-down"
+                          ></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header__lang__dropdown__item">
+                    <label
+                      class="uk-form-label header__lang__dropdown__label"
+                      for="form-stacked-text"
+                      >Tiền tệ</label
+                    >
+                    <div class="uk-form-controls">
+                      <div
+                        class="uk-width-1-1"
+                        uk-form-custom="target: > * > span:first-child"
+                      >
+                        <select>
+                          <option value="">VNĐ</option>
+                          <option value="1">Option 01</option>
+                          <option value="2">Option 02</option>
+                          <option value="3">Option 03</option>
+                          <option value="4">Option 04</option>
+                        </select>
+                        <button
+                          style="--background: url('images/vi_flag.png')"
+                          class="header__lang__dropdown__btnSelect uk-width-1-1 uk-button uk-button-default"
+                          type="button"
+                          tabindex="-1"
+                        >
+                          <span></span>
+                          <span
+                            class="uk-position-center-right"
+                            uk-icon="icon: chevron-down"
+                          ></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="uk-navbar-item header__acc uk-visible@m"> Đăng nhập </a>
+              <a class="uk-navbar-item header__acc uk-visible@m"> Đăng ký </a>
+              <a href="" class="uk-navbar-item uk-hidden@m">
+                <div class="header__iconMenu"></div>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!--Cảm thấy yêu mến việc học,Chiến thắng được 3 tháng bài học!-->
+      <div
+        class="uk-section-small home__block03"
+        data-src="images/Group71.png"
+        uk-img
+      >
+        <div class="uk-container">
+          <div class="home__block03__txt">
+            Cảm thấy yêu mến việc học,Chiến thắng được 3 tháng bài học!
+          </div>
+        </div>
+      </div>
+      <!--/Cảm thấy yêu mến việc học,Chiến thắng được 3 tháng bài học!-->
+
+      <!--Main-->
+      <div class="container_ttctgv">
+        <div class="title">Đăng tải thông tin</div>
+
+        <div class="box_step">
+          <hr />
+          <div class="step">
+            <img src="images/Subtract2.png" alt="" />
+            <img src="images/Subtract.png" alt="" />
+
+            <img src="images/Subtract2.png" alt="" />
+            <img src="images/Subtract2.png" alt="" />
+          </div>
+        </div>
+
+        <!-- Chọn video -->
+        <div class="container_step">
+          <div class="total_step">
+            <div class="title">Chọn video</div>
+            <div class="text">Lưu ý</div>
+            <div class="thong_bao">
+              <p>Trước khi đăng video</p>
+              <ul>
+                <li>
+                  Bằng cách gửi video của bạn tới italki, bạn xác nhận rằng bạn
+                  đồng ý với Điều khoản dịch vụ của TMarket.
+                </li>
+                <li>
+                  Hãy đảm bảo không vi phạm bản quyền hoặc quyền riêng tư của
+                  người khác.
+                </li>
+                <li>Kích thước tệp không được vượt quá 500 MB</li>
+                <li>
+                  Để có kết quả tốt nhất, tỷ lệ khung hình video phải là 16: 9.
+                </li>
+                <li>
+                  Vui lòng dành chút thời gian để đọc
+                  <a class="color_green" href="#">Yêu cầu giới thiệu video</a>
+                  trước khi bạn cập nhật video của mình.
+                </li>
+              </ul>
+            </div>
+
+            <div class="thong_bao">
+              <p>Video của bạn phải tôn trọng các đặc điểm sau</p>
+              <ul>
+                <li>Nó cho thấy tôi nói trôi chảy : tiếng Anh</li>
+                <li>Nó được quay theo chiều ngang</li>
+                <li>Thời lượng của nó khoảng 1 đến 4 phút</li>
+                <li>Nó có ánh sáng tốt và âm thanh rõ ràng</li>
+                <li>
+                  Nó KHÔNG bao gồm thông tin liên hệ cá nhân hoặc các quảng cáo
+                  bên ngoài
+                </li>
+              </ul>
+            </div>
+
+            <div class="text">
+              Bắt buộc:
+              <font class="color_black">
+                Mọi giáo viên bắt buộc phải tải video giới thiệu lên
+              </font>
+            </div>
+
+            <div class="file center mg_auto">
+              <a class="a_link" href="#">
+                <img src="images/Vector-video.svg" alt="" />
+                <br />
+                <div class="color_black">Tải video</div>
+              </a>
+            </div>
+
+            <hr />
+
+            <label class="container_checkbox">
+              <div class="text_align-left color_black">
+                Tôi có một webcam và tôi có thể cung cấp các bài học dựa trên
+                video.
+              </div>
+              <input type="checkbox" checked="checked" />
+              <span class="checkmark_checkbox"></span>
+            </label>
+
+            <label class="container_checkbox">
+              <div class="text_align-left color_black">
+                Tôi biết rằng nếu video giới thiệu của tôi không đáp ứng các yêu
+                cầu của italki, đơn đăng ký của tôi có thể bị từ chối. Ngoài ra,
+                tôi đồng ý để italki xuất bản video giới thiệu của tôi lên các
+                kênh chính thức của italki trên các dịch vụ lưu trữ và phát trực
+                tuyến video của bên thứ ba, chẳng hạn như YouTube, Vimeo, Youku
+                hoặc những người khác, để đảm bảo khả năng tiếp cận và khả năng
+                hiển thị của sinh viên italki bất kể vị trí.
+              </div>
+              <input type="checkbox" checked="checked" />
+              <span class="checkmark_checkbox"></span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Giới thiệu Giáo viên -->
+        <div class="container_step">
+          <div class="total_step">
+            <div class="title">Giới thiệu Giáo viên</div>
+            <div class="color_black">
+              Lưu ý: Bạn không thể thêm các liên kết bên ngoài hoặc sử dụng các
+              cụm từ xúc phạm trong mô tả của mình.
+            </div>
+            <div class="text color_black">Về tôi</div>
+            <textarea name="" id="" placeholder="Giới thiệu về tôi"></textarea>
+
+            <div class="text color_black">Tôi với tư cách là một giáo viên</div>
+            <textarea
+              name=""
+              id=""
+              placeholder="Tôi với tư cách là một giáo viên"
+            ></textarea>
+
+            <div class="text color_black">
+              Bài học & phong cách giảng dạy của tôi
+            </div>
+            <textarea
+              name=""
+              id=""
+              placeholder="Bài học & phong cách giảng dạy của tôi"
+            ></textarea>
+          </div>
+        </div>
+
+        <!-- Giấy tờ và chứng chỉ liên quan -->
+        <div class="container_step">
+          <div class="total_step">
+            <div class="text color_black">Giấy tờ và chứng chỉ liên quan</div>
+            <a href="#">
+              <div class="upload_file center mg_auto">
+                <img src="images/Vector-add.png" alt="" />
+              </div>
+            </a>
+            <div class="color_black">Tải giấy tờ liên quan</div>
+            <div class="box_file center_w_between">
+              <div class="file center">
+                <div class="exit">
+                  <a href="#"><img src="images/exit-icon.png" alt="" /></a>
+                </div>
+                <img src="images/Group 403.png" alt="" />
+              </div>
+
+              <div class="file center">
+                <div class="exit">
+                  <a href="#"><img src="images/exit-icon.png" alt="" /></a>
+                </div>
+                <img src="images/Group 403.png" alt="" />
+              </div>
+
+              <div class="file center">
+                <div class="exit">
+                  <a href="#"><img src="images/exit-icon.png" alt="" /></a>
+                </div>
+                <img src="images/Group 403.png" alt="" />
+              </div>
+
+              <div class="file center">
+                <div class="exit">
+                  <a href="#"><img src="images/exit-icon.png" alt="" /></a>
+                </div>
+                <img src="images/Group 403.png" alt="" />
+              </div>
+
+              <div class="file center">
+                <div class="exit">
+                  <a href="#"><img src="images/exit-icon.png" alt="" /></a>
+                </div>
+                <img src="images/Group 403.png" alt="" />
+              </div>
+            </div>
+
+            <div class="box_file center_w_between">
+              <div class="file center">
+                <div class="exit">
+                  <a href="#"><img src="images/exit-icon.png" alt="" /></a>
+                </div>
+                <img src="images/pdf 1.png" alt="" />
+              </div>
+
+              <div class="file center">
+                <div class="exit">
+                  <a href="#"><img src="images/exit-icon.png" alt="" /></a>
+                </div>
+                <img src="images/pdf 1.png" alt="" />
+              </div>
+
+              <div class="file center">
+                <div class="exit">
+                  <a href="#"><img src="images/exit-icon.png" alt="" /></a>
+                </div>
+                <img src="images/pdf 1.png" alt="" />
+              </div>
+
+              <div class="file center">
+                <div class="exit">
+                  <a href="#"><img src="images/exit-icon.png" alt="" /></a>
+                </div>
+                <img src="images/pdf 1.png" alt="" />
+              </div>
+
+              <div class="file center">
+                <div class="exit">
+                  <a href="#"><img src="images/exit-icon.png" alt="" /></a>
+                </div>
+                <img src="images/pdf 1.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="box_next">
+          <a id="next" href="#">Tiếp tục</a>
+        </div>
+      </div>
+      <!--/Main-->
+
+      <!--footer-->
+      <div class="footer" data-src="images/bg_footer.png" uk-img>
+        <div class="footer__top uk-section-small">
+          <div class="uk-container">
+            <div
+              class="uk-child-width-1-4@m uk-grid-small uk-grid-20-m"
+              uk-grid
+            >
+              <div>
+                <div class="item__7">
+                  <figure class="uk-margin-remove">
+                    <a href=""><img src="images/logo-market2.png" alt="" /></a>
+                  </figure>
+                </div>
+                <div class="item__7">
+                  <div class="info_cty">
+                    <ul class="uk-list footer__top__list">
+                      <li>
+                        <div class="footer__top__txt">
+                          <span>Địa chỉ:</span> Quán Nam, Kênh Dương,Lê Chân,
+                          TP. Hải Phòng
+                        </div>
+                      </li>
+                      <li>
+                        <div class="footer__top__txt">
+                          <span>Hotline:</span> 1900 1900
+                        </div>
+                      </li>
+                      <li>
+                        <div class="footer__top__txt">
+                          <span>Email:</span> Admin@tmarket.com
+                        </div>
+                      </li>
+                      <li>
+                        <div class="footer__top__txt">
+                          <span>Thời gian làm việc:</span> Từ 08:00 - 18:00, thứ
+                          2 đến thứ 7 hằng tuần
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="item__10">
+                  <h4 class="uk-h4 footer__top__title">Về TMarket</h4>
+                </div>
+                <div class="item__10">
+                  <ul class="uk-list footer__top__list">
+                    <li><a href="">Giới thiệu</a></li>
+                    <li><a href="">Tìm giáo viên</a></li>
+                    <li><a href="">Trở thành giáo viên</a></li>
+                    <li><a href="">Hướng dẫn đối với giáo viên</a></li>
+                    <li><a href="">Hướng dẫn đối với học viên</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <div class="item__10">
+                  <h4 class="uk-h4 footer__top__title">Thông tin</h4>
+                </div>
+                <div class="item__10">
+                  <ul class="uk-list footer__top__list">
+                    <li><a href="">Góp ý về chúng tôi</a></li>
+                    <li><a href="">Câu hỏi thường gặp</a></li>
+                    <li><a href="">Chat với chúng tôi</a></li>
+                    <li><a href="">Trợ giúp</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <div class="item__15">
+                  <div class="item__10">
+                    <h4 class="uk-h4 footer__top__title">Quy đổi</h4>
+                  </div>
+                  <div class="item__10">
+                    <div
+                      class="uk-width-1-1"
+                      uk-form-custom="target: > * > span:first-child"
+                    >
+                      <select>
+                        <option value="">Tiếng Việt - Vnđ</option>
+                        <option value="1">Option 01</option>
+                        <option value="2">Option 02</option>
+                        <option value="3">Option 03</option>
+                        <option value="4">Option 04</option>
+                      </select>
+                      <button
+                        style="--background: url('images/vi_flag.png')"
+                        class="footer__top__btnSelect uk-button uk-button-default uk-width-1-1 uk-position-relative"
+                        type="button"
+                        tabindex="-1"
+                      >
+                        <span></span>
+                        <span
+                          class="uk-position-center-right"
+                          uk-icon="icon: chevron-down"
+                        ></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="item__15">
+                  <div class="item__10">
+                    <h4 class="uk-h4 footer__top__title">Theo dõi chúng tôi</h4>
+                  </div>
+                  <div class="item__10">
+                    <div
+                      class="uk-child-width-auto uk-grid-small uk-flex-middle"
+                      uk-grid
+                    >
+                      <div>
+                        <a
+                          href=""
+                          class="footer__top__icon footer__top__icon--fb"
+                        ></a>
+                      </div>
+                      <div>
+                        <a
+                          href=""
+                          class="footer__top__icon footer__top__icon--instagram"
+                        ></a>
+                      </div>
+                      <div>
+                        <a
+                          href=""
+                          class="footer__top__icon footer__top__icon--twiter"
+                        ></a>
+                      </div>
+                      <div>
+                        <a
+                          href=""
+                          class="footer__top__icon footer__top__icon--youtube"
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="uk-container">
+            <div class="footer__bottom__section uk-section-xsmall">
+              <div class="uk-flex-middle uk-flex-center uk-grid-small" uk-grid>
+                <div class="uk-width-auto">
+                  <div class="footer__bottom__txt">Hotline: 0966 555 666</div>
+                </div>
+                <div class="uk-width-auto uk-width-expand@m">
+                  <div class="footer__bottom__txt">Mail: Admin@gmail.com</div>
+                </div>
+                <div class="uk-width-auto">
+                  <div class="footer__bottom__txt">
+                    © 2021 Namecard Limited.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/footer-->
+    </div>
+    <!--/app-->
+  </body>
+</html>
