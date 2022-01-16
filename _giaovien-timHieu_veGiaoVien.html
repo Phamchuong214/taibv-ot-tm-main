@@ -29,185 +29,208 @@
     <link rel="stylesheet" href="css/style_giaovien.css" />
   </head>
   <body class="">
-    <div
-      id="app"
-      class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative"
-    >
-      <div class="header uk-background-default" uk-sticky>
-        <div class="uk-container uk-padding-remove">
-          <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-            <div class="uk-navbar-left">
-              <a href="" class="uk-navbar-item uk-logo"
-                ><img src="images/logo-market2.png" alt=""
-              /></a>
-            </div>
-
-            <div class="uk-navbar-right">
-              <ul class="uk-navbar-nav uk-visible@m">
-                <li class="uk-active"><a href="#">Giới thiệu</a></li>
-                <li><a href="#">Tìm giáo viên</a></li>
-                <li><a href="#">Trở thành giáo viên</a></li>
-                <li><a href="#">Hướng dẫn</a></li>
-              </ul>
-              <div class="uk-navbar-item uk-visible@m">
-                <div
-                  class="header__lang"
-                  style="--background: url('images/vi_flag.png')"
-                >
-                  <span>Tiếng Việt - Vnđ</span>
-                  <span
-                    class="uk-position-center-right"
-                    uk-icon="icon: chevron-down"
-                  ></span>
-                </div>
-                <div
-                  class="header__lang__dropdown uk-form-stacked"
-                  uk-dropdown="mode: hover;pos: bottom-center;"
-                >
-                  <div class="header__lang__dropdown__item">
-                    <label
-                      class="uk-form-label header__lang__dropdown__label"
-                      for="form-stacked-text"
-                      >Ngôn ngữ</label
-                    >
-                    <div class="uk-form-controls">
-                      <div
-                        class="uk-width-1-1"
-                        uk-form-custom="target: > * > span:first-child"
-                      >
-                        <select>
-                          <option value="">Tiếng Việt</option>
-                          <option value="1">Option 01</option>
-                          <option value="2">Option 02</option>
-                          <option value="3">Option 03</option>
-                          <option value="4">Option 04</option>
-                        </select>
-                        <button
-                          style="--background: url('images/vi_flag.png')"
-                          class="header__lang__dropdown__btnSelect header__lang__dropdown__btnSelect--lang uk-width-1-1 uk-button uk-button-default"
-                          type="button"
-                          tabindex="-1"
-                        >
-                          <span></span>
-                          <span
-                            class="uk-position-center-right"
-                            uk-icon="icon: chevron-down"
-                          ></span>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="header__lang__dropdown__item">
-                    <label
-                      class="uk-form-label header__lang__dropdown__label"
-                      for="form-stacked-text"
-                      >Tiền tệ</label
-                    >
-                    <div class="uk-form-controls">
-                      <div
-                        class="uk-width-1-1"
-                        uk-form-custom="target: > * > span:first-child"
-                      >
-                        <select>
-                          <option value="">VNĐ</option>
-                          <option value="1">Option 01</option>
-                          <option value="2">Option 02</option>
-                          <option value="3">Option 03</option>
-                          <option value="4">Option 04</option>
-                        </select>
-                        <button
-                          style="--background: url('images/vi_flag.png')"
-                          class="header__lang__dropdown__btnSelect uk-width-1-1 uk-button uk-button-default"
-                          type="button"
-                          tabindex="-1"
-                        >
-                          <span></span>
-                          <span
-                            class="uk-position-center-right"
-                            uk-icon="icon: chevron-down"
-                          ></span>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <a class="uk-navbar-item header__acc uk-visible@m"> Đăng nhập </a>
-              <a class="uk-navbar-item header__acc uk-visible@m"> Đăng ký </a>
-              <a href="" class="uk-navbar-item uk-hidden@m">
-                <div class="header__iconMenu"></div>
-              </a>
-            </div>
-          </nav>
+    <script>
+      function togglePopup() {
+        document.getElementById("popup1").classList.toggle("active");
+      }
+    </script>
+    <!-- header  -->
+    <div class="container_header">
+      <div class="header_c center">
+        <div class="logo">
+          <img src="images/logo-market2.png" alt="" />
         </div>
-      </div>
-      <!--Cảm thấy yêu mến việc học,Chiến thắng được 3 tháng bài học!-->
-      <div
-        class="uk-section-small home__block03"
-        data-src="images/Group71.png"
-        uk-img
-      >
-        <div class="uk-container">
-          <div class="home__block03__txt">
-            Cảm thấy yêu mến việc học,Chiến thắng được 3 tháng bài học!
-          </div>
-        </div>
-      </div>
-      <!--/Cảm thấy yêu mến việc học,Chiến thắng được 3 tháng bài học!-->
 
-      <!--Main-->
-      <div class="uk-container">
-        <div class="container_timhieu">
-          <div class="list_menu">
-            <select name="" id="">
-              <option value="">Những câu hỏi hữu ích</option>
-              <option value="">option 1</option>
-              <option value="">option 2</option>
-              <option value="">option 3</option>
-            </select>
+        <div class="popup-menu1" id="popup1">
+          <div class="overlay-menu1"></div>
+
+          <div class="nav_c center">
             <ul>
+              <div class="close_menu1" onclick="togglePopup()">&times;</div>
+              <li><a href="#">Giới thiệu</a></li>
+              <li><a href="#">Tìm giáo viên</a></li>
+              <li><a href="#">Trở thành giáo viên</a></li>
+              <li><a href="#">Hướng dẫn</a></li>
               <li>
-                <a href="#"> Làm cách nào để đăng ký trở thành giáo viên? </a>
-                <hr />
+                <div class="">
+                  <div class="center pd20">
+                    <img src="images/vi_flag.png" alt="" />
+                    <span class="color_black">Tiếng Việt - Vnđ</span>
+                    <img src="images/down.svg" alt="" />
+                  </div>
+                  <div
+                    class="header__lang__dropdown uk-form-stacked"
+                    uk-dropdown="mode: hover;pos: bottom-center;"
+                  >
+                    <div class="header__lang__dropdown__item">
+                      <label
+                        class="uk-form-label header__lang__dropdown__label"
+                        for="form-stacked-text"
+                        >Ngôn ngữ</label
+                      >
+                      <div class="uk-form-controls">
+                        <div
+                          class="uk-width-1-1"
+                          uk-form-custom="target: > * > span:first-child"
+                        >
+                          <select>
+                            <option value="">Tiếng Việt</option>
+                            <option value="1">Option 01</option>
+                            <option value="2">Option 02</option>
+                            <option value="3">Option 03</option>
+                            <option value="4">Option 04</option>
+                          </select>
+                          <button
+                            style="--background: url('images/vi_flag.png')"
+                            class="header__lang__dropdown__btnSelect header__lang__dropdown__btnSelect--lang uk-width-1-1 uk-button uk-button-default"
+                            type="button"
+                            tabindex="-1"
+                          >
+                            <span></span>
+                            <span
+                              class="uk-position-center-right"
+                              uk-icon="icon: chevron-down"
+                            ></span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="header__lang__dropdown__item">
+                      <label
+                        class="uk-form-label header__lang__dropdown__label"
+                        for="form-stacked-text"
+                        >Tiền tệ</label
+                      >
+                      <div class="uk-form-controls">
+                        <div
+                          class="uk-width-1-1"
+                          uk-form-custom="target: > * > span:first-child"
+                        >
+                          <select>
+                            <option value="">VNĐ</option>
+                            <option value="1">Option 01</option>
+                            <option value="2">Option 02</option>
+                            <option value="3">Option 03</option>
+                            <option value="4">Option 04</option>
+                          </select>
+                          <button
+                            style="--background: url('images/vi_flag.png')"
+                            class="header__lang__dropdown__btnSelect uk-width-1-1 uk-button uk-button-default"
+                            type="button"
+                            tabindex="-1"
+                          >
+                            <span></span>
+                            <span
+                              class="uk-position-center-right"
+                              uk-icon="icon: chevron-down"
+                            ></span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </li>
               <li>
-                <a href="#">
-                  Làm cách nào để tôi trở thành một Giáo viên Chuyên nghiệp? Các
-                  yêu cầu đối với chứng chỉ là gì ?
+                <a class="color_black pd20" href="_dangnhap.html">
+                  Đăng nhập
                 </a>
-                <hr />
               </li>
               <li>
-                <a href="#">
-                  Sự khác biệt giữa Giáo viên Chuyên nghiệp và Gia sư Cộng đồng
-                  ?
-                </a>
-                <hr />
-              </li>
-              <li>
-                <a href="#"> Nguyên tắc và yêu cầu về ảnh hồ sơ ? </a>
-                <hr />
-              </li>
-              <li>
-                <a href="#"> Hướng dẫn và yêu cầu về video giới thiệu </a>
-                <hr />
-              </li>
-              <li>
-                <a href="#"> Nguyên tắc và yêu cầu về ảnh hồ sơ ? </a>
-                <hr />
-              </li>
-              <li>
-                <a href="#"> Nguyên tắc và yêu cầu về ảnh hồ sơ ? </a>
-                <hr />
-              </li>
-              <li>
-                <a href="#"> Nguyên tắc và yêu cầu về ảnh hồ sơ ? </a>
-                <hr />
+                <a class="color_black pd20" href="_dangky.html"> Đăng ký </a>
               </li>
             </ul>
           </div>
+        </div>
 
-          <div class="post">
+        <div class="icon_menu">
+          <img onclick="togglePopup()" src="images/menu-838.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- / header  -->
+
+    <!--Cảm thấy yêu mến việc học,Chiến thắng được 3 tháng bài học!-->
+    <div
+      class="uk-section-small home__block03 mg_t75"
+      data-src="images/Group71.png"
+      uk-img
+    >
+      <div class="uk-container">
+        <div class="home__block03__txt">
+          Cảm thấy yêu mến việc học,Chiến thắng được 3 tháng bài học!
+        </div>
+      </div>
+    </div>
+    <!--/Cảm thấy yêu mến việc học,Chiến thắng được 3 tháng bài học!-->
+
+    <!--Main-->
+    <div class="uk-container">
+      <div class="container_timhieu">
+        <div class="list_menu">
+          <button
+            onclick='document.getElementById("ul_menu_list").classList.toggle("active_ul_menu_list")'
+          >
+            Những câu hỏi hữu ích
+          </button>
+          <ul id="ul_menu_list">
+            <li>
+              <a
+                class="tablinks"
+                onclick="openCity(event, 'post_1')"
+                id="defaultOpen"
+              >
+                Làm cách nào để đăng ký trở thành giáo viên?
+              </a>
+              <hr />
+            </li>
+            <li>
+              <a class="tablinks" onclick="openCity(event, 'post_2')">
+                Làm cách nào để tôi trở thành một Giáo viên Chuyên nghiệp? Các
+                yêu cầu đối với chứng chỉ là gì ?
+              </a>
+              <hr />
+            </li>
+            <li>
+              <a class="tablinks" onclick="openCity(event, 'post_3')">
+                Sự khác biệt giữa Giáo viên Chuyên nghiệp và Gia sư Cộng đồng ?
+              </a>
+              <hr />
+            </li>
+            <li>
+              <a class="tablinks" onclick="openCity(event, 'post_4')">
+                Nguyên tắc và yêu cầu về ảnh hồ sơ ?
+              </a>
+              <hr />
+            </li>
+            <li>
+              <a class="tablinks" onclick="openCity(event, 'post_5')">
+                Hướng dẫn và yêu cầu về video giới thiệu
+              </a>
+              <hr />
+            </li>
+            <li>
+              <a class="tablinks" onclick="openCity(event, 'post_6')">
+                Nguyên tắc và yêu cầu về ảnh hồ sơ ?
+              </a>
+              <hr />
+            </li>
+            <li>
+              <a class="tablinks" onclick="openCity(event, 'post_7')">
+                Nguyên tắc và yêu cầu về ảnh hồ sơ ?
+              </a>
+              <hr />
+            </li>
+            <li>
+              <a class="tablinks" onclick="openCity(event, 'post_8')">
+                Nguyên tắc và yêu cầu về ảnh hồ sơ ?
+              </a>
+              <hr />
+            </li>
+          </ul>
+        </div>
+        <div class="post">
+          <div id="post_1" class="tabcontent">
             <img src="images/logo-market2.png" alt="" />
             <br />
             <div class="title_post">Kiểu giáo viên</div>
@@ -287,165 +310,191 @@
               <a href="#">Tiếp tục</a>
             </div>
           </div>
-        </div>
-      </div>
-      <!--/Main-->
 
-      <!--footer-->
-      <div class="footer" data-src="images/bg_footer.png" uk-img>
-        <div class="footer__top uk-section-small">
-          <div class="uk-container">
-            <div
-              class="uk-child-width-1-4@m uk-grid-small uk-grid-20-m"
-              uk-grid
-            >
-              <div>
-                <div class="item__7">
-                  <figure class="uk-margin-remove">
-                    <a href=""><img src="images/logo-market2.png" alt="" /></a>
-                  </figure>
-                </div>
-                <div class="item__7">
-                  <div class="info_cty">
-                    <ul class="uk-list footer__top__list">
-                      <li>
-                        <div class="footer__top__txt">
-                          <span>Địa chỉ:</span> Quán Nam, Kênh Dương,Lê Chân,
-                          TP. Hải Phòng
-                        </div>
-                      </li>
-                      <li>
-                        <div class="footer__top__txt">
-                          <span>Hotline:</span> 1900 1900
-                        </div>
-                      </li>
-                      <li>
-                        <div class="footer__top__txt">
-                          <span>Email:</span> Admin@tmarket.com
-                        </div>
-                      </li>
-                      <li>
-                        <div class="footer__top__txt">
-                          <span>Thời gian làm việc:</span> Từ 08:00 - 18:00, thứ
-                          2 đến thứ 7 hằng tuần
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+          <div id="post_2" class="tabcontent">
+            <h1>post 2</h1>
+          </div>
+
+          <div id="post_3" class="tabcontent">
+            <h1>post 3</h1>
+          </div>
+
+          <div id="post_4" class="tabcontent">
+            <h1>post 4</h1>
+          </div>
+
+          <div id="post_5" class="tabcontent">
+            <h1>post 5</h1>
+          </div>
+
+          <div id="post_6" class="tabcontent">
+            <h1>post 6</h1>
+          </div>
+
+          <div id="post_7" class="tabcontent">
+            <h1>post 7</h1>
+          </div>
+
+          <div id="post_8" class="tabcontent">
+            <h1>post 8</h1>
+          </div>
+        </div>
+
+        <script>
+          function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(
+                " active",
+                ""
+              );
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+          }
+          document.getElementById("defaultOpen").click();
+        </script>
+      </div>
+    </div>
+    <!--/Main-->
+
+    <!--footer-->
+    <div class="footer" data-src="images/bg_footer.png" uk-img>
+      <div class="footer__top uk-section-small">
+        <div class="uk-container">
+          <div class="uk-child-width-1-4@m uk-grid-small uk-grid-20-m" uk-grid>
+            <div>
+              <div class="item__7">
+                <figure class="uk-margin-remove">
+                  <a href=""><img src="images/logo-market2.png" alt="" /></a>
+                </figure>
               </div>
-              <div>
-                <div class="item__10">
-                  <h4 class="uk-h4 footer__top__title">Về TMarket</h4>
-                </div>
-                <div class="item__10">
+              <div class="item__7">
+                <div class="info_cty">
                   <ul class="uk-list footer__top__list">
-                    <li><a href="">Giới thiệu</a></li>
-                    <li><a href="">Tìm giáo viên</a></li>
-                    <li><a href="">Trở thành giáo viên</a></li>
-                    <li><a href="">Hướng dẫn đối với giáo viên</a></li>
-                    <li><a href="">Hướng dẫn đối với học viên</a></li>
+                    <li>
+                      <div class="footer__top__txt">
+                        <span>Địa chỉ:</span> Quán Nam, Kênh Dương,Lê Chân, TP.
+                        Hải Phòng
+                      </div>
+                    </li>
+                    <li>
+                      <div class="footer__top__txt">
+                        <span>Hotline:</span> 1900 1900
+                      </div>
+                    </li>
+                    <li>
+                      <div class="footer__top__txt">
+                        <span>Email:</span> Admin@tmarket.com
+                      </div>
+                    </li>
+                    <li>
+                      <div class="footer__top__txt">
+                        <span>Thời gian làm việc:</span> Từ 08:00 - 18:00, thứ 2
+                        đến thứ 7 hằng tuần
+                      </div>
+                    </li>
                   </ul>
-                </div>
-              </div>
-              <div>
-                <div class="item__10">
-                  <h4 class="uk-h4 footer__top__title">Thông tin</h4>
-                </div>
-                <div class="item__10">
-                  <ul class="uk-list footer__top__list">
-                    <li><a href="">Góp ý về chúng tôi</a></li>
-                    <li><a href="">Câu hỏi thường gặp</a></li>
-                    <li><a href="">Chat với chúng tôi</a></li>
-                    <li><a href="">Trợ giúp</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div>
-                <div class="item__15">
-                  <div class="item__10">
-                    <h4 class="uk-h4 footer__top__title">Quy đổi</h4>
-                  </div>
-                  <div class="item__10">
-                    <div
-                      class="uk-width-1-1"
-                      uk-form-custom="target: > * > span:first-child"
-                    >
-                      <select>
-                        <option value="">Tiếng Việt - Vnđ</option>
-                        <option value="1">Option 01</option>
-                        <option value="2">Option 02</option>
-                        <option value="3">Option 03</option>
-                        <option value="4">Option 04</option>
-                      </select>
-                      <button
-                        style="--background: url('images/vi_flag.png')"
-                        class="footer__top__btnSelect uk-button uk-button-default uk-width-1-1 uk-position-relative"
-                        type="button"
-                        tabindex="-1"
-                      >
-                        <span></span>
-                        <span
-                          class="uk-position-center-right"
-                          uk-icon="icon: chevron-down"
-                        ></span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <div class="item__15">
-                  <div class="item__10">
-                    <h4 class="uk-h4 footer__top__title">Theo dõi chúng tôi</h4>
-                  </div>
-                  <div class="item__10">
-                    <div
-                      class="uk-child-width-auto uk-grid-small uk-flex-middle"
-                      uk-grid
-                    >
-                      <div>
-                        <a
-                          href=""
-                          class="footer__top__icon footer__top__icon--fb"
-                        ></a>
-                      </div>
-                      <div>
-                        <a
-                          href=""
-                          class="footer__top__icon footer__top__icon--instagram"
-                        ></a>
-                      </div>
-                      <div>
-                        <a
-                          href=""
-                          class="footer__top__icon footer__top__icon--twiter"
-                        ></a>
-                      </div>
-                      <div>
-                        <a
-                          href=""
-                          class="footer__top__icon footer__top__icon--youtube"
-                        ></a>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="footer__bottom">
-          <div class="uk-container">
-            <div class="footer__bottom__section uk-section-xsmall">
-              <div class="uk-flex-middle uk-flex-center uk-grid-small" uk-grid>
-                <div class="uk-width-auto">
-                  <div class="footer__bottom__txt">Hotline: 0966 555 666</div>
+            <div>
+              <div class="item__10">
+                <h4 class="uk-h4 footer__top__title">Về TMarket</h4>
+              </div>
+              <div class="item__10">
+                <ul class="uk-list footer__top__list">
+                  <li><a href="">Giới thiệu</a></li>
+                  <li><a href="">Tìm giáo viên</a></li>
+                  <li><a href="">Trở thành giáo viên</a></li>
+                  <li><a href="">Hướng dẫn đối với giáo viên</a></li>
+                  <li><a href="">Hướng dẫn đối với học viên</a></li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div class="item__10">
+                <h4 class="uk-h4 footer__top__title">Thông tin</h4>
+              </div>
+              <div class="item__10">
+                <ul class="uk-list footer__top__list">
+                  <li><a href="">Góp ý về chúng tôi</a></li>
+                  <li><a href="">Câu hỏi thường gặp</a></li>
+                  <li><a href="">Chat với chúng tôi</a></li>
+                  <li><a href="">Trợ giúp</a></li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div class="item__15">
+                <div class="item__10">
+                  <h4 class="uk-h4 footer__top__title">Quy đổi</h4>
                 </div>
-                <div class="uk-width-auto uk-width-expand@m">
-                  <div class="footer__bottom__txt">Mail: Admin@gmail.com</div>
+                <div class="item__10">
+                  <div
+                    class="uk-width-1-1"
+                    uk-form-custom="target: > * > span:first-child"
+                  >
+                    <select>
+                      <option value="">Tiếng Việt - Vnđ</option>
+                      <option value="1">Option 01</option>
+                      <option value="2">Option 02</option>
+                      <option value="3">Option 03</option>
+                      <option value="4">Option 04</option>
+                    </select>
+                    <button
+                      style="--background: url('images/vi_flag.png')"
+                      class="footer__top__btnSelect uk-button uk-button-default uk-width-1-1 uk-position-relative"
+                      type="button"
+                      tabindex="-1"
+                    >
+                      <span></span>
+                      <span
+                        class="uk-position-center-right"
+                        uk-icon="icon: chevron-down"
+                      ></span>
+                    </button>
+                  </div>
                 </div>
-                <div class="uk-width-auto">
-                  <div class="footer__bottom__txt">
-                    © 2021 Namecard Limited.
+              </div>
+              <div class="item__15">
+                <div class="item__10">
+                  <h4 class="uk-h4 footer__top__title">Theo dõi chúng tôi</h4>
+                </div>
+                <div class="item__10">
+                  <div
+                    class="uk-child-width-auto uk-grid-small uk-flex-middle"
+                    uk-grid
+                  >
+                    <div>
+                      <a
+                        href=""
+                        class="footer__top__icon footer__top__icon--fb"
+                      ></a>
+                    </div>
+                    <div>
+                      <a
+                        href=""
+                        class="footer__top__icon footer__top__icon--instagram"
+                      ></a>
+                    </div>
+                    <div>
+                      <a
+                        href=""
+                        class="footer__top__icon footer__top__icon--twiter"
+                      ></a>
+                    </div>
+                    <div>
+                      <a
+                        href=""
+                        class="footer__top__icon footer__top__icon--youtube"
+                      ></a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -453,8 +502,25 @@
           </div>
         </div>
       </div>
-      <!--/footer-->
+      <div class="footer__bottom">
+        <div class="uk-container">
+          <div class="footer__bottom__section uk-section-xsmall">
+            <div class="uk-flex-middle uk-flex-center uk-grid-small" uk-grid>
+              <div class="uk-width-auto">
+                <div class="footer__bottom__txt">Hotline: 0966 555 666</div>
+              </div>
+              <div class="uk-width-auto uk-width-expand@m">
+                <div class="footer__bottom__txt">Mail: Admin@gmail.com</div>
+              </div>
+              <div class="uk-width-auto">
+                <div class="footer__bottom__txt">© 2021 Namecard Limited.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <!--/footer-->
     <!--/app-->
   </body>
 </html>
