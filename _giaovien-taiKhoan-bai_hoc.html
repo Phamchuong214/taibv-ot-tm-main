@@ -33,134 +33,157 @@
     <link rel="stylesheet" href="css/style_giaovien.css" />
   </head>
   <body class="">
+    <script>
+      function togglePopup() {
+        document.getElementById("popup1").classList.toggle("active");
+      }
+    </script>
+    <!-- header  -->
+    <div class="container_header">
+      <div class="header_c center">
+        <div class="logo">
+          <img src="images/logo-market2.png" alt="" />
+        </div>
+
+        <div class="popup-menu1" id="popup1">
+          <div class="overlay-menu1"></div>
+
+          <div class="nav_c center">
+            <ul>
+              <div class="close_menu1" onclick="togglePopup()">&times;</div>
+              <li><a href="#">Giới thiệu</a></li>
+              <li><a href="#">Tìm giáo viên</a></li>
+              <li><a href="#">Trở thành giáo viên</a></li>
+              <li><a href="#">Hướng dẫn</a></li>
+              <li>
+                <div class="">
+                  <div class="center pd20">
+                    <img src="images/vi_flag.png" alt="" />
+                    <span class="color_black">Tiếng Việt - Vnđ</span>
+                    <img src="images/down.svg" alt="" />
+                  </div>
+                  <div
+                    class="header__lang__dropdown uk-form-stacked"
+                    uk-dropdown="mode: hover;pos: bottom-center;"
+                  >
+                    <div class="header__lang__dropdown__item">
+                      <label
+                        class="uk-form-label header__lang__dropdown__label"
+                        for="form-stacked-text"
+                        >Ngôn ngữ</label
+                      >
+                      <div class="uk-form-controls">
+                        <div
+                          class="uk-width-1-1"
+                          uk-form-custom="target: > * > span:first-child"
+                        >
+                          <select>
+                            <option value="">Tiếng Việt</option>
+                            <option value="1">Option 01</option>
+                            <option value="2">Option 02</option>
+                            <option value="3">Option 03</option>
+                            <option value="4">Option 04</option>
+                          </select>
+                          <button
+                            style="--background: url('images/vi_flag.png')"
+                            class="header__lang__dropdown__btnSelect header__lang__dropdown__btnSelect--lang uk-width-1-1 uk-button uk-button-default"
+                            type="button"
+                            tabindex="-1"
+                          >
+                            <span></span>
+                            <span
+                              class="uk-position-center-right"
+                              uk-icon="icon: chevron-down"
+                            ></span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="header__lang__dropdown__item">
+                      <label
+                        class="uk-form-label header__lang__dropdown__label"
+                        for="form-stacked-text"
+                        >Tiền tệ</label
+                      >
+                      <div class="uk-form-controls">
+                        <div
+                          class="uk-width-1-1"
+                          uk-form-custom="target: > * > span:first-child"
+                        >
+                          <select>
+                            <option value="">VNĐ</option>
+                            <option value="1">Option 01</option>
+                            <option value="2">Option 02</option>
+                            <option value="3">Option 03</option>
+                            <option value="4">Option 04</option>
+                          </select>
+                          <button
+                            style="--background: url('images/vi_flag.png')"
+                            class="header__lang__dropdown__btnSelect uk-width-1-1 uk-button uk-button-default"
+                            type="button"
+                            tabindex="-1"
+                          >
+                            <span></span>
+                            <span
+                              class="uk-position-center-right"
+                              uk-icon="icon: chevron-down"
+                            ></span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a class="color_black pd20" href="_dangnhap.html">
+                  Đăng nhập
+                </a>
+              </li>
+              <li>
+                <a class="color_black pd20" href="_dangky.html"> Đăng ký </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="icon_menu">
+          <img onclick="togglePopup()" src="images/menu-838.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- / header  -->
+
+    <div class="container_header2">
+      <nav class="header2 mobile_inline_flex_colum" uk-navbar>
+        <div class="header2_left">
+          <ul>
+            <li class="uk-active text_align-center">
+              <a href="_giaovien-taiKhoan-bai_hoc.html" class="color_green">
+                Bài học
+              </a>
+              <img src="images/Rectangle 247.png" alt="" />
+            </li>
+            <li><a href="_giaovien-taiKhoan-khoa_hoc.html">Khóa học</a></li>
+            <li><a href="#">Lời mời học</a></li>
+          </ul>
+        </div>
+
+        <div class="header2_right">
+          <div class="a_next_1">
+            <a href="#">Tiếp theo</a>
+          </div>
+          <div class="a_next_2">
+            <a href="#">Tất cả học viên</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
     <div
       id="app"
       class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative"
     >
-      <div class="header uk-background-default border_bottom" uk-sticky>
-        <div class="uk-container uk-padding-remove">
-          <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-            <div class="uk-navbar-left">
-              <a href="" class="uk-navbar-item uk-logo"
-                ><img src="images/logo-market2.png" alt=""
-              /></a>
-            </div>
-
-            <div class="uk-navbar-right">
-              <ul class="uk-navbar-nav uk-visible@m">
-                <li class="uk-active"><a href="#">Cài đặt giáo viên</a></li>
-                <li><a href="#">Lịch dạy của tôi</a></li>
-                <li><a href="#">Tin nhắn</a></li>
-              </ul>
-              <div class="uk-navbar-item uk-visible@m">
-                <div class="color_black center user dropdown">
-                  <div class="avt_gv">
-                    <img src="images/Ellipse 14.png" alt="" />
-                  </div>
-                  <button
-                    class="btn btn-primary dropdown-toggle none_bt"
-                    type="button"
-                    data-toggle="dropdown"
-                  >
-                    <a class="color_black" href="#">
-                      <span>Trương Huyền</span>
-                    </a>
-                    <img src="images/Polygon 3.png" alt="" />
-                  </button>
-
-                  <div class="menu_gv dropdown-menu">
-                    <ul>
-                      <li class="title_menu">
-                        <a href="_giaovien-taiKhoan-Bai_hoc_cua_toi.html">
-                          Bài học của tôi
-                          <img src="images/men1usvg.svg" alt="" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="_giaovien-taiKhoan-Hoc_vien_cua_toi.html">
-                          Học viên của tôi
-                          <img src="images/menu2.svg" alt="" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="_giaovien-taiKhoan-Vi_cua_toi.html">
-                          Ví của tôi
-                          <img src="images/menu3.svg" alt="" />
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="_giaovien-taiKhoan-Ho_so_giao_vien_cua_toi.html"
-                        >
-                          Hồ sơ giáo viên của tôi
-                          <img src="images/menu4.svg" alt="" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="_giaovien-taiKhoan-Cai_dat_tai_khoan.html">
-                          Cài đặt tài khoản
-                          <img src="images/menu5.svg" alt="" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="_giaovien-taiKhoan-Ho_tro.html">
-                          Hỗ trợ
-                          <img src="images/menu6.svg" alt="" />
-                        </a>
-                      </li>
-                      <li style="background-color: #fff !important">
-                        <a href="#">
-                          <div class="color_black">
-                            Chuyển sang chế độ học tập
-                          </div>
-                          <label class="switch">
-                            <input type="checkbox" checked />
-                            <span class="slider round"></span>
-                          </label>
-                        </a>
-                      </li>
-                      <li
-                        style="background-color: #fff !important"
-                        class="center"
-                      >
-                        <a class="dang_nhap_menu" href="#"> Đăng xuất</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </div>
-      <div class="header uk-background-default" uk-sticky>
-        <div class="uk-container uk-padding-remove">
-          <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
-            <div class="uk-navbar-left">
-              <ul class="uk-navbar-nav uk-visible@m">
-                <li class="uk-active text_align-center">
-                  <a href="_giaovien-taiKhoan-bai_hoc.html" class="color_green">
-                    Bài học
-                  </a>
-                  <img src="images/Rectangle 247.png" alt="" />
-                </li>
-                <li><a href="_giaovien-taiKhoan-khoa_hoc.html">Khóa học</a></li>
-                <li><a href="#">Lời mời học</a></li>
-              </ul>
-            </div>
-
-            <div class="uk-navbar-right">
-              <div class="a_next_1">
-                <a href="#">Tiếp theo</a>
-              </div>
-              <div class="a_next_2">
-                <a href="#">Tất cả học viên</a>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </div>
-
       <!--Main-->
       <div class="container_ttctgv">
         <div class="container_step bg_color_gray">
