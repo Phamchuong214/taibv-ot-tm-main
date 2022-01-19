@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style_giaovien.css" />
     <style>
       * {
         box-sizing: border-box;
@@ -56,18 +57,17 @@
     </style>
   </head>
   <body>
-    <h2>Vertical Tabs</h2>
-    <p>Click on the buttons inside the tabbed menu:</p>
-
     <div class="tab">
-      <button
-        class="tablinks"
-        onclick="openCity(event, 'London')"
-        id="defaultOpen"
-      >
+      <button class="tablinks" onclick="openCity(event, 'London')">
         London
       </button>
-      <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+      <button
+        id="defaultOpen"
+        class="tablinks"
+        onclick="openCity(event, 'Paris')"
+      >
+        Paris
+      </button>
       <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
     </div>
 

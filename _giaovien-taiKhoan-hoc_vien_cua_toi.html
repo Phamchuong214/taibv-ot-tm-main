@@ -37,6 +37,31 @@
       function togglePopup() {
         document.getElementById("popup1").classList.toggle("active");
       }
+      function toggleChat() {
+        document.getElementById("box_chat").classList.toggle("active_chat");
+      }
+
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(
+            " active_tin_nhan",
+            ""
+          );
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active_tin_nhan";
+
+        document.getElementById("box_chat").classList.toggle("active_chat");
+      }
+
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
     </script>
 
     <!-- header  -->
@@ -204,356 +229,267 @@
       class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative"
     >
       <!--Main-->
-      <div class="container_ttctgv mg_t75">
-        <div
-          class="container_step center center_w_between bg_color_gray mg_mobile_t100"
-        >
-          <div class="_user">
-            <img src="images/Ellipse 14.png" alt="" />
-            <span class="font_size20 color_black text_center_mobile"
-              >Trương Huyền</span
-            >
-            <div class="color_black text_center_mobile">
-              Giáo viên chuyên nghiệp
-            </div>
-            <a class="color_green text_center_mobile" href="#">Chỉnh sửa</a>
-            <div class="color_black text_center_mobile">
-              <span>06:00 PM</span>
-            </div>
-          </div>
-
-          <div class="so_bai_hoc">
-            <div class="item_bai_hoc">
-              <div class="font_size64">
-                <span>30</span>
-              </div>
-              <span>Số lượng bài học đang dạy</span>
-            </div>
-            <div class="item_bai_hoc">
-              <div class="font_size64">
-                <span>0</span>
-              </div>
-              <span>Các khóa học mới</span>
-            </div>
-            <div class="item_bai_hoc">
-              <div class="font_size64">
-                <span>0</span>
-              </div>
-              <span>Số lượng khóa học theo gói</span>
-            </div>
-          </div>
-
-          <div class="tien center">
-            <div class="text_center_mobile">
-              <div class="color_black text_center_mobile">Tổng số dư</div>
-              <div class="font_size24 color_green">2.408.000 đ</div>
-              <a class="color_green" href="#">Rút tiền</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="container_step bg_color_gray mg_mobile_t10">
-          <div class="bai_hoc">
-            <div class="text color_black text_align-left">
-              <span>Bài học tiếp theo</span>
-              <span>30</span>
-            </div>
-
-            <div class="center_w_between mobile_inline_flex_colum">
-              <div class="item_title center_w_between center">
-                <div class="_1 text_align-left">
-                  <span class="font_size20 font_size16_mobile bold">
-                    Nền tảng kiến thức mới cho giáo viên
-                  </span>
-                  <div class="color_black mobile_width100">
-                    Tiết lộ những bí quyết để thành công
-                  </div>
-                </div>
-                <div class="_2">
-                  <img src="images/Group 925.svg" alt="" />
-                </div>
-              </div>
-
-              <div class="item_title center_w_between center">
-                <div class="_1 text_align-left">
-                  <span class="font_size20 font_size16_mobile bold">
-                    Bài học tức thời
-                  </span>
-                  <div class="color_black mobile_width100">
-                    Tự động chấp nhận và bắt đầu 1 bài học trong 5 phút ngay sau
-                    khi nhận được yêu cầu bài học mới
-                  </div>
-                </div>
-                <div class="_2">
-                  <a class="center" href="#">KÍCH HOẠT</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="_1">
-                <div
-                  class="avt bg_img"
-                  style="background-image: url(images/good_sample1\ 1.png)"
-                ></div>
-                <div class="_a">
-                  <div class="_a1">Nguyen Anh</div>
-                  <span>ID bà học: 289976028</span>
-                </div>
-              </div>
-
-              <img class="line_right_item" src="images/Line 43.png" alt="" />
-
-              <div class="_2">
-                <div class="_a">
-                  <div class="_a1">Conversation English lesson</div>
-                  <span>Tiếng anh - 60 phút</span>
-                </div>
-              </div>
-
-              <img class="line_right_item" src="images/Line 43.png" alt="" />
-
-              <div class="_3">
-                <div class="_3a">
-                  <div class="_3a1">
-                    <a href="#">VÀO LỚP</a>
-                    <div class="">
-                      <span>16h17p50s</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="_1">
-                <div
-                  class="avt bg_img"
-                  style="background-image: url(images/good_sample1\ 1.png)"
-                ></div>
-                <div class="_a">
-                  <div class="_a1">Nguyen Anh</div>
-                  <span>ID bà học: 289976028</span>
-                </div>
-              </div>
-
-              <img class="line_right_item" src="images/Line 43.png" alt="" />
-
-              <div class="_2">
-                <div class="_a">
-                  <div class="_a1">Conversation English lesson</div>
-                  <span>Tiếng anh - 60 phút</span>
-                </div>
-              </div>
-
-              <img class="line_right_item" src="images/Line 43.png" alt="" />
-
-              <div class="_3">
-                <div class="_3a">
-                  <span class="_3a1">Bài học bắt đầu sau</span>
-                  <div class="time_h1">
-                    <span>16h 17p 50s</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="_1">
-                <div
-                  class="avt bg_img"
-                  style="background-image: url(images/good_sample1\ 1.png)"
-                ></div>
-                <div class="_a">
-                  <div class="_a1">Nguyen Anh</div>
-                  <span>ID bà học: 289976028</span>
-                </div>
-              </div>
-
-              <img class="line_right_item" src="images/Line 43.png" alt="" />
-
-              <div class="_2">
-                <div class="_a">
-                  <div class="_a1">Conversation English lesson</div>
-                  <span>Tiếng anh - 60 phút</span>
-                </div>
-              </div>
-
-              <img class="line_right_item" src="images/Line 43.png" alt="" />
-
-              <div class="_3">
-                <div class="_3a">
-                  <span class="time_h1">06:30 PM</span>
-                  <div class="time_d1">
-                    <span>16h 17p 50s</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="_1">
-                <div
-                  class="avt bg_img"
-                  style="background-image: url(images/good_sample1\ 1.png)"
-                ></div>
-                <div class="_a">
-                  <div class="_a1">Nguyen Anh</div>
-                  <span>ID bà học: 289976028</span>
-                </div>
-              </div>
-
-              <img class="line_right_item" src="images/Line 43.png" alt="" />
-
-              <div class="_2">
-                <div class="_a">
-                  <div class="_a1">Conversation English lesson</div>
-                  <span>Tiếng anh - 60 phút</span>
-                </div>
-              </div>
-
-              <img class="line_right_item" src="images/Line 43.png" alt="" />
-
-              <div class="_3">
-                <div class="_3a">
-                  <span class="_3a1">1/5 bài học chưa lên lịch</span>
-                  <div class="">
-                    <span>Có giá trị đến T3, 5/2021 </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="_1">
-                <div
-                  class="avt bg_img"
-                  style="background-image: url(images/good_sample1\ 1.png)"
-                ></div>
-                <div class="_a">
-                  <div class="_a1">Nguyen Anh</div>
-                  <span>ID bà học: 289976028</span>
-                </div>
-              </div>
-
-              <img class="line_right_item" src="images/Line 43.png" alt="" />
-
-              <div class="_2">
-                <div class="_a">
-                  <div class="_a1">Conversation English lesson</div>
-                  <span>Tiếng anh - 60 phút</span>
-                </div>
-              </div>
-
-              <img class="line_right_item" src="images/Line 43.png" alt="" />
-
-              <div class="_3">
-                <div class="_3a">
-                  <span class="_3a1">Đã lên lịch cho tất cả bài học</span>
-                  <div class="">
-                    <span>Có giá trị đến T3, 5/2021 </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="them">
-              <a href="#">Hiện thị thêm</a>
-            </div>
-          </div>
-        </div>
-
+      <div class="container_ttctgv">
         <div class="container_step bg_color_gray">
-          <div class="thong_ke">
-            <div class="font_size18 text_align-left">Thống kê</div>
-            <div class="text_align-left">
-              <img src="images/Rectangle 42.png" alt="" />
-            </div>
-            <div class="width100 mobile_inline_flex_colum">
-              <div class="ty_le">
-                <div class="ty_le_1">
-                  <span>Bài học hoàn thành</span>
-                  <div class="color_green font_size20">120</div>
+          <div class="container_hoc_vien_cua_toi">
+            <div class="title_hoc_vien_cua_toi">Học viên của tôi</div>
+            <a class="item_hoc_vien">
+              <div class="item_hoc_vien_left">
+                <div class="title_item_hoc_vien">
+                  Tiếng anh giao tiếp trẻ em
+                </div>
+                <div class="line_item_hoc_vien">
+                  <img src="images/Rectangle 42.png" alt="" />
                 </div>
 
-                <div class="item_ty_le center">
-                  <div class="_1 center">Tháng 10</div>
-                  <div class="_2 center">
-                    <div class="color_white">2 bài học</div>
-                  </div>
+                <div class="so_hoc_vien_item_hoc_vien">
+                  <div class="bold">Học viên:</div>
+                  <span>30</span>
                 </div>
 
-                <div class="item_ty_le center">
-                  <div class="_1 center">Tháng 10</div>
-                  <div class="_2 center _0_phan_tram">
-                    <div class="color_black">1</div>
-                  </div>
-                </div>
-
-                <div class="item_ty_le center">
-                  <div class="_1 center">Tháng 10</div>
-                  <div class="_2 center _0_phan_tram">
-                    <div class="color_black">1</div>
-                  </div>
+                <div class="so_hoc_vien_item_hoc_vien">
+                  <div class="bold">Số giờ giảng dạy:</div>
+                  <span>23000h</span>
                 </div>
               </div>
 
-              <div class="ty_le">
-                <div class="ty_le_1">
-                  <span>Tỷ lệ phản hồi</span>
-                  <div class="color_green font_size20">100%</div>
+              <div class="item_hoc_vien_right">
+                <div class="title_item_hoc_vien_right">
+                  Học viên tham gia học
                 </div>
 
-                <div class="item_ty_le center">
-                  <div class="_1 center">Tháng 10</div>
-                  <div class="_2 center">
-                    <div class="color_white">100%</div>
-                  </div>
+                <div class="avt_hoc_vien_cua_toi">
+                  <div
+                    class="avt_hoc_vien_cua_toi1"
+                    style="background-image: url(images/good_sample1\ 1.png)"
+                  ></div>
+                  <div
+                    class="avt_hoc_vien_cua_toi2"
+                    style="background-image: url(images/good_sample1\ 1.png)"
+                  ></div>
+                  <div
+                    class="avt_hoc_vien_cua_toi3"
+                    style="background-image: url(images/good_sample1\ 1.png)"
+                  ></div>
+                  <div class="avt_hoc_vien_cua_toi_end">+5</div>
+                </div>
+              </div>
+            </a>
+
+            <a class="item_hoc_vien">
+              <div class="item_hoc_vien_left">
+                <div class="title_item_hoc_vien">
+                  Tiếng anh giao tiếp trẻ em
+                </div>
+                <div class="line_item_hoc_vien">
+                  <img src="images/Rectangle 42.png" alt="" />
                 </div>
 
-                <div class="item_ty_le center">
-                  <div class="_1 center">Tháng 10</div>
-                  <div class="_2 center _0_phan_tram">
-                    <div class="color_black">0%</div>
-                  </div>
+                <div class="so_hoc_vien_item_hoc_vien">
+                  <div class="bold">Học viên:</div>
+                  <span>30</span>
                 </div>
 
-                <div class="item_ty_le center">
-                  <div class="_1 center">Tháng 10</div>
-                  <div class="_2 center _0_phan_tram">
-                    <div class="color_black">0%</div>
-                  </div>
+                <div class="so_hoc_vien_item_hoc_vien">
+                  <div class="bold">Số giờ giảng dạy:</div>
+                  <span>23000h</span>
                 </div>
               </div>
 
-              <div class="ty_le">
-                <div class="ty_le_1">
-                  <span>Tỷ lệ tham gia</span>
-                  <div class="color_green font_size20">100%</div>
+              <div class="item_hoc_vien_right">
+                <div class="title_item_hoc_vien_right">
+                  Học viên tham gia học
                 </div>
 
-                <div class="item_ty_le center">
-                  <div class="_1 center">Tháng 10</div>
-                  <div class="_2 center">
-                    <div class="color_white">100%</div>
-                  </div>
-                </div>
-
-                <div class="item_ty_le center">
-                  <div class="_1 center">Tháng 10</div>
-                  <div class="_2 center _0_phan_tram">
-                    <div class="color_black">0%</div>
-                  </div>
-                </div>
-
-                <div class="item_ty_le center">
-                  <div class="_1 center">Tháng 10</div>
-                  <div class="_2 center _0_phan_tram">
-                    <div class="color_black">0%</div>
-                  </div>
+                <div class="avt_hoc_vien_cua_toi">
+                  <div
+                    class="avt_hoc_vien_cua_toi1"
+                    style="background-image: url(images/good_sample1\ 1.png)"
+                  ></div>
+                  <div
+                    class="avt_hoc_vien_cua_toi2"
+                    style="background-image: url(images/good_sample1\ 1.png)"
+                  ></div>
+                  <div
+                    class="avt_hoc_vien_cua_toi3"
+                    style="background-image: url(images/good_sample1\ 1.png)"
+                  ></div>
+                  <div class="avt_hoc_vien_cua_toi_end">+5</div>
                 </div>
               </div>
-            </div>
+            </a>
+
+            <a class="item_hoc_vien">
+              <div class="item_hoc_vien_left">
+                <div class="title_item_hoc_vien">
+                  Tiếng anh giao tiếp trẻ em
+                </div>
+                <div class="line_item_hoc_vien">
+                  <img src="images/Rectangle 42.png" alt="" />
+                </div>
+
+                <div class="so_hoc_vien_item_hoc_vien">
+                  <div class="bold">Học viên:</div>
+                  <span>30</span>
+                </div>
+
+                <div class="so_hoc_vien_item_hoc_vien">
+                  <div class="bold">Số giờ giảng dạy:</div>
+                  <span>23000h</span>
+                </div>
+              </div>
+
+              <div class="item_hoc_vien_right">
+                <div class="title_item_hoc_vien_right">
+                  Học viên tham gia học
+                </div>
+
+                <div class="avt_hoc_vien_cua_toi">
+                  <div
+                    class="avt_hoc_vien_cua_toi1"
+                    style="background-image: url(images/good_sample1\ 1.png)"
+                  ></div>
+                  <div
+                    class="avt_hoc_vien_cua_toi2"
+                    style="background-image: url(images/good_sample1\ 1.png)"
+                  ></div>
+                  <div
+                    class="avt_hoc_vien_cua_toi3"
+                    style="background-image: url(images/good_sample1\ 1.png)"
+                  ></div>
+                  <div class="avt_hoc_vien_cua_toi_end">+5</div>
+                </div>
+              </div>
+            </a>
+
+            <a class="item_hoc_vien">
+              <div class="item_hoc_vien_left">
+                <div class="title_item_hoc_vien">
+                  Tiếng anh giao tiếp trẻ em
+                </div>
+                <div class="line_item_hoc_vien">
+                  <img src="images/Rectangle 42.png" alt="" />
+                </div>
+
+                <div class="so_hoc_vien_item_hoc_vien">
+                  <div class="bold">Học viên:</div>
+                  <span>30</span>
+                </div>
+
+                <div class="so_hoc_vien_item_hoc_vien">
+                  <div class="bold">Số giờ giảng dạy:</div>
+                  <span>23000h</span>
+                </div>
+              </div>
+
+              <div class="item_hoc_vien_right">
+                <div class="title_item_hoc_vien_right">
+                  Học viên tham gia học
+                </div>
+
+                <div class="avt_hoc_vien_cua_toi">
+                  <div
+                    class="avt_hoc_vien_cua_toi1"
+                    style="background-image: url(images/good_sample1\ 1.png)"
+                  ></div>
+                  <div
+                    class="avt_hoc_vien_cua_toi2"
+                    style="background-image: url(images/good_sample1\ 1.png)"
+                  ></div>
+                  <div
+                    class="avt_hoc_vien_cua_toi3"
+                    style="background-image: url(images/good_sample1\ 1.png)"
+                  ></div>
+                  <div class="avt_hoc_vien_cua_toi_end">+5</div>
+                </div>
+              </div>
+            </a>
+
+            <a class="item_hoc_vien">
+              <div class="item_hoc_vien_left">
+                <div class="title_item_hoc_vien">
+                  Tiếng anh giao tiếp trẻ em
+                </div>
+                <div class="line_item_hoc_vien">
+                  <img src="images/Rectangle 42.png" alt="" />
+                </div>
+
+                <div class="so_hoc_vien_item_hoc_vien">
+                  <div class="bold">Học viên:</div>
+                  <span>30</span>
+                </div>
+
+                <div class="so_hoc_vien_item_hoc_vien">
+                  <div class="bold">Số giờ giảng dạy:</div>
+                  <span>23000h</span>
+                </div>
+              </div>
+
+              <div class="item_hoc_vien_right">
+                <div class="title_item_hoc_vien_right">
+                  Học viên tham gia học
+                </div>
+
+                <div class="avt_hoc_vien_cua_toi">
+                  <div
+                    class="avt_hoc_vien_cua_toi1"
+                    style="background-image: url(images/good_sample1\ 1.png)"
+                  ></div>
+                  <div
+                    class="avt_hoc_vien_cua_toi2"
+                    style="background-image: url(images/good_sample1\ 1.png)"
+                  ></div>
+                  <div
+                    class="avt_hoc_vien_cua_toi3"
+                    style="background-image: url(images/good_sample1\ 1.png)"
+                  ></div>
+                  <div class="avt_hoc_vien_cua_toi_end">+5</div>
+                </div>
+              </div>
+            </a>
+
+            <a class="item_hoc_vien">
+              <div class="item_hoc_vien_left">
+                <div class="title_item_hoc_vien">
+                  Tiếng anh giao tiếp trẻ em
+                </div>
+                <div class="line_item_hoc_vien">
+                  <img src="images/Rectangle 42.png" alt="" />
+                </div>
+
+                <div class="so_hoc_vien_item_hoc_vien">
+                  <div class="bold">Học viên:</div>
+                  <span>30</span>
+                </div>
+
+                <div class="so_hoc_vien_item_hoc_vien">
+                  <div class="bold">Số giờ giảng dạy:</div>
+                  <span>23000h</span>
+                </div>
+              </div>
+
+              <div class="item_hoc_vien_right">
+                <div class="title_item_hoc_vien_right">
+                  Học viên tham gia học
+                </div>
+
+                <div class="avt_hoc_vien_cua_toi">
+                  <div
+                    class="avt_hoc_vien_cua_toi1"
+                    style="background-image: url(images/good_sample1\ 1.png)"
+                  ></div>
+                  <div
+                    class="avt_hoc_vien_cua_toi2"
+                    style="background-image: url(images/good_sample1\ 1.png)"
+                  ></div>
+                  <div
+                    class="avt_hoc_vien_cua_toi3"
+                    style="background-image: url(images/good_sample1\ 1.png)"
+                  ></div>
+                  <div class="avt_hoc_vien_cua_toi_end">+5</div>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
