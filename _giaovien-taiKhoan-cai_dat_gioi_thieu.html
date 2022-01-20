@@ -8,6 +8,9 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1"
     />
+
+    <link rel="stylesheet" href="fonts/Lexend/Lexend-VariableFont_wght.ttf" />
+
     <!-- bootstrap -->
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
     <script src="bootstrap/jquery.min.js"></script>
@@ -142,8 +145,8 @@
                     </span>
                     <ul id="thong_tin_giao_vien" class="active_ul_menu_mobile">
                       <li>Thông tin cơ bản</li>
-                      <li class="color_green">Thông tin riêng tư</li>
-                      <li>Công cụ giao tiếp</li>
+                      <li>Thông tin riêng tư</li>
+                      <li class="color_green">Công cụ giao tiếp</li>
                     </ul>
                   </li>
                   <li>
@@ -224,12 +227,23 @@
                     class="active_ul_menu_cai_dat"
                   >
                     <li>
-                      <a href="#">Thông tin cơ bản</a>
+                      <a
+                        href="_giaovien-taiKhoan-cai_dat_cong_cu_giao_tiep.html"
+                        >Thông tin cơ bản</a
+                      >
                     </li>
                     <li>
-                      <a class="color_green" href="#">Thông tin riêng tư</a>
+                      <a href="_giaovien-taiKhoan-cai_dat_giao_vien.html"
+                        >Thông tin riêng tư</a
+                      >
                     </li>
-                    <li><a href="#">Công cụ giao tiếp</a></li>
+                    <li>
+                      <a
+                        class="color_green"
+                        href="_giaovien-taiKhoan-cai_dat_thong_tin_rieng_tu.html"
+                        >Công cụ giao tiếp</a
+                      >
+                    </li>
                   </ul>
                 </li>
                 <li>
@@ -240,11 +254,27 @@
                     <img src="images/down.svg" alt="" />
                   </button>
                   <ul id="cai_dat_ho_so_giao_vien">
-                    <li><a href="#">Giới thiệu</a></li>
-                    <li><a href="#">Biểu mẫu liên hệ</a></li>
-                    <li><a href="#">Video</a></li>
-                    <li><a href="#">Ngôn ngữ</a></li>
-                    <li><a href="#">Sơ yếu lý lịch và chứng chỉ</a></li>
+                    <li>
+                      <a href="_giaovien-taiKhoan-cai_dat_gioi_thieu"
+                        >Giới thiệu</a
+                      >
+                    </li>
+                    <li>
+                      <a href="_giaovien-taiKhoan-cai_dat_bieu_mau_lien_he"
+                        >Biểu mẫu liên hệ</a
+                      >
+                    </li>
+                    <li>
+                      <a href="_giaovien-taiKhoan-cai_dat_video">Video</a>
+                    </li>
+                    <li>
+                      <a href="_giaovien-taiKhoan-cai_dat_ngon_ngu">Ngôn ngữ</a>
+                    </li>
+                    <li>
+                      <a href="_giaovien-taiKhoan-cai_dat_so_yeu_ly_lich">
+                        Sơ yếu lý lịch và chứng chỉ
+                      </a>
+                    </li>
                   </ul>
                 </li>
                 <li>
@@ -255,9 +285,24 @@
                     <img src="images/down.svg" alt="" />
                   </button>
                   <ul id="cai_dat_cac_bai_hoc_va_trang_thai">
-                    <li><a href="#">Quản lý bài học</a></li>
-                    <li><a href="#">Các cài đặt trạng thái sẵn sàng</a></li>
-                    <li><a href="#">Lịch giáo viên</a></li>
+                    <li>
+                      <a href="_giaovien-taiKhoan-cai_dat_quan_ly_bai_hoc"
+                        >Quản lý bài học</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="_giaovien-taiKhoan-cai_dat_cac_cai_dat_trang_thai"
+                        >Các cài đặt trạng thái sẵn sàng</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="_giaovien-taiKhoan-cai_dat_lich_giao_vien
+                      "
+                        >Lịch giáo viên</a
+                      >
+                    </li>
                   </ul>
                 </li>
                 <li><a href="#">Rút tiền</a></li>
@@ -270,88 +315,33 @@
             </div>
 
             <div class="content_cai_dat_giao_vien">
-              <div class="itle_content_cai_dat_giao_vien">
-                Giấy tờ và chứng chỉ liên quan
+              <div class="title_content_cai_dat_giao_vien color_green">
+                Giới thiệu
               </div>
 
-              <div class="add_giay_to_content_cai_dat_giao_vien">
-                <img src="images/Vector-add.png" alt="" />
-              </div>
+              <div class="title_content_cai_dat_giao_vien2">Về tôi</div>
 
-              <div class="title_center">Tải giấy tờ liên quan</div>
+              <div class="box_text_cai_dat_giao_vien">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Facere earum mollitia, quod rerum, corrupti voluptatem tenetur
+                  officiis nisi debitis quo iusto aliquid obcaecati repudiandae
+                  dignissimos magni reiciendis odit nesciunt nulla!
+                </p>
 
-              <div class="box_file_content_cai_dat_giao_vien">
-                <div class="item_file_content_cai_dat_giao_vien">
-                  <img
-                    src="images/khoa-hoc-tieng-anh-giao-tiep-co-ban-benative 1.png"
-                    alt=""
-                  />
-                  <button class="exit_file_content_cai_dat_giao_vien">
-                    <img src="images/exit-icon.png" alt="" />
-                  </button>
-                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Velit, rem distinctio! Maxime inventore, repellendus qui
+                  magnam, labore eius, earum expedita ab dolor dicta molestias
+                  laborum provident debitis reiciendis dolores hic.
+                </p>
 
-                <div class="item_file_content_cai_dat_giao_vien">
-                  <img
-                    src="images/khoa-hoc-tieng-anh-giao-tiep-co-ban-benative 1.png"
-                    alt=""
-                  />
-                  <button class="exit_file_content_cai_dat_giao_vien">
-                    <img src="images/exit-icon.png" alt="" />
-                  </button>
-                </div>
-
-                <div class="item_file_content_cai_dat_giao_vien">
-                  <img
-                    src="images/khoa-hoc-tieng-anh-giao-tiep-co-ban-benative 1.png"
-                    alt=""
-                  />
-                  <button class="exit_file_content_cai_dat_giao_vien">
-                    <img src="images/exit-icon.png" alt="" />
-                  </button>
-                </div>
-
-                <div class="item_file_content_cai_dat_giao_vien">
-                  <img
-                    src="images/khoa-hoc-tieng-anh-giao-tiep-co-ban-benative 1.png"
-                    alt=""
-                  />
-                  <button class="exit_file_content_cai_dat_giao_vien">
-                    <img src="images/exit-icon.png" alt="" />
-                  </button>
-                </div>
-
-                <div class="item_file_content_cai_dat_giao_vien">
-                  <img src="images/pdf 1.png" alt="" />
-                  <button class="exit_file_content_cai_dat_giao_vien">
-                    <img src="images/exit-icon.png" alt="" />
-                  </button>
-                </div>
-
-                <div class="item_file_content_cai_dat_giao_vien">
-                  <img src="images/pdf 1.png" alt="" />
-                  <button class="exit_file_content_cai_dat_giao_vien">
-                    <img src="images/exit-icon.png" alt="" />
-                  </button>
-                </div>
-
-                <div class="item_file_content_cai_dat_giao_vien">
-                  <img src="images/pdf 1.png" alt="" />
-                  <button class="exit_file_content_cai_dat_giao_vien">
-                    <img src="images/exit-icon.png" alt="" />
-                  </button>
-                </div>
-
-                <div class="item_file_content_cai_dat_giao_vien">
-                  <img src="images/pdf 1.png" alt="" />
-                  <button class="exit_file_content_cai_dat_giao_vien">
-                    <img src="images/exit-icon.png" alt="" />
-                  </button>
-                </div>
-              </div>
-
-              <div class="cap_nhat_tt_cai_dat_giao_vien">
-                <a href="#">Cập nhật thông tin</a>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero
+                  fugit adipisci dicta et exercitationem ipsum nisi eos sequi
+                  cum repudiandae, explicabo quae, aliquid, maxime unde
+                  doloremque vitae. Laboriosam, vitae omnis!
+                </p>
               </div>
             </div>
           </div>
