@@ -8,6 +8,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1"
     />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+    <script src="bootstrap/jquery.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
     <!-- logo  -->
     <link rel="shortcut icon" href="images/logo.svg" />
     <!--CSS-->
@@ -34,6 +38,7 @@
         document.getElementById("popup1").classList.toggle("active");
       }
     </script>
+
     <!-- header  -->
     <div class="container_header">
       <div class="header_c center">
@@ -45,17 +50,17 @@
           <div class="overlay-menu1"></div>
 
           <div class="nav_c center">
-            <ul style="margin-top: 30px">
+            <ul>
               <div class="close_menu1" onclick="togglePopup()">&times;</div>
-              <li class="uk-active pc"><a href="#">Cài đặt giáo viên</a></li>
-              <li class="pc"><a href="#">Lịch dạy của tôi</a></li>
-              <li class="pc"><a href="#">Tin nhắn</a></li>
+              <li class="uk-active"><a href="#">Cài đặt giáo viên</a></li>
+              <li><a href="#">Lịch dạy của tôi</a></li>
+              <li><a href="#">Tin nhắn</a></li>
               <li>
                 <div class="color_black center user dropdown">
                   <button
-                    onclick="document.getElementById('menu_gv').classList.toggle('active_menu_dropdown')"
-                    class="none_bt"
+                    class="btn btn-primary dropdown-toggle none_bt"
                     type="button"
+                    data-toggle="dropdown"
                   >
                     <div class="avt_gv">
                       <img src="images/Ellipse 14.png" alt="" />
@@ -66,9 +71,9 @@
                     <img src="images/Polygon 3.png" alt="" />
                   </button>
 
-                  <div id="menu_gv" class="menu_gv dropdown-menu">
+                  <div class="menu_gv dropdown-menu">
                     <ul>
-                      <li class="title_menu title_menu_mobile">
+                      <li class="title_menu">
                         <a href="#">
                           Bài học của tôi
                           <img src="images/men1usvg.svg" alt="" />
@@ -99,7 +104,7 @@
                         </a>
                       </li>
                       <li>
-                        <a href="_giaovien_tai-khoan_ho-tro">
+                        <a href="#">
                           Hỗ trợ
                           <img src="images/menu6.svg" alt="" />
                         </a>
@@ -123,66 +128,6 @@
                   </div>
                 </div>
               </li>
-              <li class="mobile">
-                <span
-                  onclick="document.getElementById('cai_dat_giao_vien').classList.toggle('active_ul_menu_mobile')"
-                >
-                  Cài đặt giáo viên
-                </span>
-                <ul id="cai_dat_giao_vien">
-                  <li>
-                    <span
-                      onclick="document.getElementById('thong_tin_giao_vien').classList.toggle('active_ul_menu_mobile')"
-                    >
-                      Thông tin về giáo viên
-                    </span>
-                    <ul id="thong_tin_giao_vien">
-                      <li>Thông tin cơ bản</li>
-                      <li>Thông tin riêng tư</li>
-                      <li>Công cụ giao tiếp</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <span
-                      onclick="document.getElementById('ho_so_giao_vien').classList.toggle('active_ul_menu_mobile')"
-                    >
-                      Hồ sơ giáo viên
-                    </span>
-                    <ul id="ho_so_giao_vien">
-                      <li>Giới thiệu</li>
-                      <li>Biểu mẫu liên hệ</li>
-                      <li>Video</li>
-                      <li>Ngôn ngữ</li>
-                      <li>Sơ yếu lý lịch và chứng chỉ</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <span
-                      onclick="document.getElementById('cac_bai_hoc_va_trang_thai').classList.toggle('active_ul_menu_mobile')"
-                    >
-                      Các bài học và trạng thái sẵn sàng
-                    </span>
-                    <ul id="cac_bai_hoc_va_trang_thai">
-                      <li>Quản lý bài học</li>
-                      <li>Các cài đặt trạng thái sẵn sàng</li>
-                      <li>Lịch giáo viên</li>
-                    </ul>
-                  </li>
-                  <li>Rút tiền</li>
-                  <a class="dang_nhap_menu" href="#"> Đăng xuất</a>
-                </ul>
-              </li>
-              <li class="mobile">
-                <a href="_giaovien-taiKhoan-lich_day.html">Lịch dạy của tôi</a>
-              </li>
-              <li class="mobile">
-                <a
-                  href="_giaovien-taiKhoan-chat_voi_hoc_vien.html"
-                  class="li_menu"
-                >
-                  Tin nhắn <img src="images/inbox.png" alt="" />
-                </a>
-              </li>
             </ul>
           </div>
         </div>
@@ -194,214 +139,75 @@
     </div>
     <!-- / header  -->
 
-    <div class="container_header2">
-      <nav class="header2 mobile_inline_flex_colum" uk-navbar>
-        <div class="header2_left">
-          <ul>
-            <li class="uk-active text_align-center">
-              <a href="_giaovien-taiKhoan-bai_hoc.html" class="color_green">
-                Bài học
-              </a>
-              <img src="images/Rectangle 247.png" alt="" />
-            </li>
-            <li><a href="_giaovien-taiKhoan-khoa_hoc.html">Khóa học</a></li>
-            <li><a href="#">Lời mời học</a></li>
-          </ul>
-        </div>
-
-        <div class="header2_right">
-          <div class="a_next_1">
-            <a href="#">Tiếp theo</a>
-          </div>
-          <div class="a_next_2">
-            <a href="#">Tất cả học viên</a>
-          </div>
-        </div>
-      </nav>
-    </div>
-
     <div
       id="app"
       class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative"
     >
       <!--Main-->
       <div class="container_ttctgv">
-        <div class="container_step bg_color_gray">
-          <div class="text color_black text_align-left" style="padding: 60px 0">
-            <span style="padding-right: 20px">Bài học tiếp theo</span>
-            <span>30</span>
-          </div>
-
-          <div class="bai_hoc">
-            <div class="item">
-              <div class="_1">
-                <div
-                  class="avt bg_img"
-                  style="background-image: url(images/good_sample1\ 1.png)"
-                ></div>
-                <div class="_a">
-                  <div class="_a1">Nguyen Anh</div>
-                  <span>ID bà học: 289976028</span>
+          <div class="container_bat_dau_lam_bai">
+            <div class="danh_sach_cau_hoi">  
+                <div class="box_time">
+                    <div class="title_txt">
+                        Thời gian còn:
+                    </div>
+                    <div class="box_so">
+                        30:00
+                    </div>
                 </div>
-              </div>
-
-              <img class="line_right_item" src="images/Line 43.png" alt="" />
-
-              <div class="_2">
-                <div class="_a">
-                  <div class="_a1">Conversation English lesson</div>
-                  <span>Tiếng anh - 60 phút</span>
+                <div class="box_thao_tac">
+                    <a href="#"><input type="submit" value="Bỏ qua" class="bo_qua"></a>
+                  <a href="#"><input type="submit" value="Câu tiếp" class="cau_tiep"></a>
                 </div>
-              </div>
+            </div>
 
-              <img class="line_right_item" src="images/Line 43.png" alt="" />
-
-              <div class="_3">
-                <div class="_3a">
-                  <div class="_3a1">
-                    <a href="#">VÀO LỚP</a>
-                    <div class="">
-                      <span>16h17p50s</span>
+            <div class="cau_hoi">
+                <div class="cau_hoi_09_m">
+                    <span>Câu hỏi 9</span>
+                    <br>Hoàn thành câu
+                      <div class="box_09">
+                        <div class="box_04">
+                          <button class="so_ngay">
+                            Yesterday
+                            <div class="so_day">
+                              1
+                            </div>
+                            <div class="goc_cau_hoi">
+                              <img src="images/Rectangle 13.png" alt="">
+                            </div>
+                          </button>
+                          <button class="so_ngay" >
+                            Near
+                            <div class="so_day">
+                              2
+                            </div>
+                          </button>
+                          <button class="so_ngay">
+                            Today
+                            <div class="so_day">
+                              3
+                            </div>
+                          </button>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
             </div>
-
-            <div class="item">
-              <div class="_1">
-                <div
-                  class="avt bg_img"
-                  style="background-image: url(images/good_sample1\ 1.png)"
-                ></div>
-                <div class="_a">
-                  <div class="_a1">Nguyen Anh</div>
-                  <span>ID bà học: 289976028</span>
-                </div>
+            <div class="noi_quy">
+                <ul>
+                    <li>Học viên cần trả lời đáp án trong thời gian 
+                      quy định</li>
+                    <li>Khi bỏ qua học viên sẽ không thể quay lại câu hỏi đó</li>
+                    <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</li>
+                </ul>
               </div>
-
-              <img class="line_right_item" src="images/Line 43.png" alt="" />
-
-              <div class="_2">
-                <div class="_a">
-                  <div class="_a1">Conversation English lesson</div>
-                  <span>Tiếng anh - 60 phút</span>
-                </div>
-              </div>
-
-              <img class="line_right_item" src="images/Line 43.png" alt="" />
-
-              <div class="_3">
-                <div class="_3a">
-                  <span class="_3a1">Bài học bắt đầu sau</span>
-                  <div class="time_h1">
-                    <span>16h 17p 50s</span>
-                  </div>
-                </div>
-              </div>
+                
+                
             </div>
-
-            <div class="item">
-              <div class="_1">
-                <div
-                  class="avt bg_img"
-                  style="background-image: url(images/good_sample1\ 1.png)"
-                ></div>
-                <div class="_a">
-                  <div class="_a1">Nguyen Anh</div>
-                  <span>ID bà học: 289976028</span>
-                </div>
-              </div>
-
-              <img class="line_right_item" src="images/Line 43.png" alt="" />
-
-              <div class="_2">
-                <div class="_a">
-                  <div class="_a1">Conversation English lesson</div>
-                  <span>Tiếng anh - 60 phút</span>
-                </div>
-              </div>
-
-              <img class="line_right_item" src="images/Line 43.png" alt="" />
-
-              <div class="_3">
-                <div class="_3a">
-                  <span class="_3a1">Bài học bắt đầu sau</span>
-                  <div class="time_h1">
-                    <span>16h 17p 50s</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="_1">
-                <div
-                  class="avt bg_img"
-                  style="background-image: url(images/good_sample1\ 1.png)"
-                ></div>
-                <div class="_a">
-                  <div class="_a1">Nguyen Anh</div>
-                  <span>ID bà học: 289976028</span>
-                </div>
-              </div>
-
-              <img class="line_right_item" src="images/Line 43.png" alt="" />
-
-              <div class="_2">
-                <div class="_a">
-                  <div class="_a1">Conversation English lesson</div>
-                  <span>Tiếng anh - 60 phút</span>
-                </div>
-              </div>
-
-              <img class="line_right_item" src="images/Line 43.png" alt="" />
-
-              <div class="_3">
-                <div class="_3a">
-                  <span class="time_h1">06:30 PM</span>
-                  <div class="time_d1">
-                    <span>16h 17p 50s</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="_1">
-                <div
-                  class="avt bg_img"
-                  style="background-image: url(images/good_sample1\ 1.png)"
-                ></div>
-                <div class="_a">
-                  <div class="_a1">Nguyen Anh</div>
-                  <span>ID bà học: 289976028</span>
-                </div>
-              </div>
-
-              <img class="line_right_item" src="images/Line 43.png" alt="" />
-
-              <div class="_2">
-                <div class="_a">
-                  <div class="_a1">Conversation English lesson</div>
-                  <span>Tiếng anh - 60 phút</span>
-                </div>
-              </div>
-
-              <img class="line_right_item" src="images/Line 43.png" alt="" />
-
-              <div class="_3">
-                <div class="_3a">
-                  <span class="time_h1">06:30 PM</span>
-                  <div class="time_d1">
-                    <span>16h 17p 50s</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
+      
+    </div>
+      
+
       <!--/Main-->
 
       <!--footer-->

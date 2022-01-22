@@ -8,6 +8,9 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1"
     />
+
+    <link rel="stylesheet" href="fonts/Lexend/Lexend-VariableFont_wght.ttf" />
+
     <!-- logo  -->
     <link rel="shortcut icon" href="images/logo.svg" />
     <!--CSS-->
@@ -148,8 +151,8 @@
                     >
                       Hồ sơ giáo viên
                     </span>
-                    <ul id="ho_so_giao_vien">
-                      <li>Giới thiệu</li>
+                    <ul id="ho_so_giao_vien" class="active_ul_menu_mobile">
+                      <li class="color_green">Giới thiệu</li>
                       <li>Biểu mẫu liên hệ</li>
                       <li>Video</li>
                       <li>Ngôn ngữ</li>
@@ -194,209 +197,291 @@
     </div>
     <!-- / header  -->
 
-    <div class="container_header2">
-      <nav class="header2 mobile_inline_flex_colum" uk-navbar>
-        <div class="header2_left">
-          <ul>
-            <li class="uk-active text_align-center">
-              <a href="_giaovien-taiKhoan-bai_hoc.html" class="color_green">
-                Bài học
-              </a>
-              <img src="images/Rectangle 247.png" alt="" />
-            </li>
-            <li><a href="_giaovien-taiKhoan-khoa_hoc.html">Khóa học</a></li>
-            <li><a href="#">Lời mời học</a></li>
-          </ul>
-        </div>
-
-        <div class="header2_right">
-          <div class="a_next_1">
-            <a href="#">Tiếp theo</a>
-          </div>
-          <div class="a_next_2">
-            <a href="#">Tất cả học viên</a>
-          </div>
-        </div>
-      </nav>
-    </div>
-
     <div
       id="app"
       class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative"
     >
       <!--Main-->
+
       <div class="container_ttctgv">
         <div class="container_step bg_color_gray">
-          <div class="text color_black text_align-left" style="padding: 60px 0">
-            <span style="padding-right: 20px">Bài học tiếp theo</span>
-            <span>30</span>
-          </div>
-
-          <div class="bai_hoc">
-            <div class="item">
-              <div class="_1">
-                <div
-                  class="avt bg_img"
-                  style="background-image: url(images/good_sample1\ 1.png)"
-                ></div>
-                <div class="_a">
-                  <div class="_a1">Nguyen Anh</div>
-                  <span>ID bà học: 289976028</span>
-                </div>
+          <div class="container_cai_dai_giao_vien">
+            <div class="list_menu_cai_dai_giao_vien">
+              <div class="line_doc">
+                <img src="images/Rectangle 255.png" alt="" />
               </div>
-
-              <img class="line_right_item" src="images/Line 43.png" alt="" />
-
-              <div class="_2">
-                <div class="_a">
-                  <div class="_a1">Conversation English lesson</div>
-                  <span>Tiếng anh - 60 phút</span>
-                </div>
-              </div>
-
-              <img class="line_right_item" src="images/Line 43.png" alt="" />
-
-              <div class="_3">
-                <div class="_3a">
-                  <div class="_3a1">
-                    <a href="#">VÀO LỚP</a>
-                    <div class="">
-                      <span>16h17p50s</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <ul id="cai_dat_giao_vien">
+                <li>
+                  <button
+                    onclick="document.getElementById('cai_dat_thong_tin_giao_vien').classList.toggle('active_ul_menu_cai_dat')"
+                  >
+                    Thông tin về giáo viên
+                    <img src="images/down.svg" alt="" />
+                  </button>
+                  <ul id="cai_dat_thong_tin_giao_vien">
+                    <li>
+                      <a
+                        href="_giaovien-taiKhoan-cai_dat_thong_tin_rieng_tu.html"
+                        >Thông tin cơ bản</a
+                      >
+                    </li>
+                    <li>
+                      <a href="_giaovien-taiKhoan-cai_dat_giao_vien.html"
+                        >Thông tin riêng tư</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="_giaovien-taiKhoan-cai_dat_thong_tin_rieng_tu.html"
+                        >Công cụ giao tiếp</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <button
+                    onclick="document.getElementById('cai_dat_ho_so_giao_vien').classList.toggle('active_ul_menu_cai_dat')"
+                  >
+                    Hồ sơ giáo viên
+                    <img src="images/down.svg" alt="" />
+                  </button>
+                  <ul
+                    id="cai_dat_ho_so_giao_vien"
+                    class="active_ul_menu_cai_dat"
+                  >
+                    <li>
+                      <a href="_giaovien-taiKhoan-cai_dat_gioi_thieu.html">
+                        Giới thiệu
+                      </a>
+                    </li>
+                    <li>
+                      <a href="_giaovien-taiKhoan-cai_dat_bieu_mau_lien_he.html"
+                        >Biểu mẫu liên hệ</a
+                      >
+                    </li>
+                    <li>
+                      <a href="_giaovien-taiKhoan-cai_dat_video.html">
+                        Video
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="color_green"
+                        href="_giaovien-taiKhoan-cai_dat_ngon_ngu.html"
+                      >
+                        Ngôn ngữ
+                      </a>
+                    </li>
+                    <li>
+                      <a href="_giaovien-taiKhoan-cai_dat_so_yeu_ly_lich.html">
+                        Sơ yếu lý lịch và chứng chỉ
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <button
+                    onclick="document.getElementById('cai_dat_cac_bai_hoc_va_trang_thai').classList.toggle('active_ul_menu_cai_dat')"
+                  >
+                    Các bài học và trạng thái sẵn sàng
+                    <img src="images/down.svg" alt="" />
+                  </button>
+                  <ul id="cai_dat_cac_bai_hoc_va_trang_thai">
+                    <li>
+                      <a href="_giaovien-taiKhoan-cai_dat_quan_ly_bai_hoc.html"
+                        >Quản lý bài học</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="_giaovien-taiKhoan-cai_dat_cac_cai_dat_trang_thai.html"
+                        >Các cài đặt trạng thái sẵn sàng</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="_giaovien-taiKhoan-cai_dat_lich_giao_vien.html
+                      "
+                        >Lịch giáo viên</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#">Rút tiền</a></li>
+                <a class="dang_nhap_menu" href="#"> XEM HỒ SƠ</a>
+              </ul>
             </div>
 
-            <div class="item">
-              <div class="_1">
-                <div
-                  class="avt bg_img"
-                  style="background-image: url(images/good_sample1\ 1.png)"
-                ></div>
-                <div class="_a">
-                  <div class="_a1">Nguyen Anh</div>
-                  <span>ID bà học: 289976028</span>
-                </div>
-              </div>
-
-              <img class="line_right_item" src="images/Line 43.png" alt="" />
-
-              <div class="_2">
-                <div class="_a">
-                  <div class="_a1">Conversation English lesson</div>
-                  <span>Tiếng anh - 60 phút</span>
-                </div>
-              </div>
-
-              <img class="line_right_item" src="images/Line 43.png" alt="" />
-
-              <div class="_3">
-                <div class="_3a">
-                  <span class="_3a1">Bài học bắt đầu sau</span>
-                  <div class="time_h1">
-                    <span>16h 17p 50s</span>
-                  </div>
-                </div>
-              </div>
+            <div class="mobile">
+              <div class="title_mobile_cai_dat">Ngôn ngữ</div>
             </div>
 
-            <div class="item">
-              <div class="_1">
-                <div
-                  class="avt bg_img"
-                  style="background-image: url(images/good_sample1\ 1.png)"
-                ></div>
-                <div class="_a">
-                  <div class="_a1">Nguyen Anh</div>
-                  <span>ID bà học: 289976028</span>
-                </div>
+            <div class="content_cai_dat_giao_vien">
+              <div class="title_content_cai_dat_giao_vien color_green">
+                Kỹ năng ngôn ngữ
               </div>
 
-              <img class="line_right_item" src="images/Line 43.png" alt="" />
+              <div class="title_content_cai_dat_giao_vien2">Ngôn ngữ mẹ đẻ</div>
 
-              <div class="_2">
-                <div class="_a">
-                  <div class="_a1">Conversation English lesson</div>
-                  <span>Tiếng anh - 60 phút</span>
-                </div>
+              <div class="select_cai_dat_ngon_ngu">
+                <select name="" id="">
+                  <option value="">Tiếng Việt</option>
+                  <option value="">Tiếng Việt</option>
+                  <option value="">Tiếng Việt</option>
+                </select>
               </div>
 
-              <img class="line_right_item" src="images/Line 43.png" alt="" />
+              <div class="title_content_cai_dat_giao_vien2">
+                + Thêm công cụ khác
+              </div>
 
-              <div class="_3">
-                <div class="_3a">
-                  <span class="_3a1">Bài học bắt đầu sau</span>
-                  <div class="time_h1">
-                    <span>16h 17p 50s</span>
+              <div class="title_content_cai_dat_giao_vien2">
+                Ngôn ngữ bạn nói hoặc học
+              </div>
+
+              <div class="box_select_ngon_ngu">
+                <div class="select_cai_dat_ngon_ngu">
+                  <select name="" id="">
+                    <option value="">Tiếng Việt</option>
+                    <option value="">Tiếng Việt</option>
+                    <option value="">Tiếng Việt</option>
+                  </select>
+                </div>
+
+                <div class="select_cai_dat_ngon_ngu">
+                  <select name="" id="">
+                    <option value="">C2 thành thạo</option>
+                    <option value="">C2 thành thạo</option>
+                    <option value="">C2 thành thạo</option>
+                  </select>
+                </div>
+
+                <div class="checkbox_cai_dat_ngon_ngu">
+                  <div class="box-checkbox">
+                    <label class="container_checkbox2">
+                      <input type="checkbox" checked="checked" />
+                      <span class="checkmark2"></span>
+                    </label>
+                    Đang học
                   </div>
-                </div>
-              </div>
-            </div>
 
-            <div class="item">
-              <div class="_1">
-                <div
-                  class="avt bg_img"
-                  style="background-image: url(images/good_sample1\ 1.png)"
-                ></div>
-                <div class="_a">
-                  <div class="_a1">Nguyen Anh</div>
-                  <span>ID bà học: 289976028</span>
-                </div>
-              </div>
-
-              <img class="line_right_item" src="images/Line 43.png" alt="" />
-
-              <div class="_2">
-                <div class="_a">
-                  <div class="_a1">Conversation English lesson</div>
-                  <span>Tiếng anh - 60 phút</span>
-                </div>
-              </div>
-
-              <img class="line_right_item" src="images/Line 43.png" alt="" />
-
-              <div class="_3">
-                <div class="_3a">
-                  <span class="time_h1">06:30 PM</span>
-                  <div class="time_d1">
-                    <span>16h 17p 50s</span>
+                  <div class="box-checkbox">
+                    <label class="container_checkbox2">
+                      <input type="checkbox" checked="checked" />
+                      <span
+                        style="border-radius: 50%"
+                        class="checkmark2"
+                      ></span>
+                    </label>
+                    Chính
                   </div>
-                </div>
-              </div>
-            </div>
 
-            <div class="item">
-              <div class="_1">
-                <div
-                  class="avt bg_img"
-                  style="background-image: url(images/good_sample1\ 1.png)"
-                ></div>
-                <div class="_a">
-                  <div class="_a1">Nguyen Anh</div>
-                  <span>ID bà học: 289976028</span>
+                  <a href="#"><img src="images/x.png" alt="" /></a>
                 </div>
               </div>
 
-              <img class="line_right_item" src="images/Line 43.png" alt="" />
-
-              <div class="_2">
-                <div class="_a">
-                  <div class="_a1">Conversation English lesson</div>
-                  <span>Tiếng anh - 60 phút</span>
+              <div class="box_select_ngon_ngu">
+                <div class="select_cai_dat_ngon_ngu">
+                  <select name="" id="">
+                    <option value="">Tiếng Việt</option>
+                    <option value="">Tiếng Việt</option>
+                    <option value="">Tiếng Việt</option>
+                  </select>
                 </div>
-              </div>
 
-              <img class="line_right_item" src="images/Line 43.png" alt="" />
+                <div class="select_cai_dat_ngon_ngu">
+                  <select name="" id="">
+                    <option value="">C2 thành thạo</option>
+                    <option value="">C2 thành thạo</option>
+                    <option value="">C2 thành thạo</option>
+                  </select>
+                </div>
 
-              <div class="_3">
-                <div class="_3a">
-                  <span class="time_h1">06:30 PM</span>
-                  <div class="time_d1">
-                    <span>16h 17p 50s</span>
+                <div class="checkbox_cai_dat_ngon_ngu">
+                  <div class="box-checkbox">
+                    <label class="container_checkbox2">
+                      <input type="checkbox" checked="checked" />
+                      <span class="checkmark2"></span>
+                    </label>
+                    Đang học
                   </div>
+
+                  <div class="box-checkbox">
+                    <label class="container_checkbox2">
+                      <input type="checkbox" checked="checked" />
+                      <span
+                        style="border-radius: 50%"
+                        class="checkmark2"
+                      ></span>
+                    </label>
+                    Chính
+                  </div>
+
+                  <a href="#"><img src="images/x.png" alt="" /></a>
                 </div>
+              </div>
+
+              <div class="box_select_ngon_ngu">
+                <div class="select_cai_dat_ngon_ngu">
+                  <select name="" id="">
+                    <option value="">Tiếng Việt</option>
+                    <option value="">Tiếng Việt</option>
+                    <option value="">Tiếng Việt</option>
+                  </select>
+                </div>
+
+                <div class="select_cai_dat_ngon_ngu">
+                  <select name="" id="">
+                    <option value="">Tiếng Việt</option>
+                    <option value="">Tiếng Việt</option>
+                    <option value="">Tiếng Việt</option>
+                  </select>
+                </div>
+
+                <div class="checkbox_cai_dat_ngon_ngu">
+                  <div class="box-checkbox">
+                    <label class="container_checkbox2">
+                      <input type="checkbox" checked="checked" />
+                      <span class="checkmark2"></span>
+                    </label>
+                    Đang học
+                  </div>
+
+                  <div class="box-checkbox">
+                    <label class="container_checkbox2">
+                      <input type="checkbox" checked="checked" />
+                      <span
+                        style="border-radius: 50%"
+                        class="checkmark2"
+                      ></span>
+                    </label>
+                    Chính
+                  </div>
+
+                  <a href="#"><img src="images/x.png" alt="" /></a>
+                </div>
+              </div>
+              <div class="title_content_cai_dat_giao_vien2 color_green">
+                + Thêm công cụ khác
+              </div>
+
+              <div class="title_content_cai_dat_giao_vien2">
+                Ngôn ngữ giảng day
+              </div>
+              <div class="box-checkbox">
+                <label class="container_checkbox2">
+                  <input type="checkbox" checked="checked" />
+                  <span class="checkmark2"></span>
+                </label>
+                Tiếng Anh
+              </div>
+
+              <div class="box-checkbox">
+                <label class="container_checkbox2">
+                  <input type="checkbox" checked="checked" />
+                  <span class="checkmark2"></span>
+                </label>
+                Tiếng Việt
               </div>
             </div>
           </div>

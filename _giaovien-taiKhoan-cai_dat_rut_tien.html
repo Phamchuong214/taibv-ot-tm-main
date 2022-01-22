@@ -10,6 +10,7 @@
     />
 
     <link rel="stylesheet" href="fonts/Lexend/Lexend-VariableFont_wght.ttf" />
+
     <!-- logo  -->
     <link rel="shortcut icon" href="images/logo.svg" />
     <!--CSS-->
@@ -178,7 +179,7 @@
                     >
                       Thông tin về giáo viên
                     </span>
-                    <ul id="thong_tin_giao_vien" class="active_ul_menu_mobile">
+                    <ul id="thong_tin_giao_vien">
                       <li>
                         <a
                           href="_giaovien-taiKhoan-cai_dat_thong_tin_co_ban.html"
@@ -195,7 +196,6 @@
                       </li>
                       <li>
                         <a
-                          class="color_green"
                           href="_giaovien-taiKhoan-cai_dat_cong_cu_giao_tiep.html"
                         >
                           Công cụ giao tiếp
@@ -319,10 +319,7 @@
                     Thông tin về giáo viên
                     <img src="images/down.svg" alt="" />
                   </button>
-                  <ul
-                    id="cai_dat_thong_tin_giao_vien"
-                    class="active_ul_menu_cai_dat"
-                  >
+                  <ul id="cai_dat_thong_tin_giao_vien">
                     <li>
                       <a
                         href="_giaovien-taiKhoan-cai_dat_thong_tin_co_ban.html"
@@ -339,7 +336,6 @@
                     </li>
                     <li>
                       <a
-                        class="color_green"
                         href="_giaovien-taiKhoan-cai_dat_cong_cu_giao_tiep.html"
                       >
                         Công cụ giao tiếp
@@ -415,56 +411,248 @@
                   </ul>
                 </li>
                 <li>
-                  <a href="_giaovien-taiKhoan-cai_dat_rut_tien.html">
-                    Rút tiền
-                  </a>
+                  <a href="_giaovien-taiKhoan-cai_dat_rut_tien.html"
+                    >Rút tiền</a
+                  >
                 </li>
                 <a class="dang_nhap_menu" href="#"> XEM HỒ SƠ </a>
               </ul>
             </div>
 
             <div class="mobile">
-              <div class="title_mobile_cai_dat">Thông tin riêng tư</div>
+              <div class="menu_rut_tien">
+                <a
+                  id="defaultOpen"
+                  class="item_menu_rut_tien tablinks active_rut_tien"
+                  onclick="openCity(event, 'vi')"
+                >
+                  Ví
+                </a>
+                <a
+                  class="item_menu_rut_tien tablinks"
+                  onclick="openCity(event, 'tao_yeu_cau_rut_tien')"
+                >
+                  Tạo yêu cầu rút tiền
+                </a>
+                <a
+                  class="item_menu_rut_tien tablinks"
+                  onclick="openCity(event, 'lich_su_rut_tien')"
+                >
+                  Lịch sử rút tiền
+                </a>
+                <a
+                  class="item_menu_rut_tien tablinks"
+                  onclick="openCity(event, 'lich_su_giao_dich')"
+                >
+                  Lịch sử giao dịch
+                </a>
+              </div>
             </div>
 
             <div class="content_cai_dat_giao_vien">
-              <div class="title_content_cai_dat_giao_vien">
-                Công cụ giao tiếp
+              <div class="menu_rut_tien pc">
+                <a
+                  id="defaultOpen"
+                  class="item_menu_rut_tien tablinks active_rut_tien"
+                  onclick="openCity(event, 'vi')"
+                >
+                  Ví
+                </a>
+                <a
+                  class="item_menu_rut_tien tablinks"
+                  onclick="openCity(event, 'tao_yeu_cau_rut_tien')"
+                >
+                  Tạo yêu cầu rút tiền
+                </a>
+                <a
+                  class="item_menu_rut_tien tablinks"
+                  onclick="openCity(event, 'lich_su_rut_tien')"
+                >
+                  Lịch sử rút tiền
+                </a>
+                <a
+                  class="item_menu_rut_tien tablinks"
+                  onclick="openCity(event, 'lich_su_giao_dich')"
+                >
+                  Lịch sử giao dịch
+                </a>
               </div>
 
-              <div class="title_content_cai_dat_giao_vien2">
-                Ứng dụng trò chuyện
-              </div>
-              <div class="box_input_cong_cu_giao_tiep">
-                <div class="input1_cong_cu_giao_tiep">
-                  <select name="" id="">
-                    <option value="">Skybe</option>
-                    <option value="">Zoom</option>
-                  </select>
+              <div id="vi" class="tabcontent vi_rut_tien">
+                <div class="so_tien_vi">
+                  <div class="so_tien_vi1">
+                    Tổng số tiền các khóa học
+                    <span>2.408.000 đ</span>
+                  </div>
+
+                  <div class="so_tien_vi2">
+                    Hệ thống chưa thanh toán
+                    <span>508.000 đ</span>
+                  </div>
                 </div>
 
-                <div class="input2_cong_cu_giao_tiep">
-                  <input type="text" value="Skybe" placeholder="" />
-                  <a href="#"><img src="images/delete.svg" alt="" /></a>
-                </div>
-              </div>
-
-              <div class="box_input_cong_cu_giao_tiep">
-                <div class="input1_cong_cu_giao_tiep">
-                  <select name="" id="">
-                    <option value="">Zoom</option>
-                    <option value="">Skybe</option>
-                  </select>
-                </div>
-
-                <div class="input2_cong_cu_giao_tiep">
-                  <input type="text" value="htpps://zoom/980934892" />
-                  <img src="images/delete.svg" alt="" />
+                <div class="luu_y_vi_rut_tien">
+                  Lưu ý: Tối thiểu số dư trong ví phải lớn 30$, 1 tháng chỉ được
+                  rút 1 lần thì giáo viên mới được tạo yêu cầu rút tiền, cố định
+                  ngày 10 hàng tháng
                 </div>
               </div>
 
-              <div class="them_cong_cu_giao_tiep">
-                <a href="#">+ Thêm một công cụ giao tiếp</a>
+              <div
+                id="tao_yeu_cau_rut_tien"
+                class="tabcontent tao_yeu_cau_rut_tien"
+              >
+                <div class="rut_tien_tao_yeu_cau_rut_tien">Rút tiền</div>
+
+                <div class="nhap_so_tien_rut">
+                  Nhập số tiền rút
+                  <div class="input_nhap_so_tien_rut">
+                    <input type="text" placeholder="Nhập số rút" />
+                    <span>nvđ</span>
+                  </div>
+                </div>
+
+                <a href="#">Rút tiền</a>
+              </div>
+
+              <div id="lich_su_rut_tien" class="tabcontent lich_su_rut_tien">
+                <div class="box_lich_su_rut_tien">
+                  <div class="rut_tien_lich_su_rut_tien">
+                    Rút tiền
+                    <span> 20/10/2021 </span>
+                  </div>
+
+                  <div class="so_tien_lich_su_rut_tien">
+                    Số tiền
+                    <span> 5.000.000đ </span>
+                  </div>
+
+                  <div class="trang_thai_lich_su_rut_tien">
+                    Trạng thái
+                    <span class="color_orange"> Chưa xử lý </span>
+                  </div>
+                </div>
+
+                <div class="box_lich_su_rut_tien">
+                  <div class="rut_tien_lich_su_rut_tien">
+                    Rút tiền
+                    <span> 20/10/2021 </span>
+                  </div>
+
+                  <div class="so_tien_lich_su_rut_tien">
+                    Số tiền
+                    <span> 5.000.000đ </span>
+                  </div>
+
+                  <div class="trang_thai_lich_su_rut_tien">
+                    Trạng thái
+                    <span class="color_orange"> Chưa xử lý </span>
+                  </div>
+                </div>
+
+                <div class="box_lich_su_rut_tien">
+                  <div class="rut_tien_lich_su_rut_tien">
+                    Rút tiền
+                    <span> 20/10/2021 </span>
+                  </div>
+
+                  <div class="so_tien_lich_su_rut_tien">
+                    Số tiền
+                    <span> 5.000.000đ </span>
+                  </div>
+
+                  <div class="trang_thai_lich_su_rut_tien">
+                    Trạng thái
+                    <span class="xanh_da_troi"> Hoàn thành </span>
+                  </div>
+                </div>
+
+                <div class="box_lich_su_rut_tien">
+                  <div class="rut_tien_lich_su_rut_tien">
+                    Rút tiền
+                    <span> 20/10/2021 </span>
+                  </div>
+
+                  <div class="so_tien_lich_su_rut_tien">
+                    Số tiền
+                    <span> 5.000.000đ </span>
+                  </div>
+
+                  <div class="trang_thai_lich_su_rut_tien">
+                    Trạng thái
+                    <span class="xanh_da_troi"> Hoàn thành </span>
+                  </div>
+                </div>
+              </div>
+
+              <div id="lich_su_giao_dich" class="tabcontent lich_su_giao_dich">
+                <div class="box_lich_su_rut_tien">
+                  <div class="rut_tien_lich_su_rut_tien">
+                    Rút tiền
+                    <span> 20/10/2021 </span>
+                  </div>
+
+                  <div class="so_tien_lich_su_rut_tien">
+                    Số tiền
+                    <span> 5.000.000đ </span>
+                  </div>
+
+                  <div class="trang_thai_lich_su_rut_tien">
+                    Trạng thái
+                    <span class="xanh_da_troi"> Hoàn thành </span>
+                  </div>
+                </div>
+
+                <div class="box_lich_su_rut_tien">
+                  <div class="rut_tien_lich_su_rut_tien">
+                    Rút tiền
+                    <span> 20/10/2021 </span>
+                  </div>
+
+                  <div class="so_tien_lich_su_rut_tien">
+                    Số tiền
+                    <span> 5.000.000đ </span>
+                  </div>
+
+                  <div class="trang_thai_lich_su_rut_tien">
+                    Trạng thái
+                    <span class="xanh_da_troi"> Hoàn thành </span>
+                  </div>
+                </div>
+
+                <div class="box_lich_su_rut_tien">
+                  <div class="rut_tien_lich_su_rut_tien">
+                    Rút tiền
+                    <span> 20/10/2021 </span>
+                  </div>
+
+                  <div class="so_tien_lich_su_rut_tien">
+                    Số tiền
+                    <span> 5.000.000đ </span>
+                  </div>
+
+                  <div class="trang_thai_lich_su_rut_tien">
+                    Trạng thái
+                    <span class="xanh_da_troi"> Hoàn thành </span>
+                  </div>
+                </div>
+
+                <div class="box_lich_su_rut_tien">
+                  <div class="rut_tien_lich_su_rut_tien">
+                    Rút tiền
+                    <span> 20/10/2021 </span>
+                  </div>
+
+                  <div class="so_tien_lich_su_rut_tien">
+                    Số tiền
+                    <span> 5.000.000đ </span>
+                  </div>
+
+                  <div class="trang_thai_lich_su_rut_tien">
+                    Trạng thái
+                    <span class="xanh_da_troi"> Hoàn thành </span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

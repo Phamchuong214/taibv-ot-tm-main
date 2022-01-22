@@ -3,11 +3,13 @@
   <head>
     <script src="/__prepros.js"></script>
     <meta charset="UTF-8" />
-    <title>TMarket - Giáo viên</title>
+    <title>Tài khoản - Cài đặt giáo viên</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1"
     />
+
+    <link rel="stylesheet" href="fonts/Lexend/Lexend-VariableFont_wght.ttf" />
     <!-- logo  -->
     <link rel="shortcut icon" href="images/logo.svg" />
     <!--CSS-->
@@ -33,12 +35,48 @@
       function togglePopup() {
         document.getElementById("popup1").classList.toggle("active");
       }
+
+      function popupChinh_sua_bai_hoc() {
+        document
+          .getElementById("overlay_chinh_sau_bai_hoc")
+          .classList.toggle("active_overlay_de_xuat_khoa_hoc");
+      }
+      function popupChinh_xoa_bai_hoc() {
+        document
+          .getElementById("overlay_xoa_bai_hoc")
+          .classList.toggle("active_overlay_de_xuat_khoa_hoc");
+      }
+      function popup_chinh_sua_thoi_gian() {
+        document
+          .getElementById("popup_chinh_sua_thoi_gian_ranh")
+          .classList.toggle("active_block");
+      }
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(
+            " active_rut_tien",
+            ""
+          );
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active_rut_tien";
+      }
+
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
     </script>
+
     <!-- header  -->
     <div class="container_header">
       <div class="header_c center">
         <div class="logo">
-          <img src="images/logo-market2.png" alt="" />
+          <a href="_index.html"><img src="images/logo-market2.png" alt="" /></a>
         </div>
 
         <div class="popup-menu1" id="popup1">
@@ -48,8 +86,12 @@
             <ul style="margin-top: 30px">
               <div class="close_menu1" onclick="togglePopup()">&times;</div>
               <li class="uk-active pc"><a href="#">Cài đặt giáo viên</a></li>
-              <li class="pc"><a href="#">Lịch dạy của tôi</a></li>
-              <li class="pc"><a href="#">Tin nhắn</a></li>
+              <li class="pc">
+                <a href="_giaovien-taiKhoan-lich_day.html">Lịch dạy của tôi</a>
+              </li>
+              <li class="pc">
+                <a href="_giaovien-taiKhoan-chat_voi_hoc_vien.html">Tin nhắn</a>
+              </li>
               <li>
                 <div class="color_black center user dropdown">
                   <button
@@ -129,7 +171,7 @@
                 >
                   Cài đặt giáo viên
                 </span>
-                <ul id="cai_dat_giao_vien">
+                <ul id="cai_dat_giao_vien" class="active_ul_menu_mobile">
                   <li>
                     <span
                       onclick="document.getElementById('thong_tin_giao_vien').classList.toggle('active_ul_menu_mobile')"
@@ -137,9 +179,27 @@
                       Thông tin về giáo viên
                     </span>
                     <ul id="thong_tin_giao_vien">
-                      <li>Thông tin cơ bản</li>
-                      <li>Thông tin riêng tư</li>
-                      <li>Công cụ giao tiếp</li>
+                      <li>
+                        <a
+                          href="_giaovien-taiKhoan-cai_dat_thong_tin_co_ban.html"
+                        >
+                          Thông tin cơ bản
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="_giaovien-taiKhoan-cai_dat_thong_tin_rieng_tu.html"
+                        >
+                          Thông tin riêng tư
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="_giaovien-taiKhoan-cai_dat_cong_cu_giao_tiep.html"
+                        >
+                          Công cụ giao tiếp
+                        </a>
+                      </li>
                     </ul>
                   </li>
                   <li>
@@ -148,12 +208,39 @@
                     >
                       Hồ sơ giáo viên
                     </span>
-                    <ul id="ho_so_giao_vien">
-                      <li>Giới thiệu</li>
-                      <li>Biểu mẫu liên hệ</li>
-                      <li>Video</li>
-                      <li>Ngôn ngữ</li>
-                      <li>Sơ yếu lý lịch và chứng chỉ</li>
+                    <ul id="ho_so_giao_vien" class="active_ul_menu_mobile">
+                      <li>
+                        <a href="_giaovien-taiKhoan-cai_dat_gioi_thieu.html">
+                          Giới thiệu
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="_giaovien-taiKhoan-cai_dat_bieu_mau_lien_he.html"
+                        >
+                          Biểu mẫu liên hệ
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="color_green"
+                          href="_giaovien-taiKhoan-cai_dat_video.html"
+                        >
+                          Video
+                        </a>
+                      </li>
+                      <li>
+                        <a href="_giaovien-taiKhoan-cai_dat_ngon_ngu.html">
+                          Ngôn ngữ
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="_giaovien-taiKhoan-cai_dat_so_yeu_ly_lich.html"
+                        >
+                          Sơ yếu lý lịch và chứng chỉ
+                        </a>
+                      </li>
                     </ul>
                   </li>
                   <li>
@@ -163,9 +250,28 @@
                       Các bài học và trạng thái sẵn sàng
                     </span>
                     <ul id="cac_bai_hoc_va_trang_thai">
-                      <li>Quản lý bài học</li>
-                      <li>Các cài đặt trạng thái sẵn sàng</li>
-                      <li>Lịch giáo viên</li>
+                      <li>
+                        <a
+                          href="_giaovien-taiKhoan-cai_dat_quan_ly_bai_hoc.html"
+                        >
+                          Quản lý bài học
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="_giaovien-taiKhoan-cai_dat_cac_cai_dat_trang_thai.html"
+                        >
+                          Các cài đặt trạng thái sẵn sàng
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="_giaovien-taiKhoan-cai_dat_lich_giao_vien.html
+                            "
+                        >
+                          Lịch giáo viên
+                        </a>
+                      </li>
                     </ul>
                   </li>
                   <li>Rút tiền</li>
@@ -194,209 +300,210 @@
     </div>
     <!-- / header  -->
 
-    <div class="container_header2">
-      <nav class="header2 mobile_inline_flex_colum" uk-navbar>
-        <div class="header2_left">
-          <ul>
-            <li class="uk-active text_align-center">
-              <a href="_giaovien-taiKhoan-bai_hoc.html" class="color_green">
-                Bài học
-              </a>
-              <img src="images/Rectangle 247.png" alt="" />
-            </li>
-            <li><a href="_giaovien-taiKhoan-khoa_hoc.html">Khóa học</a></li>
-            <li><a href="#">Lời mời học</a></li>
-          </ul>
-        </div>
-
-        <div class="header2_right">
-          <div class="a_next_1">
-            <a href="#">Tiếp theo</a>
-          </div>
-          <div class="a_next_2">
-            <a href="#">Tất cả học viên</a>
-          </div>
-        </div>
-      </nav>
-    </div>
-
     <div
       id="app"
       class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative"
     >
       <!--Main-->
+
       <div class="container_ttctgv">
         <div class="container_step bg_color_gray">
-          <div class="text color_black text_align-left" style="padding: 60px 0">
-            <span style="padding-right: 20px">Bài học tiếp theo</span>
-            <span>30</span>
-          </div>
-
-          <div class="bai_hoc">
-            <div class="item">
-              <div class="_1">
-                <div
-                  class="avt bg_img"
-                  style="background-image: url(images/good_sample1\ 1.png)"
-                ></div>
-                <div class="_a">
-                  <div class="_a1">Nguyen Anh</div>
-                  <span>ID bà học: 289976028</span>
-                </div>
+          <div class="container_cai_dai_giao_vien">
+            <div class="list_menu_cai_dai_giao_vien">
+              <div class="line_doc">
+                <img src="images/Rectangle 255.png" alt="" />
               </div>
-
-              <img class="line_right_item" src="images/Line 43.png" alt="" />
-
-              <div class="_2">
-                <div class="_a">
-                  <div class="_a1">Conversation English lesson</div>
-                  <span>Tiếng anh - 60 phút</span>
-                </div>
-              </div>
-
-              <img class="line_right_item" src="images/Line 43.png" alt="" />
-
-              <div class="_3">
-                <div class="_3a">
-                  <div class="_3a1">
-                    <a href="#">VÀO LỚP</a>
-                    <div class="">
-                      <span>16h17p50s</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <ul id="cai_dat_giao_vien">
+                <li>
+                  <button
+                    onclick="document.getElementById('cai_dat_thong_tin_giao_vien').classList.toggle('active_ul_menu_cai_dat')"
+                  >
+                    Thông tin về giáo viên
+                    <img src="images/down.svg" alt="" />
+                  </button>
+                  <ul id="cai_dat_thong_tin_giao_vien">
+                    <li>
+                      <a
+                        href="_giaovien-taiKhoan-cai_dat_thong_tin_co_ban.html"
+                      >
+                        Thông tin cơ bản
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="_giaovien-taiKhoan-cai_dat_thong_tin_rieng_tu.html"
+                      >
+                        Thông tin riêng tư
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="_giaovien-taiKhoan-cai_dat_cong_cu_giao_tiep.html"
+                      >
+                        Công cụ giao tiếp
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <button
+                    onclick="document.getElementById('cai_dat_ho_so_giao_vien').classList.toggle('active_ul_menu_cai_dat')"
+                  >
+                    Hồ sơ giáo viên
+                    <img src="images/down.svg" alt="" />
+                  </button>
+                  <ul
+                    id="cai_dat_ho_so_giao_vien"
+                    class="active_ul_menu_cai_dat"
+                  >
+                    <li>
+                      <a href="_giaovien-taiKhoan-cai_dat_gioi_thieu.html">
+                        Giới thiệu
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="_giaovien-taiKhoan-cai_dat_bieu_mau_lien_he.html"
+                      >
+                        Biểu mẫu liên hệ
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        class="color_green"
+                        href="_giaovien-taiKhoan-cai_dat_video.html"
+                      >
+                        Video
+                      </a>
+                    </li>
+                    <li>
+                      <a href="_giaovien-taiKhoan-cai_dat_ngon_ngu.html">
+                        Ngôn ngữ
+                      </a>
+                    </li>
+                    <li>
+                      <a href="_giaovien-taiKhoan-cai_dat_so_yeu_ly_lich.html">
+                        Sơ yếu lý lịch và chứng chỉ
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <button
+                    onclick="document.getElementById('cai_dat_cac_bai_hoc_va_trang_thai').classList.toggle('active_ul_menu_cai_dat')"
+                  >
+                    Các bài học và trạng thái sẵn sàng
+                    <img src="images/down.svg" alt="" />
+                  </button>
+                  <ul id="cai_dat_cac_bai_hoc_va_trang_thai">
+                    <li>
+                      <a href="_giaovien-taiKhoan-cai_dat_quan_ly_bai_hoc.html">
+                        Quản lý bài học
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="_giaovien-taiKhoan-cai_dat_cac_cai_dat_trang_thai.html"
+                      >
+                        Các cài đặt trạng thái sẵn sàng
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="_giaovien-taiKhoan-cai_dat_lich_giao_vien.html
+                      "
+                      >
+                        Lịch giáo viên
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="_giaovien-taiKhoan-cai_dat_rut_tien.html"
+                    >Rút tiền</a
+                  >
+                </li>
+                <a class="dang_nhap_menu" href="#"> XEM HỒ SƠ </a>
+              </ul>
             </div>
 
-            <div class="item">
-              <div class="_1">
-                <div
-                  class="avt bg_img"
-                  style="background-image: url(images/good_sample1\ 1.png)"
-                ></div>
-                <div class="_a">
-                  <div class="_a1">Nguyen Anh</div>
-                  <span>ID bà học: 289976028</span>
-                </div>
-              </div>
-
-              <img class="line_right_item" src="images/Line 43.png" alt="" />
-
-              <div class="_2">
-                <div class="_a">
-                  <div class="_a1">Conversation English lesson</div>
-                  <span>Tiếng anh - 60 phút</span>
-                </div>
-              </div>
-
-              <img class="line_right_item" src="images/Line 43.png" alt="" />
-
-              <div class="_3">
-                <div class="_3a">
-                  <span class="_3a1">Bài học bắt đầu sau</span>
-                  <div class="time_h1">
-                    <span>16h 17p 50s</span>
-                  </div>
-                </div>
-              </div>
+            <div class="mobile">
+              <div class="title_mobile_cai_dat">Video</div>
             </div>
 
-            <div class="item">
-              <div class="_1">
-                <div
-                  class="avt bg_img"
-                  style="background-image: url(images/good_sample1\ 1.png)"
-                ></div>
-                <div class="_a">
-                  <div class="_a1">Nguyen Anh</div>
-                  <span>ID bà học: 289976028</span>
-                </div>
+            <div class="content_cai_dat_giao_vien">
+              <div class="title_content_cai_dat_giao_vien color_green">
+                Video
               </div>
 
-              <img class="line_right_item" src="images/Line 43.png" alt="" />
-
-              <div class="_2">
-                <div class="_a">
-                  <div class="_a1">Conversation English lesson</div>
-                  <span>Tiếng anh - 60 phút</span>
-                </div>
+              <div class="video_cai_dat_giao_vien">
+                <video width="100%" controls>
+                  <source src="" type="video/mp4" />
+                  <source src="" type="video/ogg" />
+                  Your browser does not support HTML video.
+                </video>
               </div>
 
-              <img class="line_right_item" src="images/Line 43.png" alt="" />
-
-              <div class="_3">
-                <div class="_3a">
-                  <span class="_3a1">Bài học bắt đầu sau</span>
-                  <div class="time_h1">
-                    <span>16h 17p 50s</span>
-                  </div>
+              <div class="da_phe_duyet_cai_dat_giao_vien">
+                <div class="center">
+                  <img src="images/dot17.png" alt="" />
+                  Đã phê duyệt
                 </div>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="_1">
-                <div
-                  class="avt bg_img"
-                  style="background-image: url(images/good_sample1\ 1.png)"
-                ></div>
-                <div class="_a">
-                  <div class="_a1">Nguyen Anh</div>
-                  <span>ID bà học: 289976028</span>
-                </div>
+                <a href="#">THAY ĐỔI VIDEO</a>
               </div>
 
-              <img class="line_right_item" src="images/Line 43.png" alt="" />
-
-              <div class="_2">
-                <div class="_a">
-                  <div class="_a1">Conversation English lesson</div>
-                  <span>Tiếng anh - 60 phút</span>
-                </div>
+              <div class="note_cai_dat_giao_vien">
+                <div class="title_note_cai_dat">Trước khi đăng video</div>
+                <ul>
+                  <li>
+                    Bằng cách gửi video của bạn tới italki, bạn xác nhận rằng
+                    bạn
+                  </li>
+                  đồng ý
+                  <li>với Điều khoản dịch vụ của TMarket.</li>
+                  <li>
+                    Hãy đảm bảo không vi phạm bản quyền hoặc quyền riêng tư của
+                    người khác.
+                  </li>
+                  <li>Kích thước tệp không được vượt quá 500 MB</li>
+                  <li>
+                    Để có kết quả tốt nhất, tỷ lệ khung hình video phải là 16:
+                    9.
+                  </li>
+                  <li>
+                    Vui lòng dành chút thời gian để đọc
+                    <a href="#" class="color_green">Yêu cầu giới thiệu video</a>
+                    trước khi bạn cập nhật
+                  </li>
+                  <li>video của mình.</li>
+                </ul>
               </div>
 
-              <img class="line_right_item" src="images/Line 43.png" alt="" />
-
-              <div class="_3">
-                <div class="_3a">
-                  <span class="time_h1">06:30 PM</span>
-                  <div class="time_d1">
-                    <span>16h 17p 50s</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="_1">
-                <div
-                  class="avt bg_img"
-                  style="background-image: url(images/good_sample1\ 1.png)"
-                ></div>
-                <div class="_a">
-                  <div class="_a1">Nguyen Anh</div>
-                  <span>ID bà học: 289976028</span>
-                </div>
-              </div>
-
-              <img class="line_right_item" src="images/Line 43.png" alt="" />
-
-              <div class="_2">
-                <div class="_a">
-                  <div class="_a1">Conversation English lesson</div>
-                  <span>Tiếng anh - 60 phút</span>
-                </div>
-              </div>
-
-              <img class="line_right_item" src="images/Line 43.png" alt="" />
-
-              <div class="_3">
-                <div class="_3a">
-                  <span class="time_h1">06:30 PM</span>
-                  <div class="time_d1">
-                    <span>16h 17p 50s</span>
-                  </div>
-                </div>
+              <div class="note_cai_dat_giao_vien">
+                <div class="title_note_cai_dat">Trước khi đăng video</div>
+                <ul>
+                  <li>
+                    Bằng cách gửi video của bạn tới italki, bạn xác nhận rằng
+                    bạn
+                  </li>
+                  đồng ý
+                  <li>với Điều khoản dịch vụ của TMarket.</li>
+                  <li>
+                    Hãy đảm bảo không vi phạm bản quyền hoặc quyền riêng tư của
+                    người khác.
+                  </li>
+                  <li>Kích thước tệp không được vượt quá 500 MB</li>
+                  <li>
+                    Để có kết quả tốt nhất, tỷ lệ khung hình video phải là 16:
+                    9.
+                  </li>
+                  <li>
+                    Vui lòng dành chút thời gian để đọc
+                    <a href="#" class="color_green">Yêu cầu giới thiệu video</a>
+                    trước khi bạn cập nhật
+                  </li>
+                  <li>video của mình.</li>
+                </ul>
               </div>
             </div>
           </div>

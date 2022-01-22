@@ -3,15 +3,13 @@
   <head>
     <script src="/__prepros.js"></script>
     <meta charset="UTF-8" />
-    <title>TMarket - Giáo viên</title>
+    <title>Tài khoản - Cài đặt giáo viên</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1"
     />
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
-    <script src="bootstrap/jquery.min.js"></script>
-    <script src="bootstrap/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="fonts/Lexend/Lexend-VariableFont_wght.ttf" />
     <!-- logo  -->
     <link rel="shortcut icon" href="images/logo.svg" />
     <!--CSS-->
@@ -37,12 +35,48 @@
       function togglePopup() {
         document.getElementById("popup1").classList.toggle("active");
       }
+
+      function popupChinh_sua_bai_hoc() {
+        document
+          .getElementById("overlay_chinh_sau_bai_hoc")
+          .classList.toggle("active_overlay_de_xuat_khoa_hoc");
+      }
+      function popupChinh_xoa_bai_hoc() {
+        document
+          .getElementById("overlay_xoa_bai_hoc")
+          .classList.toggle("active_overlay_de_xuat_khoa_hoc");
+      }
+      function popup_chinh_sua_thoi_gian() {
+        document
+          .getElementById("popup_chinh_sua_thoi_gian_ranh")
+          .classList.toggle("active_block");
+      }
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(
+            " active_rut_tien",
+            ""
+          );
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active_rut_tien";
+      }
+
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
     </script>
+
     <!-- header  -->
     <div class="container_header">
       <div class="header_c center">
         <div class="logo">
-          <img src="images/logo-market2.png" alt="" />
+          <a href="_index.html"><img src="images/logo-market2.png" alt="" /></a>
         </div>
 
         <div class="popup-menu1" id="popup1">
@@ -52,8 +86,12 @@
             <ul style="margin-top: 30px">
               <div class="close_menu1" onclick="togglePopup()">&times;</div>
               <li class="uk-active pc"><a href="#">Cài đặt giáo viên</a></li>
-              <li class="pc"><a href="#">Lịch dạy của tôi</a></li>
-              <li class="pc"><a href="#">Tin nhắn</a></li>
+              <li class="pc">
+                <a href="_giaovien-taiKhoan-lich_day.html">Lịch dạy của tôi</a>
+              </li>
+              <li class="pc">
+                <a href="_giaovien-taiKhoan-chat_voi_hoc_vien.html">Tin nhắn</a>
+              </li>
               <li>
                 <div class="color_black center user dropdown">
                   <button
@@ -133,7 +171,7 @@
                 >
                   Cài đặt giáo viên
                 </span>
-                <ul id="cai_dat_giao_vien">
+                <ul id="cai_dat_giao_vien" class="active_ul_menu_mobile">
                   <li>
                     <span
                       onclick="document.getElementById('thong_tin_giao_vien').classList.toggle('active_ul_menu_mobile')"
@@ -141,9 +179,28 @@
                       Thông tin về giáo viên
                     </span>
                     <ul id="thong_tin_giao_vien" class="active_ul_menu_mobile">
-                      <li>Thông tin cơ bản</li>
-                      <li class="color_green">Thông tin riêng tư</li>
-                      <li>Công cụ giao tiếp</li>
+                      <li>
+                        <a
+                          href="_giaovien-taiKhoan-cai_dat_thong_tin_co_ban.html"
+                        >
+                          Thông tin cơ bản
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="color_green"
+                          href="_giaovien-taiKhoan-cai_dat_thong_tin_rieng_tu.html"
+                        >
+                          Thông tin riêng tư
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="_giaovien-taiKhoan-cai_dat_cong_cu_giao_tiep.html"
+                        >
+                          Công cụ giao tiếp
+                        </a>
+                      </li>
                     </ul>
                   </li>
                   <li>
@@ -153,11 +210,35 @@
                       Hồ sơ giáo viên
                     </span>
                     <ul id="ho_so_giao_vien">
-                      <li>Giới thiệu</li>
-                      <li>Biểu mẫu liên hệ</li>
-                      <li>Video</li>
-                      <li>Ngôn ngữ</li>
-                      <li>Sơ yếu lý lịch và chứng chỉ</li>
+                      <li>
+                        <a href="_giaovien-taiKhoan-cai_dat_gioi_thieu.html">
+                          Giới thiệu
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="_giaovien-taiKhoan-cai_dat_bieu_mau_lien_he.html"
+                        >
+                          Biểu mẫu liên hệ
+                        </a>
+                      </li>
+                      <li>
+                        <a href="_giaovien-taiKhoan-cai_dat_video.html">
+                          Video
+                        </a>
+                      </li>
+                      <li>
+                        <a href="_giaovien-taiKhoan-cai_dat_ngon_ngu.html">
+                          Ngôn ngữ
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="_giaovien-taiKhoan-cai_dat_so_yeu_ly_lich.html"
+                        >
+                          Sơ yếu lý lịch và chứng chỉ
+                        </a>
+                      </li>
                     </ul>
                   </li>
                   <li>
@@ -167,12 +248,31 @@
                       Các bài học và trạng thái sẵn sàng
                     </span>
                     <ul id="cac_bai_hoc_va_trang_thai">
-                      <li>Quản lý bài học</li>
-                      <li>Các cài đặt trạng thái sẵn sàng</li>
-                      <li>Lịch giáo viên</li>
+                      <li>
+                        <a
+                          href="_giaovien-taiKhoan-cai_dat_quan_ly_bai_hoc.html"
+                        >
+                          Quản lý bài học
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="_giaovien-taiKhoan-cai_dat_cac_cai_dat_trang_thai.html"
+                        >
+                          Các cài đặt trạng thái sẵn sàng
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="_giaovien-taiKhoan-cai_dat_lich_giao_vien.html
+                            "
+                        >
+                          Lịch giáo viên
+                        </a>
+                      </li>
                     </ul>
                   </li>
-                  <li>Rút tiền</li>
+                  <li class="color_green">Rút tiền</li>
                   <a class="dang_nhap_menu" href="#"> Đăng xuất</a>
                 </ul>
               </li>
@@ -224,12 +324,27 @@
                     class="active_ul_menu_cai_dat"
                   >
                     <li>
-                      <a href="#">Thông tin cơ bản</a>
+                      <a
+                        href="_giaovien-taiKhoan-cai_dat_thong_tin_co_ban.html"
+                      >
+                        Thông tin cơ bản
+                      </a>
                     </li>
                     <li>
-                      <a class="color_green" href="#">Thông tin riêng tư</a>
+                      <a
+                        class="color_green"
+                        href="_giaovien-taiKhoan-cai_dat_thong_tin_rieng_tu.html"
+                      >
+                        Thông tin riêng tư
+                      </a>
                     </li>
-                    <li><a href="#">Công cụ giao tiếp</a></li>
+                    <li>
+                      <a
+                        href="_giaovien-taiKhoan-cai_dat_cong_cu_giao_tiep.html"
+                      >
+                        Công cụ giao tiếp
+                      </a>
+                    </li>
                   </ul>
                 </li>
                 <li>
@@ -240,11 +355,33 @@
                     <img src="images/down.svg" alt="" />
                   </button>
                   <ul id="cai_dat_ho_so_giao_vien">
-                    <li><a href="#">Giới thiệu</a></li>
-                    <li><a href="#">Biểu mẫu liên hệ</a></li>
-                    <li><a href="#">Video</a></li>
-                    <li><a href="#">Ngôn ngữ</a></li>
-                    <li><a href="#">Sơ yếu lý lịch và chứng chỉ</a></li>
+                    <li>
+                      <a href="_giaovien-taiKhoan-cai_dat_gioi_thieu.html">
+                        Giới thiệu
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="_giaovien-taiKhoan-cai_dat_bieu_mau_lien_he.html"
+                      >
+                        Biểu mẫu liên hệ
+                      </a>
+                    </li>
+                    <li>
+                      <a href="_giaovien-taiKhoan-cai_dat_video.html">
+                        Video
+                      </a>
+                    </li>
+                    <li>
+                      <a href="_giaovien-taiKhoan-cai_dat_ngon_ngu.html">
+                        Ngôn ngữ
+                      </a>
+                    </li>
+                    <li>
+                      <a href="_giaovien-taiKhoan-cai_dat_so_yeu_ly_lich.html">
+                        Sơ yếu lý lịch và chứng chỉ
+                      </a>
+                    </li>
                   </ul>
                 </li>
                 <li>
@@ -255,13 +392,34 @@
                     <img src="images/down.svg" alt="" />
                   </button>
                   <ul id="cai_dat_cac_bai_hoc_va_trang_thai">
-                    <li><a href="#">Quản lý bài học</a></li>
-                    <li><a href="#">Các cài đặt trạng thái sẵn sàng</a></li>
-                    <li><a href="#">Lịch giáo viên</a></li>
+                    <li>
+                      <a href="_giaovien-taiKhoan-cai_dat_quan_ly_bai_hoc.html">
+                        Quản lý bài học
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="_giaovien-taiKhoan-cai_dat_cac_cai_dat_trang_thai.html"
+                      >
+                        Các cài đặt trạng thái sẵn sàng
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="_giaovien-taiKhoan-cai_dat_lich_giao_vien.html
+                      "
+                      >
+                        Lịch giáo viên
+                      </a>
+                    </li>
                   </ul>
                 </li>
-                <li><a href="#">Rút tiền</a></li>
-                <a class="dang_nhap_menu" href="#"> Đăng xuất</a>
+                <li>
+                  <a href="_giaovien-taiKhoan-cai_dat_rut_tien.html"
+                    >Rút tiền</a
+                  >
+                </li>
+                <a class="dang_nhap_menu" href="#"> XEM HỒ SƠ </a>
               </ul>
             </div>
 
@@ -270,8 +428,9 @@
             </div>
 
             <div class="content_cai_dat_giao_vien">
-              <div class="itle_content_cai_dat_giao_vien">
-                Giấy tờ và chứng chỉ liên quan
+              <div class="title_content_cai_dat_giao_vien2">
+                <div class="pc">Giấy tờ và chứng chỉ liên quan</div>
+                <div class="mobile">Giấy tờ liên quan</div>
               </div>
 
               <div class="add_giay_to_content_cai_dat_giao_vien">

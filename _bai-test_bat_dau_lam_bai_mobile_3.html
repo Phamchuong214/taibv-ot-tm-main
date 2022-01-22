@@ -38,6 +38,7 @@
         document.getElementById("popup1").classList.toggle("active");
       }
     </script>
+
     <!-- header  -->
     <div class="container_header">
       <div class="header_c center">
@@ -49,17 +50,17 @@
           <div class="overlay-menu1"></div>
 
           <div class="nav_c center">
-            <ul style="margin-top: 30px">
+            <ul>
               <div class="close_menu1" onclick="togglePopup()">&times;</div>
-              <li class="uk-active pc"><a href="#">Cài đặt giáo viên</a></li>
-              <li class="pc"><a href="#">Lịch dạy của tôi</a></li>
-              <li class="pc"><a href="#">Tin nhắn</a></li>
+              <li class="uk-active"><a href="#">Cài đặt giáo viên</a></li>
+              <li><a href="#">Lịch dạy của tôi</a></li>
+              <li><a href="#">Tin nhắn</a></li>
               <li>
                 <div class="color_black center user dropdown">
                   <button
-                    onclick="document.getElementById('menu_gv').classList.toggle('active_menu_dropdown')"
-                    class="none_bt"
+                    class="btn btn-primary dropdown-toggle none_bt"
                     type="button"
+                    data-toggle="dropdown"
                   >
                     <div class="avt_gv">
                       <img src="images/Ellipse 14.png" alt="" />
@@ -70,9 +71,9 @@
                     <img src="images/Polygon 3.png" alt="" />
                   </button>
 
-                  <div id="menu_gv" class="menu_gv dropdown-menu">
+                  <div class="menu_gv dropdown-menu">
                     <ul>
-                      <li class="title_menu title_menu_mobile">
+                      <li class="title_menu">
                         <a href="#">
                           Bài học của tôi
                           <img src="images/men1usvg.svg" alt="" />
@@ -103,7 +104,7 @@
                         </a>
                       </li>
                       <li>
-                        <a href="_giaovien_tai-khoan_ho-tro">
+                        <a href="#">
                           Hỗ trợ
                           <img src="images/menu6.svg" alt="" />
                         </a>
@@ -127,66 +128,6 @@
                   </div>
                 </div>
               </li>
-              <li class="mobile">
-                <span
-                  onclick="document.getElementById('cai_dat_giao_vien').classList.toggle('active_ul_menu_mobile')"
-                >
-                  Cài đặt giáo viên
-                </span>
-                <ul id="cai_dat_giao_vien">
-                  <li>
-                    <span
-                      onclick="document.getElementById('thong_tin_giao_vien').classList.toggle('active_ul_menu_mobile')"
-                    >
-                      Thông tin về giáo viên
-                    </span>
-                    <ul id="thong_tin_giao_vien" class="active_ul_menu_mobile">
-                      <li class="color_green">Thông tin cơ bản</li>
-                      <li>Thông tin riêng tư</li>
-                      <li>Công cụ giao tiếp</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <span
-                      onclick="document.getElementById('ho_so_giao_vien').classList.toggle('active_ul_menu_mobile')"
-                    >
-                      Hồ sơ giáo viên
-                    </span>
-                    <ul id="ho_so_giao_vien">
-                      <li>Giới thiệu</li>
-                      <li>Biểu mẫu liên hệ</li>
-                      <li>Video</li>
-                      <li>Ngôn ngữ</li>
-                      <li>Sơ yếu lý lịch và chứng chỉ</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <span
-                      onclick="document.getElementById('cac_bai_hoc_va_trang_thai').classList.toggle('active_ul_menu_mobile')"
-                    >
-                      Các bài học và trạng thái sẵn sàng
-                    </span>
-                    <ul id="cac_bai_hoc_va_trang_thai">
-                      <li>Quản lý bài học</li>
-                      <li>Các cài đặt trạng thái sẵn sàng</li>
-                      <li>Lịch giáo viên</li>
-                    </ul>
-                  </li>
-                  <li>Rút tiền</li>
-                  <a class="dang_nhap_menu" href="#"> Đăng xuất</a>
-                </ul>
-              </li>
-              <li class="mobile">
-                <a href="_giaovien-taiKhoan-lich_day.html">Lịch dạy của tôi</a>
-              </li>
-              <li class="mobile">
-                <a
-                  href="_giaovien-taiKhoan-chat_voi_hoc_vien.html"
-                  class="li_menu"
-                >
-                  Tin nhắn <img src="images/inbox.png" alt="" />
-                </a>
-              </li>
             </ul>
           </div>
         </div>
@@ -203,148 +144,74 @@
       class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative"
     >
       <!--Main-->
-
       <div class="container_ttctgv">
-        <div class="container_step bg_color_gray">
-          <div class="container_cai_dai_giao_vien">
-            <div class="list_menu_cai_dai_giao_vien">
-              <div class="line_doc">
-                <img src="images/Rectangle 255.png" alt="" />
-              </div>
-              <ul id="cai_dat_giao_vien">
-                <li>
-                  <button
-                    onclick="document.getElementById('cai_dat_thong_tin_giao_vien').classList.toggle('active_ul_menu_cai_dat')"
-                  >
-                    Thông tin về giáo viên
-                    <img src="images/down.svg" alt="" />
-                  </button>
-                  <ul
-                    id="cai_dat_thong_tin_giao_vien"
-                    class="active_ul_menu_cai_dat"
-                  >
-                    <li>
-                      <a class="color_green" href="#">Thông tin cơ bản</a>
-                    </li>
-                    <li><a href="#">Thông tin riêng tư</a></li>
-                    <li><a href="#">Công cụ giao tiếp</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <button
-                    onclick="document.getElementById('cai_dat_ho_so_giao_vien').classList.toggle('active_ul_menu_cai_dat')"
-                  >
-                    Hồ sơ giáo viên
-                    <img src="images/down.svg" alt="" />
-                  </button>
-                  <ul id="cai_dat_ho_so_giao_vien">
-                    <li><a href="#">Giới thiệu</a></li>
-                    <li><a href="#">Biểu mẫu liên hệ</a></li>
-                    <li><a href="#">Video</a></li>
-                    <li><a href="#">Ngôn ngữ</a></li>
-                    <li><a href="#">Sơ yếu lý lịch và chứng chỉ</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <button
-                    onclick="document.getElementById('cai_dat_cac_bai_hoc_va_trang_thai').classList.toggle('active_ul_menu_cai_dat')"
-                  >
-                    Các bài học và trạng thái sẵn sàng
-                    <img src="images/down.svg" alt="" />
-                  </button>
-                  <ul id="cai_dat_cac_bai_hoc_va_trang_thai">
-                    <li><a href="#">Quản lý bài học</a></li>
-                    <li><a href="#">Các cài đặt trạng thái sẵn sàng</a></li>
-                    <li><a href="#">Lịch giáo viên</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Rút tiền</a></li>
-                <a class="dang_nhap_menu" href="#"> Đăng xuất</a>
-              </ul>
+          <div class="container_bat_dau_lam_bai">
+            <div class="danh_sach_cau_hoi">  
+                <div class="box_time">
+                    <div class="title_txt">
+                        Thời gian còn:
+                    </div>
+                    <div class="box_so">
+                        30:00
+                    </div>
+                </div>
+                <div class="box_thao_tac">
+                    <a href="#"><input type="submit" value="Bỏ qua" class="bo_qua"></a>
+                  <a href="#"><input type="submit" value="Câu tiếp" class="cau_tiep"></a>
+                </div>
             </div>
 
-            <div class="mobile">
-              <div class="title_mobile_cai_dat">Thông tin cơ bản</div>
+            <div class="cau_hoi">
+                <div class="cau_hoi_03_m">
+                    <span>Câu hỏi 3</span>
+                    <br>Nghe và trả lời câu hỏi
+                      <div class="box_03">
+                            <input type="range" min="1" max="100" value="50">
+                            <div class="thao_tac">
+                              <img src="images/play.png" alt="" class="play">
+                              <img src="images/reload.png" alt="" class="reload"> 10s
+                              <img src="images/reload2.png" alt="" class="reload_2"> 10s
+                            </div>
+                          </div>
+                            <button class="so_ngay">
+                              Yesterday
+                              <div class="so_day">
+                                1
+                              </div>
+                              <div class="goc_cau_hoi">
+                                <img src="images/Rectangle 13.png" alt="">
+                              </div>
+                            </button>
+                            <button class="so_ngay" >
+                              Near
+                              <div class="so_day">
+                                2
+                              </div>
+                            </button>
+                            <button class="so_ngay" >
+                              Today
+                              <div class="so_day">
+                                3
+                              </div>
+                            </button>
+                  </div>
             </div>
-
-            <div class="content_cai_dat_giao_vien">
-              <div
-                class="avt_cai_dat_giao_vien"
-                style="background-image: url(images/good_sample1\ 1.png)"
-              >
-                <a href="#"><img src="images/camera369.png" alt="" /></a>
+            <div class="noi_quy">
+                <ul>
+                    <li>Học viên cần trả lời đáp án trong thời gian 
+                      quy định</li>
+                    <li>Khi bỏ qua học viên sẽ không thể quay lại câu hỏi đó</li>
+                    <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</li>
+                </ul>
               </div>
-
-              <div class="input1_cai_dat_giao_vien">
-                <div class="input_cai_dat_giao_vien">
-                  <div class="title_input_cai_dat_giao_vien">Tên hiển thị</div>
-                  <input type="text" placeholder="Huyền Trương" />
-                </div>
-              </div>
-
-              <div class="box_input2_cai_dat_giao_vien">
-                <div class="input2_cai_dat_giao_vien">
-                  <div class="input_cai_dat_giao_vien">
-                    <div class="title_input_cai_dat_giao_vien">Họ</div>
-                    <input type="text" placeholder="Trương" />
-                  </div>
-                </div>
-
-                <div class="input2_cai_dat_giao_vien">
-                  <div class="input_cai_dat_giao_vien">
-                    <div class="title_input_cai_dat_giao_vien">Tên</div>
-                    <input type="text" placeholder="Huyền" />
-                  </div>
-                </div>
-              </div>
-
-              <div class="box_input2_cai_dat_giao_vien">
-                <div class="input2_cai_dat_giao_vien">
-                  <div class="input_cai_dat_giao_vien">
-                    <div class="title_input_cai_dat_giao_vien">Ngày sinh</div>
-                    <input type="date" placeholder="Huyền Trương" />
-                  </div>
-                </div>
-
-                <div class="input2_cai_dat_giao_vien">
-                  <div class="input_cai_dat_giao_vien">
-                    <div class="title_input_cai_dat_giao_vien">Giới tính</div>
-                    <input type="text" placeholder="Nữ" />
-                  </div>
-                </div>
-              </div>
-
-              <div class="input1_cai_dat_giao_vien">
-                <div class="input_cai_dat_giao_vien">
-                  <div class="title_input_cai_dat_giao_vien">Quốc gia</div>
-                  <select name="" id="">
-                    <option value="">Việt Nam</option>
-                    <option value="">Việt Nam</option>
-                    <option value="">Việt Nam</option>
-                    <option value="">Việt Nam</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="input1_cai_dat_giao_vien">
-                <div class="input_cai_dat_giao_vien">
-                  <div class="title_input_cai_dat_giao_vien">
-                    Địa chỉ cụ thể
-                  </div>
-                  <input
-                    type="text"
-                    placeholder="107 Trung Hành, Đằng Lâm, Hải An, Hải Phòng"
-                  />
-                </div>
-              </div>
-
-              <div class="cap_nhat_tt_cai_dat_giao_vien">
-                <a href="#">Cập nhật thông tin</a>
-              </div>
+                
+                
             </div>
-          </div>
-        </div>
       </div>
+      
+    </div>
+      
+
       <!--/Main-->
 
       <!--footer-->
