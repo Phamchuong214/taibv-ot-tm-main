@@ -5845,7 +5845,7 @@ input:checked + .slider:before {
   top: 20%;
   left: 0;
   background: #fff;
-  z-index: 3;
+  z-index: 2;
   overflow: auto;
   /* transform: translate(0, 30%); */
   /* position: relative; */
@@ -5857,6 +5857,7 @@ input:checked + .slider:before {
   color: #000;
   font-weight: 550;
   border-bottom: #ebebeb 2px solid;
+  text-align: center;
 }
 .popup_dat_lich_hoc > .box_step > .step {
   width: 100%;
@@ -6181,11 +6182,47 @@ input:checked + .slider:before {
   .box_so_luong_hoc_vien_step2,
   .thoi_gian_hoc_dat_lich_hoc,
   .danh_sach_bai_hoc_popup_dang_ky,
-  .thu_ngay_dat_lich_hoc_popup > table {
+  .thu_ngay_dat_lich_hoc_popup > table,
+  .box_cong_cu_giao_tiep_dat_lich_hoc,
+  .box_dat_lich_hoc_id_cua_ban {
     width: 85%;
   }
   .item_checkbox_dat_lich_hoc {
     width: 30%;
+  }
+  .note_title_cong_cu_giao_tiep {
+    line-height: normal;
+    height: 114px;
+    padding: 10px 0;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+  }
+  .box_cong_cu_giao_tiep_dat_lich_hoc2 {
+    flex-wrap: wrap;
+  }
+  .skype_class_room,
+  .zalo_class_room,
+  .google_meet_class_room,
+  .zoom_class_room {
+    width: 46%;
+    margin: 10px 0;
+    line-height: normal;
+  }
+  .tmarket_class_room {
+    width: 100%;
+  }
+  .box_dat_lich_hoc_id_cua_ban > .text_dat_lich_hoc_id_cua_ban,
+  .box_dat_lich_hoc_id_cua_ban > .input_dat_lich_hoc_id_cua_ban {
+    width: 100%;
+  }
+  .box_dat_lich_hoc_id_cua_ban > .input_dat_lich_hoc_id_cua_ban > input {
+    width: 100%;
+  }
+  .step3_popup_dat_lich_hoc > .table_cai_dat_lich_giao_vien_mobile {
+    width: 90%;
+    margin: auto;
   }
 }
 
@@ -6269,3 +6306,334 @@ input:checked + .slider:before {
 }
 
 /* /checkbox_v */
+.container_chitietgiaovien_c {
+  width: 90% !important;
+}
+
+/* xac nhan thanh toan  */
+
+.container_xacnhanthanhtoan {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.main__left__xacnhanthanhtoan {
+  width: 741px;
+}
+.item__phuongthucthanhtoan {
+  width: 94%;
+  position: relative;
+  padding: 3%;
+  background: #fff;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.lineColor__item__phuongthucthanhtoan {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  display: flex;
+  width: 100%;
+}
+.color__live1 {
+  height: 2px;
+  background-color: #521a80;
+  width: 19%;
+}
+.color__live2 {
+  height: 2px;
+  background-color: #125faf;
+  width: 19%;
+}
+.color__live3 {
+  height: 2px;
+  background-color: #158534;
+  width: 19%;
+}
+.color__live4 {
+  height: 2px;
+  background-color: #eeeb15;
+  width: 19%;
+}
+.color__live5 {
+  height: 2px;
+  background-color: #f9a132;
+  width: 19%;
+}
+.color__live6 {
+  height: 2px;
+  background-color: #af0923;
+  width: 5%;
+}
+.item__phuongthucthanhtoan > .title {
+  font-weight: 500;
+  color: #000;
+  text-align: left;
+  height: 20px;
+  line-height: 20px;
+  margin: 0;
+  font-size: 16px;
+}
+.item__phuongthucthanhtoan > .thoigian__item__baihoc {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__right__xacnhanthanhtoan {
+  width: 370px;
+}
+.main__right__xacnhanthanhtoan > .hoc_vien {
+  width: 100%;
+}
+.main__right__xacnhanthanhtoan > .note {
+  margin-top: 87px;
+  text-align: left;
+  width: 100%;
+}
+.main__right__xacnhanthanhtoan > .note > ul > li {
+  margin-bottom: 15px;
+}
+.top__item__phuongthucthanhtoan {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  align-items: center;
+}
+.top__item__phuongthucthanhtoan > .title {
+  text-align: left;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+.khuvucthanhtoan__phuongthucthanhtoan {
+  color: #878787;
+}
+.khuvucthanhtoan__phuongthucthanhtoan select {
+  width: 223px;
+  height: 44px;
+  background: #fafafc;
+  border: 1px solid #ebebeb;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 0 13px;
+  outline: none !important;
+}
+.nganghangthanhtoan__phuongthucthanhtoan {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  border-bottom: #ebebeb 1px solid;
+}
+.item__phuongthucthanhtoan > textarea {
+  height: 105px;
+  width: 96%;
+  padding: 2%;
+  background: #fafafc;
+  border: 1px solid #ebebeb;
+  box-sizing: border-box;
+  outline: none !important;
+  margin-top: 20px;
+}
+.name__nganghangthanhtoan {
+  font-size: 16px;
+}
+.vietdanhgia__giaovien__xacnhanthanhtoan {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.vietdanhgia__giaovien__xacnhanthanhtoan > button {
+  width: 119px;
+  height: 28px;
+  outline: none;
+  background: #ffffff;
+  border: 0.8px solid #37474f;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.main__right__xacnhanthanhtoan
+  > .hoc_vien
+  > .hoc_vien_avt
+  > .name_hoc_vien
+  img {
+  width: auto !important;
+  height: auto !important;
+}
+.main__right__xacnhanthanhtoan > .hoc_vien > .hoc_vien_avt {
+  align-items: flex-start;
+}
+.item__bot__hoc_vien__main__right__xacnhanthanhtoan {
+  width: 100%;
+  border-top: 5px solid #fafafc;
+  margin: 10px 0;
+}
+.content__item__bot__hoc_vien__main__right__xacnhanthanhtoan {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+}
+.content__item__bot__hoc_vien__main__right__xacnhanthanhtoan > span {
+  font-weight: 500;
+}
+.btn__hoc_vien__main__right__xacnhanthanhtoan {
+  background: #65af54;
+  border: 1px solid #aeaeae;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  height: 42px;
+  outline: none !important;
+  color: #fff;
+  width: 100%;
+  margin-top: 30px;
+}
+.main__right__xacnhanthanhtoan > .hoc_vien > .hoc_vien_avt > .name_hoc_vien {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.dongy__popup__thongbao {
+  height: 50px;
+  width: 100%;
+  background: #65af54;
+  border-radius: 0px 0px 10px 10px;
+  line-height: 50px;
+  color: #fff;
+}
+.dongy__popup__thongbao:hover {
+  font-weight: 500;
+  color: #fff;
+  
+}
+.thanhtoanthanhcong,
+.thongbao__vetrangchu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #00000070;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.close_popup_xoa_bai_hoc {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #000;
+  color: #fff;
+  line-height: 20px;
+}
+.close_popup_xoa_bai_hoc:hover {
+  color: #65af54;
+}
+@media only screen and (max-width: 740px) {
+  .container_xacnhanthanhtoan {
+    margin-top: 100px;
+    flex-wrap: wrap;
+  }
+  .main__left__xacnhanthanhtoan,
+  .main__right__xacnhanthanhtoan {
+    width: 100%;
+  }
+  .main__right__xacnhanthanhtoan > .hoc_vien {
+    width: 94% !important;
+    padding: 3%;
+  }
+  .item__phuongthucthanhtoan > textarea {
+    width: 100%;
+  }
+  .top__item__phuongthucthanhtoan {
+    flex-wrap: wrap;
+  }
+  .khuvucthanhtoan__phuongthucthanhtoan select {
+    width: 100%;
+  }
+  .khuvucthanhtoan__phuongthucthanhtoan {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+/* / xac nhan thanh toan  */
+
+/* radio  */
+
+/* The container__radio */
+.container__radio {
+  width: 100%;
+  display: block;
+  position: relative;
+  /* padding-left: 35px; */
+  /* margin-bottom: 12px; */
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container__radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark__radio {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  height: 16px;
+  width: 16px;
+  background-color: #fff;
+  border: 1px solid #65af54;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container__radio:hover input ~ .checkmark__radio {
+  background-color: rgb(250, 250, 250);
+}
+
+/* When the radio button is checked, add a blue background */
+.container__radio input:checked ~ .checkmark__radio {
+  background-color: #fff;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark__radio:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container__radio input:checked ~ .checkmark__radio:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container__radio .checkmark__radio:after {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #65af54;
+}
+
+/* / radio  */
