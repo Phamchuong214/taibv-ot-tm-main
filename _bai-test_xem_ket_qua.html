@@ -8,10 +8,6 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1"
     />
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
-    <script src="bootstrap/jquery.min.js"></script>
-    <script src="bootstrap/bootstrap.min.js"></script>
     <!-- logo  -->
     <link rel="shortcut icon" href="images/logo.svg" />
     <!--CSS-->
@@ -43,24 +39,36 @@
     <div class="container_header">
       <div class="header_c center">
         <div class="logo">
-          <img src="images/logo-market2.png" alt="" />
+          <a href="_index.html"><img src="images/logo-market2.png" alt="" /></a>
         </div>
 
         <div class="popup-menu1" id="popup1">
           <div class="overlay-menu1"></div>
 
           <div class="nav_c center">
-            <ul>
+            <ul style="margin-top: 30px">
               <div class="close_menu1" onclick="togglePopup()">&times;</div>
-              <li class="uk-active"><a href="#">Cài đặt giáo viên</a></li>
-              <li><a href="#">Lịch dạy của tôi</a></li>
-              <li><a href="#">Tin nhắn</a></li>
+              <li class="uk-active pc"><a href="#">Giới thiệu</a></li>
+              <li class="pc">
+                <a href="_giaovien-taiKhoan-lich_day.html" class="color_green">     
+                  Tìm giáo viên
+                </a>
+              </li>
+              <li class="pc">
+                <a href="_giaovien-taiKhoan-chat_voi_hoc_vien.html">Trở thành giáo viên</a>
+              </li>
+              <li class="pc">
+                <a href="_giaovien-taiKhoan-chat_voi_hoc_vien.html">Hướng dẫn</a>
+              </li>
+              <li class="pc">
+                <a href="_giaovien-taiKhoan-chat_voi_hoc_vien.html">Liên hệ</a>
+              </li>
               <li>
                 <div class="color_black center user dropdown">
                   <button
-                    class="btn btn-primary dropdown-toggle none_bt"
+                    onclick="document.getElementById('menu_gv').classList.toggle('active_menu_dropdown')"
+                    class="none_bt"
                     type="button"
-                    data-toggle="dropdown"
                   >
                     <div class="avt_gv">
                       <img src="images/Ellipse 14.png" alt="" />
@@ -71,9 +79,9 @@
                     <img src="images/Polygon 3.png" alt="" />
                   </button>
 
-                  <div class="menu_gv dropdown-menu">
+                  <div id="menu_gv" class="menu_gv dropdown-menu">
                     <ul>
-                      <li class="title_menu">
+                      <li class="title_menu title_menu_mobile">
                         <a href="#">
                           Bài học của tôi
                           <img src="images/men1usvg.svg" alt="" />
@@ -104,7 +112,7 @@
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="_giaovien_tai-khoan_ho-tro">
                           Hỗ trợ
                           <img src="images/menu6.svg" alt="" />
                         </a>
@@ -128,6 +136,56 @@
                   </div>
                 </div>
               </li>
+              <li class="mobile">
+                <a
+                  href="_giaovien-taiKhoan-chat_voi_hoc_vien.html"
+                  class="li_menu"
+                >
+                Giới thiệu
+                </a>
+              </li>
+
+              <li class="mobile">
+                <a
+                  href="_giaovien-taiKhoan-chat_voi_hoc_vien.html"
+                  class="li_menu color_green"
+                >
+                Tìm giáo viên 
+                </a>
+              </li>
+
+              <li class="mobile">
+                <a
+                  href="_giaovien-taiKhoan-chat_voi_hoc_vien.html"
+                  class="li_menu"
+                >
+                Trở thành giáo viên 
+                </a>
+              </li>
+
+              <li class="mobile">
+                <a
+                  href="_giaovien-taiKhoan-chat_voi_hoc_vien.html"
+                  class="li_menu"
+                >
+                Hướng dẫn 
+                </a>
+              </li>
+
+              <li class="mobile">
+                <a
+                  href="_giaovien-taiKhoan-chat_voi_hoc_vien.html"
+                  class="li_menu"
+                >
+                Liên hệ
+                </a>
+              </li>
+              
+              
+              
+              
+              
+
             </ul>
           </div>
         </div>

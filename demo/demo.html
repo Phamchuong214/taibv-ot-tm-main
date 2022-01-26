@@ -1,5 +1,82 @@
-<video width="400" controls>
-  <source src="" type="video/mp4" />
-  <source src="" type="video/ogg" />
-  Your browser does not support HTML video.
-</video>
+<!DOCTYPE html>
+<html>
+  <style>
+    /* The container_checkbox_v */
+    .container_checkbox_v {
+      display: block;
+      position: relative;
+      /* padding-left: 35px; */
+      /* margin-bottom: 12px; */
+      cursor: pointer;
+      font-size: 22px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    /* Hide the browser's default checkbox */
+    .container_checkbox_v input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+
+    /* Create a custom checkbox */
+    .checkmark_v {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+
+      background: #65af54;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    /* On mouse-over, add a grey background color */
+    .container_checkbox_v:hover input ~ .checkmark_v {
+      background-color: #ccc;
+    }
+
+    /* When the checkbox is checked, add a blue background */
+    .container_checkbox_v input:checked ~ .checkmark_v {
+      background-color: #65af54;
+    }
+
+    /* Create the checkmark_v/indicator (hidden when not checked) */
+    .checkmark_v:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+
+    /* Show the checkmark_v when checked */
+    .container_checkbox_v input:checked ~ .checkmark_v:after {
+      display: block;
+    }
+
+    /* Style the checkmark_v/indicator */
+    .container_checkbox_v .checkmark_v:after {
+      left: 7px;
+      top: 5px;
+      width: 2px;
+      height: 6px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  </style>
+  <body>
+    <h1>Custom Checkboxes</h1>
+    <label class="container_checkbox_v">
+      <input type="checkbox" checked="checked" />
+      <span class="checkmark_v"></span>
+    </label>
+  </body>
+</html>
