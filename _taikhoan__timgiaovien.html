@@ -1,0 +1,1588 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <script src="/__prepros.js"></script>
+    <meta charset="UTF-8" />
+    <title>Tài khoản</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
+    <!-- logo  -->
+    <link rel="shortcut icon" href="images/logo.svg" />
+    <!--CSS-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="assets/uikit-3.9.4/css/uikit.min.css" />
+    <link rel="stylesheet" href="style.css?v=1640401490" />
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- UIkit JS -->
+    <script src="assets/uikit-3.9.4/js/uikit.min.js"></script>
+    <script src="assets/uikit-3.9.4/js/uikit-icons.min.js"></script>
+    <script src="js/app.js?v=1640401490"></script>
+    <!-- CSS  -->
+    <link rel="stylesheet" href="css/style_giaovien.css" />
+  </head>
+  <body class="">
+    <script>
+      function togglePopup() {
+        document.getElementById("popup1").classList.toggle("active");
+      }
+    </script>
+    <!-- header  -->
+    <div class="container_header">
+      <div class="header_c center">
+        <div class="logo">
+          <img src="images/logo-market2.png" alt="" />
+        </div>
+
+        <div class="popup-menu1" id="popup1">
+          <div class="overlay-menu1"></div>
+
+          <div class="nav_c center">
+            <ul style="margin-top: 30px">
+              <div class="close_menu1" onclick="togglePopup()">&times;</div>
+              <li class="uk-active pc">
+                <a href="_timgiaovien.html">Tìm giáo viên</a>
+              </li>
+              <li class="pc">
+                <a href="_giaovien-taiKhoan-chat_voi_hoc_vien.html">Chat</a>
+              </li>
+              <li class="pc">
+                <div class="">
+                  <div class="center pd20">
+                    <img src="images/vi_flag.png" alt="" />
+                    <span class="color_black" style="font-size: 16px !important"
+                      >Tiếng Việt - Vnđ</span
+                    >
+                    <img src="images/down.svg" alt="" />
+                  </div>
+                  <div
+                    class="header__lang__dropdown uk-form-stacked"
+                    uk-dropdown="mode: hover;pos: bottom-center;"
+                  >
+                    <div class="header__lang__dropdown__item">
+                      <label
+                        class="uk-form-label header__lang__dropdown__label"
+                        for="form-stacked-text"
+                        >Ngôn ngữ</label
+                      >
+                      <div class="uk-form-controls">
+                        <div
+                          class="uk-width-1-1"
+                          uk-form-custom="target: > * > span:first-child"
+                        >
+                          <select>
+                            <option value="">Tiếng Việt</option>
+                            <option value="1">Option 01</option>
+                            <option value="2">Option 02</option>
+                            <option value="3">Option 03</option>
+                            <option value="4">Option 04</option>
+                          </select>
+                          <button
+                            style="--background: url('images/vi_flag.png')"
+                            class="header__lang__dropdown__btnSelect header__lang__dropdown__btnSelect--lang uk-width-1-1 uk-button uk-button-default"
+                            type="button"
+                            tabindex="-1"
+                          >
+                            <span></span>
+                            <span
+                              class="uk-position-center-right"
+                              uk-icon="icon: chevron-down"
+                            ></span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="header__lang__dropdown__item">
+                      <label
+                        class="uk-form-label header__lang__dropdown__label"
+                        for="form-stacked-text"
+                        >Tiền tệ</label
+                      >
+                      <div class="uk-form-controls">
+                        <div
+                          class="uk-width-1-1"
+                          uk-form-custom="target: > * > span:first-child"
+                        >
+                          <select>
+                            <option value="">VNĐ</option>
+                            <option value="1">Option 01</option>
+                            <option value="2">Option 02</option>
+                            <option value="3">Option 03</option>
+                            <option value="4">Option 04</option>
+                          </select>
+                          <button
+                            style="--background: url('images/vi_flag.png')"
+                            class="header__lang__dropdown__btnSelect uk-width-1-1 uk-button uk-button-default"
+                            type="button"
+                            tabindex="-1"
+                          >
+                            <span></span>
+                            <span
+                              class="uk-position-center-right"
+                              uk-icon="icon: chevron-down"
+                            ></span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="mobile">
+                <a href="_timgiaovien.html">Tìm giáo viên</a>
+              </li>
+              <li class="mobile">
+                <a
+                  href="_giaovien-taiKhoan-chat_voi_hoc_vien.html"
+                  class="li_menu"
+                >
+                  Chat <img src="images/inbox.png" alt="" />
+                </a>
+              </li>
+              <li class="mobile">
+                <div class="">
+                  <div class="center pd20">
+                    <img src="images/vi_flag.png" alt="" />
+                    <span class="color_black" style="font-size: 16px !important"
+                      >Tiếng Việt - Vnđ</span
+                    >
+                    <img src="images/down.svg" alt="" />
+                  </div>
+                  <div
+                    class="header__lang__dropdown uk-form-stacked"
+                    uk-dropdown="mode: hover;pos: bottom-center;"
+                  >
+                    <div class="header__lang__dropdown__item">
+                      <label
+                        class="uk-form-label header__lang__dropdown__label"
+                        for="form-stacked-text"
+                        >Ngôn ngữ</label
+                      >
+                      <div class="uk-form-controls">
+                        <div
+                          class="uk-width-1-1"
+                          uk-form-custom="target: > * > span:first-child"
+                        >
+                          <select>
+                            <option value="">Tiếng Việt</option>
+                            <option value="1">Option 01</option>
+                            <option value="2">Option 02</option>
+                            <option value="3">Option 03</option>
+                            <option value="4">Option 04</option>
+                          </select>
+                          <button
+                            style="--background: url('images/vi_flag.png')"
+                            class="header__lang__dropdown__btnSelect header__lang__dropdown__btnSelect--lang uk-width-1-1 uk-button uk-button-default"
+                            type="button"
+                            tabindex="-1"
+                          >
+                            <span></span>
+                            <span
+                              class="uk-position-center-right"
+                              uk-icon="icon: chevron-down"
+                            ></span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="header__lang__dropdown__item">
+                      <label
+                        class="uk-form-label header__lang__dropdown__label"
+                        for="form-stacked-text"
+                        >Tiền tệ</label
+                      >
+                      <div class="uk-form-controls">
+                        <div
+                          class="uk-width-1-1"
+                          uk-form-custom="target: > * > span:first-child"
+                        >
+                          <select>
+                            <option value="">VNĐ</option>
+                            <option value="1">Option 01</option>
+                            <option value="2">Option 02</option>
+                            <option value="3">Option 03</option>
+                            <option value="4">Option 04</option>
+                          </select>
+                          <button
+                            style="--background: url('images/vi_flag.png')"
+                            class="header__lang__dropdown__btnSelect uk-width-1-1 uk-button uk-button-default"
+                            type="button"
+                            tabindex="-1"
+                          >
+                            <span></span>
+                            <span
+                              class="uk-position-center-right"
+                              uk-icon="icon: chevron-down"
+                            ></span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="color_black center user dropdown">
+                  <button
+                    onclick="document.getElementById('menu_gv').classList.toggle('active_menu_dropdown')"
+                    class="none_bt"
+                    type="button"
+                  >
+                    <div class="avt_gv">
+                      <img src="images/Ellipse 14.png" alt="" />
+                    </div>
+                    <a class="color_black" href="#">
+                      <span>Trương Huyền</span>
+                    </a>
+                    <img src="images/Polygon 3.png" alt="" />
+                  </button>
+
+                  <div id="menu_gv" class="menu_gv dropdown-menu">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          Danh sách khoá học
+                          <img src="images/m1.png" alt="" />
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#">
+                          Ví của tôi
+                          <img src="images/m2.png" alt="" />
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#">
+                          Bài test đã làm
+                          <img src="images/m3.png" alt="" />
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#">
+                          Thông tin cá nhân
+                          <img src="images/m4.png" alt="" />
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#">
+                          Danh sách khoá học bảo lưu
+                          <img src="images/m5.png" alt="" />
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#">
+                          Giáo viên yêu thích
+                          <img src="images/m6.png" alt="" />
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#">
+                          Đăng ký làm giáo viên
+                          <img src="images/m7.png" alt="" />
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#">
+                          Lịch sử đánh giá
+                          <img src="images/m8.png" alt="" />
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#">
+                          Đổi mật khẩu
+                          <img src="images/m9.png" alt="" />
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="_giaovien_tai-khoan_ho-tro">
+                          Hỗ trợ
+                          <img src="images/m10.png" alt="" />
+                        </a>
+                      </li>
+                      <li
+                        style="background-color: #fff !important"
+                        class="center"
+                      >
+                        <a class="dang_nhap_menu" href="#"> Đăng xuất</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="icon_menu">
+          <img onclick="togglePopup()" src="images/menu-838.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- / header  -->
+
+    <div
+      id="app"
+      class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative"
+    >
+      <!--Main-->
+
+      <div class="container_ttctgv">
+        <div class="container_step bg_color_gray">
+          <div class="__container__taikhoan__timgiaovien">
+            <div class="__sogiaovien__duoctimkiem">
+              15 Giáo viên được tìm kiếm
+            </div>
+
+            <div class="__hocvien__taikhoan__timgiaovien">
+              <div class="top__hocvien__taikhoan__timgiaovien">
+                <div
+                  class="__avt__giaovien__taikhoan__timgiaovien"
+                  style="background-image: url(images/Ellipse\ 14.png)"
+                ></div>
+                <div class="__thongtingiaovien__timgiaovien">
+                  <div class="__name__giaovien__tiemgiaovien">
+                    <font> Trương HUyền </font>
+                    <span> Giáo viên chuyên nghiệp </span>
+
+                    <div class="____line mobile">
+                      <img src="images/Rectangle 42.png" alt="" />
+                    </div>
+
+                    <span class="____line mobile">Đến từ Việt Nam</span>
+                  </div>
+
+                  <div class="__share__tim__timgiaovien__taikhoan">
+                    <div class="mobile" style="width: auto">
+                      5.0
+                      <img src="images/sao vang.png" alt="" />
+                      <img src="images/sao vang.png" alt="" />
+                      <img src="images/sao vang.png" alt="" />
+                      <img src="images/sao vang.png" alt="" />
+                      <img src="images/sao vang.png" alt="" />
+                    </div>
+
+                    <div>
+                      <a href="#"><img src="images/share.png" alt="" /></a>
+                      <a href="#"><img src="images/tim.png" alt="" /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bot__hocvien__taikhoan__timgiaovien">
+                <div class="__thongtinkhoahoc__taikhoan__timgiaovien">
+                  <div class="__tenkhoahoc__taikhoan__timgiaovien">
+                    <div class="__name__khoahoc__taikhoan__timgiaovien">
+                      <span>
+                        <font> Conversation English lesson </font> 12 bài học
+                      </span>
+                    </div>
+
+                    <div class="_thongtinbaihoc__taikhoantimgiaovien">
+                      <span>Đã học: <font>6 bài học</font></span>
+                    </div>
+                  </div>
+
+                  <div class="____line">
+                    <img src="images/Rectangle 42.png" alt="" />
+                  </div>
+
+                  <div class="__tongtienkhoahoc__taikhoantimgiaovien">
+                    <button
+                      onclick="popup__chonthoigianhoc()"
+                      class="__datlichhoc__taikhoatimgiaovien pc"
+                    >
+                      Đặt lịch học
+                    </button>
+
+                    <div class="__tongkhoahoc__taikhoantimgiaovien">
+                      <span>
+                        Tổng khoá học:
+                        <font> 1.500.000 vnđ </font>
+                      </span>
+                      <span>
+                        6 bài học còn lại:
+                        <font style="font-size: 22px; color: #65af54">
+                          750.000 vnđ
+                        </font>
+                      </span>
+                    </div>
+
+                    <button
+                      onclick="popup__chonthoigianhoc()"
+                      class="__datlichhoc__taikhoatimgiaovien mobile"
+                    >
+                      Đặt lịch học
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="__hocvien__taikhoan__timgiaovien">
+              <div class="top__hocvien__taikhoan__timgiaovien">
+                <div
+                  class="__avt__giaovien__taikhoan__timgiaovien"
+                  style="background-image: url(images/Ellipse\ 14.png)"
+                ></div>
+                <div class="__thongtingiaovien__timgiaovien">
+                  <div class="__name__giaovien__tiemgiaovien">
+                    <font> Trương HUyền </font>
+                    <span> Giáo viên chuyên nghiệp </span>
+
+                    <div class="____line mobile">
+                      <img src="images/Rectangle 42.png" alt="" />
+                    </div>
+
+                    <span class="____line mobile">Đến từ Việt Nam</span>
+                  </div>
+
+                  <div class="__share__tim__timgiaovien__taikhoan">
+                    <div class="mobile" style="width: auto">
+                      5.0
+                      <img src="images/sao vang.png" alt="" />
+                      <img src="images/sao vang.png" alt="" />
+                      <img src="images/sao vang.png" alt="" />
+                      <img src="images/sao vang.png" alt="" />
+                      <img src="images/sao vang.png" alt="" />
+                    </div>
+
+                    <div>
+                      <a href="#"><img src="images/share.png" alt="" /></a>
+                      <a href="#"><img src="images/tim.png" alt="" /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bot__hocvien__taikhoan__timgiaovien">
+                <div class="__thongtinkhoahoc__taikhoan__timgiaovien">
+                  <div class="__tenkhoahoc__taikhoan__timgiaovien">
+                    <div class="__name__khoahoc__taikhoan__timgiaovien">
+                      <span>
+                        <font> Conversation English lesson </font> 12 bài học
+                      </span>
+                    </div>
+
+                    <div class="_thongtinbaihoc__taikhoantimgiaovien">
+                      <span>Đã học: <font>6 bài học</font></span>
+                    </div>
+                  </div>
+
+                  <div class="____line">
+                    <img src="images/Rectangle 42.png" alt="" />
+                  </div>
+
+                  <div class="__tongtienkhoahoc__taikhoantimgiaovien">
+                    <button
+                      onclick="popup__chonthoigianhoc()"
+                      class="__datlichhoc__taikhoatimgiaovien pc"
+                    >
+                      Đặt lịch học
+                    </button>
+
+                    <div class="__tongkhoahoc__taikhoantimgiaovien">
+                      <span>
+                        Tổng khoá học:
+                        <font> 1.500.000 vnđ </font>
+                      </span>
+                      <span>
+                        6 bài học còn lại:
+                        <font style="font-size: 22px; color: #65af54">
+                          750.000 vnđ
+                        </font>
+                      </span>
+                    </div>
+
+                    <button
+                      onclick="popup__chonthoigianhoc()"
+                      class="__datlichhoc__taikhoatimgiaovien mobile"
+                    >
+                      Đặt lịch học
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="__hocvien__taikhoan__timgiaovien">
+              <div class="top__hocvien__taikhoan__timgiaovien">
+                <div
+                  class="__avt__giaovien__taikhoan__timgiaovien"
+                  style="background-image: url(images/Ellipse\ 14.png)"
+                ></div>
+                <div class="__thongtingiaovien__timgiaovien">
+                  <div class="__name__giaovien__tiemgiaovien">
+                    <font> Trương HUyền </font>
+                    <span> Giáo viên chuyên nghiệp </span>
+
+                    <div class="____line mobile">
+                      <img src="images/Rectangle 42.png" alt="" />
+                    </div>
+
+                    <span class="____line mobile">Đến từ Việt Nam</span>
+                  </div>
+
+                  <div class="__share__tim__timgiaovien__taikhoan">
+                    <div class="mobile" style="width: auto">
+                      5.0
+                      <img src="images/sao vang.png" alt="" />
+                      <img src="images/sao vang.png" alt="" />
+                      <img src="images/sao vang.png" alt="" />
+                      <img src="images/sao vang.png" alt="" />
+                      <img src="images/sao vang.png" alt="" />
+                    </div>
+
+                    <div>
+                      <a href="#"><img src="images/share.png" alt="" /></a>
+                      <a href="#"><img src="images/tim.png" alt="" /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bot__hocvien__taikhoan__timgiaovien">
+                <div class="__thongtinkhoahoc__taikhoan__timgiaovien">
+                  <div class="__tenkhoahoc__taikhoan__timgiaovien">
+                    <div class="__name__khoahoc__taikhoan__timgiaovien">
+                      <span>
+                        <font> Conversation English lesson </font> 12 bài học
+                      </span>
+                    </div>
+
+                    <div class="_thongtinbaihoc__taikhoantimgiaovien">
+                      <span>Đã học: <font>6 bài học</font></span>
+                    </div>
+                  </div>
+
+                  <div class="____line">
+                    <img src="images/Rectangle 42.png" alt="" />
+                  </div>
+
+                  <div class="__tongtienkhoahoc__taikhoantimgiaovien">
+                    <button
+                      onclick="popup__chonthoigianhoc()"
+                      class="__datlichhoc__taikhoatimgiaovien pc"
+                    >
+                      Đặt lịch học
+                    </button>
+
+                    <div class="__tongkhoahoc__taikhoantimgiaovien">
+                      <span>
+                        Tổng khoá học:
+                        <font> 1.500.000 vnđ </font>
+                      </span>
+                      <span>
+                        6 bài học còn lại:
+                        <font style="font-size: 22px; color: #65af54">
+                          750.000 vnđ
+                        </font>
+                      </span>
+                    </div>
+
+                    <button
+                      onclick="popup__chonthoigianhoc()"
+                      class="__datlichhoc__taikhoatimgiaovien mobile"
+                    >
+                      Đặt lịch học
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="__hocvien__taikhoan__timgiaovien">
+              <div class="top__hocvien__taikhoan__timgiaovien">
+                <div
+                  class="__avt__giaovien__taikhoan__timgiaovien"
+                  style="background-image: url(images/Ellipse\ 14.png)"
+                ></div>
+                <div class="__thongtingiaovien__timgiaovien">
+                  <div class="__name__giaovien__tiemgiaovien">
+                    <font> Trương HUyền </font>
+                    <span> Giáo viên chuyên nghiệp </span>
+
+                    <div class="____line mobile">
+                      <img src="images/Rectangle 42.png" alt="" />
+                    </div>
+
+                    <span class="____line mobile">Đến từ Việt Nam</span>
+                  </div>
+
+                  <div class="__share__tim__timgiaovien__taikhoan">
+                    <div class="mobile" style="width: auto">
+                      5.0
+                      <img src="images/sao vang.png" alt="" />
+                      <img src="images/sao vang.png" alt="" />
+                      <img src="images/sao vang.png" alt="" />
+                      <img src="images/sao vang.png" alt="" />
+                      <img src="images/sao vang.png" alt="" />
+                    </div>
+
+                    <div>
+                      <a href="#"><img src="images/share.png" alt="" /></a>
+                      <a href="#"><img src="images/tim.png" alt="" /></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bot__hocvien__taikhoan__timgiaovien">
+                <div class="__thongtinkhoahoc__taikhoan__timgiaovien">
+                  <div class="__tenkhoahoc__taikhoan__timgiaovien">
+                    <div class="__name__khoahoc__taikhoan__timgiaovien">
+                      <span>
+                        <font> Conversation English lesson </font> 12 bài học
+                      </span>
+                    </div>
+
+                    <div class="_thongtinbaihoc__taikhoantimgiaovien">
+                      <span>Đã học: <font>6 bài học</font></span>
+                    </div>
+                  </div>
+
+                  <div class="____line">
+                    <img src="images/Rectangle 42.png" alt="" />
+                  </div>
+
+                  <div class="__tongtienkhoahoc__taikhoantimgiaovien">
+                    <button
+                      onclick="popup__chonthoigianhoc()"
+                      class="__datlichhoc__taikhoatimgiaovien pc"
+                    >
+                      Đặt lịch học
+                    </button>
+
+                    <div class="__tongkhoahoc__taikhoantimgiaovien">
+                      <span>
+                        Tổng khoá học:
+                        <font> 1.500.000 vnđ </font>
+                      </span>
+                      <span>
+                        6 bài học còn lại:
+                        <font style="font-size: 22px; color: #65af54">
+                          750.000 vnđ
+                        </font>
+                      </span>
+                    </div>
+
+                    <button
+                      onclick="popup__chonthoigianhoc()"
+                      class="__datlichhoc__taikhoatimgiaovien mobile"
+                    >
+                      Đặt lịch học
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="___btn__taikhoan__timgiaovien">HIỂN THỊ THÊM</button>
+          </div>
+        </div>
+      </div>
+      <!--/Main-->
+
+      <!--footer-->
+      <div class="footer" data-src="images/bg_footer.png" uk-img>
+        <div class="footer__top uk-section-small">
+          <div class="uk-container">
+            <div
+              class="uk-child-width-1-4@m uk-grid-small uk-grid-20-m"
+              uk-grid
+            >
+              <div>
+                <div class="item__7">
+                  <figure class="uk-margin-remove">
+                    <a href=""><img src="images/logo-market2.png" alt="" /></a>
+                  </figure>
+                </div>
+                <div class="item__7">
+                  <div class="info_cty">
+                    <ul class="uk-list footer__top__list">
+                      <li>
+                        <div class="footer__top__txt">
+                          <span>Địa chỉ:</span> Quán Nam, Kênh Dương,Lê Chân,
+                          TP. Hải Phòng
+                        </div>
+                      </li>
+                      <li>
+                        <div class="footer__top__txt">
+                          <span>Hotline:</span> 1900 1900
+                        </div>
+                      </li>
+                      <li>
+                        <div class="footer__top__txt">
+                          <span>Email:</span> Admin@tmarket.com
+                        </div>
+                      </li>
+                      <li>
+                        <div class="footer__top__txt">
+                          <span>Thời gian làm việc:</span> Từ 08:00 - 18:00, thứ
+                          2 đến thứ 7 hằng tuần
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="item__10">
+                  <h4 class="uk-h4 footer__top__title">Về TMarket</h4>
+                </div>
+                <div class="item__10">
+                  <ul class="uk-list footer__top__list">
+                    <li><a href="">Giới thiệu</a></li>
+                    <li><a href="">Tìm giáo viên</a></li>
+                    <li><a href="">Trở thành giáo viên</a></li>
+                    <li><a href="">Hướng dẫn đối với giáo viên</a></li>
+                    <li><a href="">Hướng dẫn đối với học viên</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <div class="item__10">
+                  <h4 class="uk-h4 footer__top__title">Thông tin</h4>
+                </div>
+                <div class="item__10">
+                  <ul class="uk-list footer__top__list">
+                    <li><a href="">Góp ý về chúng tôi</a></li>
+                    <li><a href="">Câu hỏi thường gặp</a></li>
+                    <li><a href="">Chat với chúng tôi</a></li>
+                    <li><a href="">Trợ giúp</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <div class="item__15">
+                  <div class="item__10">
+                    <h4 class="uk-h4 footer__top__title">Quy đổi</h4>
+                  </div>
+                  <div class="item__10">
+                    <div
+                      class="uk-width-1-1"
+                      uk-form-custom="target: > * > span:first-child"
+                    >
+                      <select>
+                        <option value="">Tiếng Việt - Vnđ</option>
+                        <option value="1">Option 01</option>
+                        <option value="2">Option 02</option>
+                        <option value="3">Option 03</option>
+                        <option value="4">Option 04</option>
+                      </select>
+                      <button
+                        style="--background: url('images/vi_flag.png')"
+                        class="footer__top__btnSelect uk-button uk-button-default uk-width-1-1 uk-position-relative"
+                        type="button"
+                        tabindex="-1"
+                      >
+                        <span></span>
+                        <span
+                          class="uk-position-center-right"
+                          uk-icon="icon: chevron-down"
+                        ></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="item__15">
+                  <div class="item__10">
+                    <h4 class="uk-h4 footer__top__title">Theo dõi chúng tôi</h4>
+                  </div>
+                  <div class="item__10">
+                    <div
+                      class="uk-child-width-auto uk-grid-small uk-flex-middle"
+                      uk-grid
+                    >
+                      <div>
+                        <a
+                          href=""
+                          class="footer__top__icon footer__top__icon--fb"
+                        ></a>
+                      </div>
+                      <div>
+                        <a
+                          href=""
+                          class="footer__top__icon footer__top__icon--instagram"
+                        ></a>
+                      </div>
+                      <div>
+                        <a
+                          href=""
+                          class="footer__top__icon footer__top__icon--twiter"
+                        ></a>
+                      </div>
+                      <div>
+                        <a
+                          href=""
+                          class="footer__top__icon footer__top__icon--youtube"
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="uk-container">
+            <div class="footer__bottom__section uk-section-xsmall">
+              <div class="uk-flex-middle uk-flex-center uk-grid-small" uk-grid>
+                <div class="uk-width-auto">
+                  <div class="footer__bottom__txt">Hotline: 0966 555 666</div>
+                </div>
+                <div class="uk-width-auto uk-width-expand@m">
+                  <div class="footer__bottom__txt">Mail: Admin@gmail.com</div>
+                </div>
+                <div class="uk-width-auto">
+                  <div class="footer__bottom__txt">
+                    © 2021 Namecard Limited.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/footer-->
+    </div>
+    <!--/app-->
+
+    <div
+      id="overlay_dat_lich_hoc"
+      class="overlay_dat_lich_hoc"
+      style="display: none"
+    >
+      <div class="popup_dat_lich_hoc">
+        <div
+          onclick="popup__chonthoigianhoc()"
+          class="close_popup_chinh_sua_thoi_gian_ranh"
+        >
+          &times;
+        </div>
+        <div class="step3_popup_dat_lich_hoc" style="display: block">
+          <div class="title_popup_dat_lich_hoc">Chọn thời gian học</div>
+
+          <div class="box_step">
+            <div class="step">
+              <img src="images/Subtract.png" alt="" />
+            </div>
+          </div>
+
+          <nav
+            class="uk-navbar-container modal__chitietlichhoc__navbar"
+            uk-navbar
+            style="margin-top: 20px"
+          >
+            <div class="uk-navbar-center">
+              <div class="uk-navbar-item modal__chitietlichhoc__navItem">
+                <a href="#" class="modal__chitietlichhoc__icon">
+                  <img src="images/back-Vector.png" alt="" />
+                </a>
+              </div>
+              <div class="uk-navbar-item modal__chitietlichhoc__navItem">
+                <div class="modal__chitietlichhoc__navTitle">
+                  Tháng 10 / 2021
+                </div>
+              </div>
+              <div class="uk-navbar-item modal__chitietlichhoc__navItem">
+                <a href="" class="modal__chitietlichhoc__icon" s>
+                  <img src="images/next-Vector.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </nav>
+
+          <!-- bảng trên mobile -->
+          <div class="table_cai_dat_lich_giao_vien_mobile mobile">
+            <div class="box_thu_cai_dat_lich">
+              <div class="item_thu_cai_dat_lich">
+                Thứ 2
+                <span>4</span>
+              </div>
+              <div class="item_thu_cai_dat_lich">
+                Thứ 3
+                <span>4</span>
+              </div>
+              <div class="item_thu_cai_dat_lich">
+                Thứ 4
+                <span>4</span>
+              </div>
+              <div class="item_thu_cai_dat_lich">
+                Thứ 5
+                <span>4</span>
+              </div>
+              <div class="item_thu_cai_dat_lich">
+                Thứ 6
+                <span
+                  class="box_ngay_onclick"
+                  onclick="popup_chinh_sua_thoi_gian()"
+                  >8</span
+                >
+              </div>
+              <div class="item_thu_cai_dat_lich">
+                Thứ 7
+                <span>4</span>
+              </div>
+              <div class="item_thu_cai_dat_lich">
+                CN
+                <span>4</span>
+              </div>
+            </div>
+
+            <div class="title_thoi_gian_cai_dat_lich_mobile">Thời gian</div>
+
+            <div class="box_gio_thoi_gian_cai_dat_mobile">
+              <div class="item_gio_cai_thoi_gian_mobile">
+                <div class="color_gray">00:30</div>
+              </div>
+
+              <div class="item_gio_cai_thoi_gian_mobile">
+                <div class="color_gray">00:30</div>
+              </div>
+
+              <div class="item_gio_cai_thoi_gian_mobile">
+                <div class="">00:30</div>
+              </div>
+
+              <div class="item_gio_cai_thoi_gian_mobile">
+                <div class="">00:30</div>
+              </div>
+
+              <div class="item_gio_cai_thoi_gian_mobile">
+                <div class="">00:30</div>
+              </div>
+
+              <div class="item_gio_cai_thoi_gian_mobile">
+                <div class="">00:30</div>
+              </div>
+
+              <div class="item_gio_cai_thoi_gian_mobile">
+                <div class="">00:30</div>
+              </div>
+
+              <div class="item_gio_cai_thoi_gian_mobile">
+                <div class="">00:30</div>
+              </div>
+
+              <div class="item_gio_cai_thoi_gian_mobile">
+                <div class="">00:30</div>
+              </div>
+
+              <div class="item_gio_cai_thoi_gian_mobile">
+                <div class="">00:30</div>
+              </div>
+
+              <div class="item_gio_cai_thoi_gian_mobile">
+                <div
+                  class="box_ngay_onclick"
+                  onclick="popup_chinh_sua_thoi_gian()"
+                >
+                  00:30
+                </div>
+              </div>
+
+              <div class="item_gio_cai_thoi_gian_mobile">
+                <div class="">00:30</div>
+              </div>
+
+              <div class="item_gio_cai_thoi_gian_mobile">
+                <div class="">00:30</div>
+              </div>
+
+              <div class="item_gio_cai_thoi_gian_mobile">
+                <div class="">00:30</div>
+              </div>
+
+              <div class="item_gio_cai_thoi_gian_mobile">
+                <div class="">00:30</div>
+              </div>
+
+              <div class="item_gio_cai_thoi_gian_mobile">
+                <div class="">00:30</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="thu_ngay_dat_lich_hoc_popup pc">
+            <table
+              class="uk-table uk-table-divider uk-table-small modal__chitietlichhoc__table"
+            >
+              <tr>
+                <th></th>
+                <th>
+                  <span class="uk-visible@m modal__chitietlichhoc__table__txt1"
+                    >Thứ 2, ngày 4</span
+                  >
+                  <span class="uk-hidden@m modal__chitietlichhoc__table__txt1"
+                    >T2 4</span
+                  >
+                </th>
+                <th>
+                  <span class="uk-visible@m modal__chitietlichhoc__table__txt1"
+                    >Thứ 3, ngày 5</span
+                  >
+                  <span class="uk-hidden@m modal__chitietlichhoc__table__txt1"
+                    >T3, 5</span
+                  >
+                </th>
+                <th>
+                  <span class="uk-visible@m modal__chitietlichhoc__table__txt1"
+                    >Thứ 4, ngày 6</span
+                  >
+                  <span class="uk-hidden@m modal__chitietlichhoc__table__txt1"
+                    >T4, 6</span
+                  >
+                </th>
+                <th>
+                  <span class="uk-visible@m modal__chitietlichhoc__table__txt1"
+                    >Thứ 5, ngày 7</span
+                  >
+                  <span class="uk-hidden@m modal__chitietlichhoc__table__txt1"
+                    >T5, 7</span
+                  >
+                </th>
+                <th>
+                  <span class="uk-visible@m modal__chitietlichhoc__table__txt1"
+                    >Thứ 6, ngày 8</span
+                  >
+                  <span class="uk-hidden@m modal__chitietlichhoc__table__txt1"
+                    >T6, 8</span
+                  >
+                </th>
+                <th>
+                  <span class="uk-visible@m modal__chitietlichhoc__table__txt1"
+                    >Thứ 7, ngày 9</span
+                  >
+                  <span class="uk-hidden@m modal__chitietlichhoc__table__txt1"
+                    >T7, 9</span
+                  >
+                </th>
+                <th>
+                  <span class="uk-visible@m modal__chitietlichhoc__table__txt1"
+                    >Chủ nhật, ngày 10</span
+                  >
+                  <span class="uk-hidden@m modal__chitietlichhoc__table__txt1"
+                    >CN, 10</span
+                  >
+                </th>
+              </tr>
+            </table>
+          </div>
+
+          <div class="container_content_chon_thoi_gian_hoc pc">
+            <!--modal__body uk-modal-body-->
+            <div class="" style="width: 1200px; margin: auto">
+              <div class="uk-container" style="padding: 0; margin: 0">
+                <div
+                  class=""
+                  uk-toggle="cls: uk-overflow-auto; mode: media; media: (max-width: 959.8px)"
+                >
+                  <table
+                    class="uk-table uk-table-divider uk-table-small modal__chitietlichhoc__table"
+                    style="margin-top: 0"
+                  >
+                    <thead>
+                      <tr>
+                        <td class="chu_thich_table_dat_lich_hoc" colspan="8">
+                          <div
+                            class="uk-child-width-auto@m uk-child-width-1-2 uk-grid-12 uk-grid-30-m uk-flex-center"
+                            uk-grid
+                            style="justify-content: flex-start"
+                          >
+                            <div>
+                              <div class="uk-grid-8 uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto">
+                                  <div
+                                    class="uk-cover-container modal__chitietlichhoc__table__free uk-flex"
+                                  >
+                                    <canvas width="20" height="20"></canvas>
+                                  </div>
+                                </div>
+                                <div class="uk-width-expand">
+                                  <div
+                                    class="modal__chitietlichhoc__table__txt2"
+                                  >
+                                    Lịch rảnh
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="uk-grid-8 uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto">
+                                  <div
+                                    class="uk-cover-container modal__chitietlichhoc__table__choosed uk-flex"
+                                    data-src="images/MaskGroup.png"
+                                    uk-img
+                                  >
+                                    <canvas width="20" height="20"></canvas>
+                                  </div>
+                                </div>
+                                <div class="uk-width-expand">
+                                  <div
+                                    class="modal__chitietlichhoc__table__txt2"
+                                  >
+                                    Đã được chọn
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="uk-grid-8 uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto">
+                                  <div
+                                    class="uk-cover-container modal__chitietlichhoc__table__locked uk-background-muted uk-flex"
+                                  >
+                                    <canvas width="20" height="20"></canvas>
+                                  </div>
+                                </div>
+                                <div class="uk-width-expand">
+                                  <div
+                                    class="modal__chitietlichhoc__table__txt2"
+                                  >
+                                    Đã khoá
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <div class="uk-grid-8 uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto">
+                                  <div
+                                    class="uk-cover-container modal__chitietlichhoc__table__choose uk-background-muted uk-flex"
+                                  >
+                                    <canvas width="20" height="20"></canvas>
+                                  </div>
+                                </div>
+                                <div class="uk-width-expand">
+                                  <div
+                                    class="modal__chitietlichhoc__table__txt2"
+                                  >
+                                    Đang chọn
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </thead>
+                    <tbody class="bg_color_table_dat_lich_hoc">
+                      <tr>
+                        <td>
+                          <span class="modal__chitietlichhoc__table__txt2"
+                            >00:30</span
+                          >
+                        </td>
+                        <td></td>
+                        <td>
+                          <label class="uk-position-cover">
+                            <input
+                              class="uk-checkbox modal__chitietlichhoc__table__checkbox uk-hidden"
+                              type="checkbox"
+                            />
+                            <div
+                              class="uk-position-cover modal__chitietlichhoc__table__bgchoose"
+                            ></div>
+                          </label>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="modal__chitietlichhoc__table__txt2"
+                            >01:00</span
+                          >
+                        </td>
+                        <td></td>
+                        <td>
+                          <label class="uk-position-cover">
+                            <input
+                              class="uk-checkbox modal__chitietlichhoc__table__checkbox uk-hidden"
+                              type="checkbox"
+                            />
+                            <div
+                              class="uk-position-cover modal__chitietlichhoc__table__bgchoose"
+                            ></div>
+                          </label>
+                        </td>
+                        <td>
+                          <div
+                            class="uk-position-cover modal__chitietlichhoc__table__bgchoosed"
+                            data-src="images/MaskGroup.png"
+                            uk-img
+                          ></div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="modal__chitietlichhoc__table__txt2"
+                            >01:30</span
+                          >
+                        </td>
+                        <td></td>
+                        <td>
+                          <label class="uk-position-cover">
+                            <input
+                              class="uk-checkbox modal__chitietlichhoc__table__checkbox uk-hidden"
+                              type="checkbox"
+                            />
+                            <div
+                              class="uk-position-cover modal__chitietlichhoc__table__bgchoose"
+                            ></div>
+                          </label>
+                        </td>
+                        <td></td>
+                        <td>
+                          <div
+                            class="uk-position-cover modal__chitietlichhoc__table__bgchoosed"
+                            data-src="images/MaskGroup.png"
+                            uk-img
+                          ></div>
+                        </td>
+                        <td>
+                          <div
+                            class="uk-position-cover modal__chitietlichhoc__table__bgchoosed"
+                            data-src="images/MaskGroup.png"
+                            uk-img
+                          ></div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="modal__chitietlichhoc__table__txt2"
+                            >02:00</span
+                          >
+                        </td>
+                        <td></td>
+                        <td>
+                          <label class="uk-position-cover">
+                            <input
+                              class="uk-checkbox modal__chitietlichhoc__table__checkbox uk-hidden"
+                              type="checkbox"
+                            />
+                            <div
+                              class="uk-position-cover modal__chitietlichhoc__table__bgchoose"
+                            ></div>
+                          </label>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                          <div
+                            class="uk-position-cover modal__chitietlichhoc__table__bgchoosed"
+                            data-src="images/MaskGroup.png"
+                            uk-img
+                          ></div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="modal__chitietlichhoc__table__txt2"
+                            >02:30</span
+                          >
+                        </td>
+                        <td></td>
+                        <td>
+                          <label class="uk-position-cover">
+                            <input
+                              class="uk-checkbox modal__chitietlichhoc__table__checkbox uk-hidden"
+                              type="checkbox"
+                              checked
+                            />
+                            <div
+                              class="uk-position-cover modal__chitietlichhoc__table__bgchoose"
+                            ></div>
+                          </label>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                          <label class="uk-position-cover">
+                            <input
+                              class="uk-checkbox modal__chitietlichhoc__table__checkbox uk-hidden"
+                              type="checkbox"
+                              checked
+                            />
+                            <div
+                              class="uk-position-cover modal__chitietlichhoc__table__bgchoose"
+                            ></div>
+                          </label>
+                        </td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="modal__chitietlichhoc__table__txt2"
+                            >03:00</span
+                          >
+                        </td>
+                        <td></td>
+                        <td>
+                          <label class="uk-position-cover">
+                            <input
+                              class="uk-checkbox modal__chitietlichhoc__table__checkbox uk-hidden"
+                              type="checkbox"
+                              checked
+                            />
+                            <div
+                              class="uk-position-cover modal__chitietlichhoc__table__bgchoose"
+                            ></div>
+                          </label>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td>
+                          <label class="uk-position-cover">
+                            <input
+                              class="uk-checkbox modal__chitietlichhoc__table__checkbox uk-hidden"
+                              type="checkbox"
+                              checked
+                            />
+                            <div
+                              class="uk-position-cover modal__chitietlichhoc__table__bgchoose"
+                            ></div>
+                          </label>
+                        </td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="modal__chitietlichhoc__table__txt2"
+                            >03:30</span
+                          >
+                        </td>
+                        <td></td>
+                        <td>
+                          <label class="uk-position-cover">
+                            <input
+                              class="uk-checkbox modal__chitietlichhoc__table__checkbox uk-hidden"
+                              type="checkbox"
+                            />
+                            <div
+                              class="uk-position-cover modal__chitietlichhoc__table__bgchoose"
+                            ></div>
+                          </label>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="modal__chitietlichhoc__table__txt2"
+                            >04:00</span
+                          >
+                        </td>
+                        <td></td>
+                        <td>
+                          <label class="uk-position-cover">
+                            <input
+                              class="uk-checkbox modal__chitietlichhoc__table__checkbox uk-hidden"
+                              type="checkbox"
+                            />
+                            <div
+                              class="uk-position-cover modal__chitietlichhoc__table__bgchoose"
+                            ></div>
+                          </label>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container_giao_vien_popup_khoa_hoc">
+            <div class="box_giao_vien">
+              <div class="user_giao_vien pc">
+                <div
+                  class="avt_giao_vien"
+                  style="background-image: url(images/good_sample1\ 1.png)"
+                ></div>
+                <div class="user_name_giao_vien pc">
+                  <div class="ten_giao_vien">Trương HUyền</div>
+                  Giáo viên chuyên nghiệp
+                </div>
+                <div class="item_next_step_dat_lich_hoc">
+                  <img src="images/Subtract22222.png" alt="" />
+                </div>
+                <div class="next_step_dat_lich_hoc">
+                  <span style="color: #000; font-weight: 550">
+                    Conversation English lesson
+                  </span>
+                  <span>12 bài học</span>
+                </div>
+                <div class="item_next_step_dat_lich_hoc">
+                  <img src="images/Subtract22222.png" alt="" />
+                </div>
+                <div
+                  class="next_step_dat_lich_hoc"
+                  style="justify-content: center"
+                >
+                  <span style="color: #000; font-weight: 550">
+                    6 bài học còn lại
+                  </span>
+                </div>
+              </div>
+
+              <div class="hoc_phi_button_dat_lich_hoc">
+                <div class="hoc_phi_dat_lich_hoc">
+                  <span style="color: #000; font-weight: 550"> Học phí: </span>
+                  <br />
+                  <span class="color_green" style="font-weight: 550">
+                    1.500.000 vnđ
+                  </span>
+                </div>
+                <button onclick="popup__chonthoigianhoc()">Hoàn thành</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- chinh sua thoi gian  -->
+
+    <div
+      id="popup_chinh_sua_thoi_gian_ranh"
+      class="overlay_chinh_sua_thoi_gian_ranh"
+      style="z-index: 4"
+    >
+      <div class="popup_chinh_sua_thoi_gian_ranh">
+        <a
+          onclick="popup_chinh_sua_thoi_gian()"
+          class="close_popup_chinh_sua_thoi_gian_ranh"
+        >
+          &times;
+        </a>
+        <div class="title_chinh_sua_thoi_gian_ranh">
+          Chỉnh sửa thời gian rảnh
+        </div>
+
+        <hr />
+
+        <div class="select_popup_chinh_sua_thoi_gian_ranh">
+          <select name="" id="">
+            <option value="">08:00</option>
+            <option value="">09:00</option>
+            <option value="">10:00</option>
+            <option value="">11:00</option>
+          </select>
+        </div>
+
+        <div class="select_popup_chinh_sua_thoi_gian_ranh">
+          <select name="" id="">
+            <option value="">08:00</option>
+            <option value="">09:00</option>
+            <option value="">10:00</option>
+            <option value="">11:00</option>
+          </select>
+        </div>
+
+        <div class="delete_popup_chinh_sua_thoi_gian_ranh">
+          <a href="#"><img src="images/delete.svg" alt="" /></a>
+        </div>
+
+        <div class="select_popup_chinh_sua_thoi_gian_ranh">
+          <select name="" id="">
+            <option value="">08:00</option>
+            <option value="">09:00</option>
+            <option value="">10:00</option>
+            <option value="">11:00</option>
+          </select>
+        </div>
+
+        <div class="select_popup_chinh_sua_thoi_gian_ranh">
+          <select name="" id="">
+            <option value="">08:00</option>
+            <option value="">09:00</option>
+            <option value="">10:00</option>
+            <option value="">11:00</option>
+          </select>
+        </div>
+
+        <div class="delete_popup_chinh_sua_thoi_gian_ranh">
+          <a href="#"><img src="images/delete.svg" alt="" /></a>
+        </div>
+
+        <div class="clr"></div>
+
+        <div class="them_khung_thoi_gian">
+          <a href="#">+ Thêm khung thời gian mới</a>
+        </div>
+
+        <div class="box_popup_chinh_sua_thoi_gian_ranh">
+          <button onclick="popup_chinh_sua_thoi_gian()">
+            ÁP DỤNG CHO TẤT CẢ CÁ THỨ 4
+          </button>
+          <button onclick="popup_chinh_sua_thoi_gian()">
+            CHỈ ÁP DỤNG CHO 1 THÁNG 12
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- /chinh sua thoi gian -->
+  </body>
+</html>
+
+<script>
+  function popup__chonthoigianhoc() {
+    document
+      .getElementById("overlay_dat_lich_hoc")
+      .classList.toggle("active_block");
+  }
+
+  function popupChinh_xoa_bai_hoc() {
+    document
+      .getElementById("overlay_xoa_bai_hoc")
+      .classList.toggle("active_overlay_de_xuat_khoa_hoc");
+  }
+
+  function popup_chinh_sua_thoi_gian() {
+    document
+      .getElementById("popup_chinh_sua_thoi_gian_ranh")
+      .classList.toggle("active_block");
+  }
+</script>

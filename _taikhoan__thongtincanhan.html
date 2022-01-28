@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <script src="/__prepros.js"></script>
+    <meta charset="UTF-8" />
+    <title>Tài khoản - Cài đặt giáo viên</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
+
+    <link rel="stylesheet" href="fonts/Lexend/Lexend-VariableFont_wght.ttf" />
+    <!-- logo  -->
+    <link rel="shortcut icon" href="images/logo.svg" />
+    <!--CSS-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="assets/uikit-3.9.4/css/uikit.min.css" />
+    <link rel="stylesheet" href="style.css?v=1640401490" />
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- UIkit JS -->
+    <script src="assets/uikit-3.9.4/js/uikit.min.js"></script>
+    <script src="assets/uikit-3.9.4/js/uikit-icons.min.js"></script>
+    <script src="js/app.js?v=1640401490"></script>
+    <!-- CSS  -->
+    <link rel="stylesheet" href="css/style_giaovien.css" />
+  </head>
+  <body class="">
+    <script>
+      function togglePopup() {
+        document.getElementById("popup1").classList.toggle("active");
+      }
+
+      function popupChinh_sua_bai_hoc() {
+        document
+          .getElementById("overlay_chinh_sau_bai_hoc")
+          .classList.toggle("active_overlay_de_xuat_khoa_hoc");
+      }
+      function popupChinh_xoa_bai_hoc() {
+        document
+          .getElementById("overlay_xoa_bai_hoc")
+          .classList.toggle("active_overlay_de_xuat_khoa_hoc");
+      }
+      function popup_chinh_sua_thoi_gian() {
+        document
+          .getElementById("popup_chinh_sua_thoi_gian_ranh")
+          .classList.toggle("active_block");
+      }
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(
+            " active_rut_tien",
+            ""
+          );
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active_rut_tien";
+      }
+
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+    </script>
+    <!-- header  -->
+    <div class="container_header">
+      <div class="header_c center">
+        <div class="logo">
+          <img src="images/logo-market2.png" alt="" />
+        </div>
+
+        <div class="popup-menu1" id="popup1">
+          <div class="overlay-menu1"></div>
+
+          <div class="nav_c center">
+            <ul style="margin-top: 30px">
+              <div class="close_menu1" onclick="togglePopup()">&times;</div>
+              <li class="uk-active pc">
+                <a href="_timgiaovien.html">Tìm giáo viên</a>
+              </li>
+              <li class="pc">
+                <a href="_giaovien-taiKhoan-chat_voi_hoc_vien.html">Chat</a>
+              </li>
+              <li class="pc">
+                <div class="">
+                  <div class="center pd20">
+                    <img src="images/vi_flag.png" alt="" />
+                    <span class="color_black" style="font-size: 16px !important"
+                      >Tiếng Việt - Vnđ</span
+                    >
+                    <img src="images/down.svg" alt="" />
+                  </div>
+                  <div
+                    class="header__lang__dropdown uk-form-stacked"
+                    uk-dropdown="mode: hover;pos: bottom-center;"
+                  >
+                    <div class="header__lang__dropdown__item">
+                      <label
+                        class="uk-form-label header__lang__dropdown__label"
+                        for="form-stacked-text"
+                        >Ngôn ngữ</label
+                      >
+                      <div class="uk-form-controls">
+                        <div
+                          class="uk-width-1-1"
+                          uk-form-custom="target: > * > span:first-child"
+                        >
+                          <select>
+                            <option value="">Tiếng Việt</option>
+                            <option value="1">Option 01</option>
+                            <option value="2">Option 02</option>
+                            <option value="3">Option 03</option>
+                            <option value="4">Option 04</option>
+                          </select>
+                          <button
+                            style="--background: url('images/vi_flag.png')"
+                            class="header__lang__dropdown__btnSelect header__lang__dropdown__btnSelect--lang uk-width-1-1 uk-button uk-button-default"
+                            type="button"
+                            tabindex="-1"
+                          >
+                            <span></span>
+                            <span
+                              class="uk-position-center-right"
+                              uk-icon="icon: chevron-down"
+                            ></span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="header__lang__dropdown__item">
+                      <label
+                        class="uk-form-label header__lang__dropdown__label"
+                        for="form-stacked-text"
+                        >Tiền tệ</label
+                      >
+                      <div class="uk-form-controls">
+                        <div
+                          class="uk-width-1-1"
+                          uk-form-custom="target: > * > span:first-child"
+                        >
+                          <select>
+                            <option value="">VNĐ</option>
+                            <option value="1">Option 01</option>
+                            <option value="2">Option 02</option>
+                            <option value="3">Option 03</option>
+                            <option value="4">Option 04</option>
+                          </select>
+                          <button
+                            style="--background: url('images/vi_flag.png')"
+                            class="header__lang__dropdown__btnSelect uk-width-1-1 uk-button uk-button-default"
+                            type="button"
+                            tabindex="-1"
+                          >
+                            <span></span>
+                            <span
+                              class="uk-position-center-right"
+                              uk-icon="icon: chevron-down"
+                            ></span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="mobile">
+                <a href="_timgiaovien.html">Tìm giáo viên</a>
+              </li>
+              <li class="mobile">
+                <a
+                  href="_giaovien-taiKhoan-chat_voi_hoc_vien.html"
+                  class="li_menu"
+                >
+                  Chat <img src="images/inbox.png" alt="" />
+                </a>
+              </li>
+              <li class="mobile">
+                <div class="">
+                  <div class="center pd20">
+                    <img src="images/vi_flag.png" alt="" />
+                    <span class="color_black" style="font-size: 16px !important"
+                      >Tiếng Việt - Vnđ</span
+                    >
+                    <img src="images/down.svg" alt="" />
+                  </div>
+                  <div
+                    class="header__lang__dropdown uk-form-stacked"
+                    uk-dropdown="mode: hover;pos: bottom-center;"
+                  >
+                    <div class="header__lang__dropdown__item">
+                      <label
+                        class="uk-form-label header__lang__dropdown__label"
+                        for="form-stacked-text"
+                        >Ngôn ngữ</label
+                      >
+                      <div class="uk-form-controls">
+                        <div
+                          class="uk-width-1-1"
+                          uk-form-custom="target: > * > span:first-child"
+                        >
+                          <select>
+                            <option value="">Tiếng Việt</option>
+                            <option value="1">Option 01</option>
+                            <option value="2">Option 02</option>
+                            <option value="3">Option 03</option>
+                            <option value="4">Option 04</option>
+                          </select>
+                          <button
+                            style="--background: url('images/vi_flag.png')"
+                            class="header__lang__dropdown__btnSelect header__lang__dropdown__btnSelect--lang uk-width-1-1 uk-button uk-button-default"
+                            type="button"
+                            tabindex="-1"
+                          >
+                            <span></span>
+                            <span
+                              class="uk-position-center-right"
+                              uk-icon="icon: chevron-down"
+                            ></span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="header__lang__dropdown__item">
+                      <label
+                        class="uk-form-label header__lang__dropdown__label"
+                        for="form-stacked-text"
+                        >Tiền tệ</label
+                      >
+                      <div class="uk-form-controls">
+                        <div
+                          class="uk-width-1-1"
+                          uk-form-custom="target: > * > span:first-child"
+                        >
+                          <select>
+                            <option value="">VNĐ</option>
+                            <option value="1">Option 01</option>
+                            <option value="2">Option 02</option>
+                            <option value="3">Option 03</option>
+                            <option value="4">Option 04</option>
+                          </select>
+                          <button
+                            style="--background: url('images/vi_flag.png')"
+                            class="header__lang__dropdown__btnSelect uk-width-1-1 uk-button uk-button-default"
+                            type="button"
+                            tabindex="-1"
+                          >
+                            <span></span>
+                            <span
+                              class="uk-position-center-right"
+                              uk-icon="icon: chevron-down"
+                            ></span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="color_black center user dropdown">
+                  <button
+                    onclick="document.getElementById('menu_gv').classList.toggle('active_menu_dropdown')"
+                    class="none_bt"
+                    type="button"
+                  >
+                    <div class="avt_gv">
+                      <img src="images/Ellipse 14.png" alt="" />
+                    </div>
+                    <a class="color_black" href="#">
+                      <span>Trương Huyền</span>
+                    </a>
+                    <img src="images/Polygon 3.png" alt="" />
+                  </button>
+
+                  <div id="menu_gv" class="menu_gv dropdown-menu">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          Danh sách khoá học
+                          <img src="images/m1.png" alt="" />
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#">
+                          Ví của tôi
+                          <img src="images/m2.png" alt="" />
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#">
+                          Bài test đã làm
+                          <img src="images/m3.png" alt="" />
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#">
+                          Thông tin cá nhân
+                          <img src="images/m4.png" alt="" />
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#">
+                          Danh sách khoá học bảo lưu
+                          <img src="images/m5.png" alt="" />
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#">
+                          Giáo viên yêu thích
+                          <img src="images/m6.png" alt="" />
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#">
+                          Đăng ký làm giáo viên
+                          <img src="images/m7.png" alt="" />
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#">
+                          Lịch sử đánh giá
+                          <img src="images/m8.png" alt="" />
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#">
+                          Đổi mật khẩu
+                          <img src="images/m9.png" alt="" />
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="_giaovien_tai-khoan_ho-tro">
+                          Hỗ trợ
+                          <img src="images/m10.png" alt="" />
+                        </a>
+                      </li>
+                      <li
+                        style="background-color: #fff !important"
+                        class="center"
+                      >
+                        <a
+                          class="dang_nhap_menu"
+                          onclick="dangxuat__taikhoan()"
+                        >
+                          Đăng xuất</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="icon_menu">
+          <img onclick="togglePopup()" src="images/menu-838.svg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- / header  -->
+
+    <div
+      id="app"
+      class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative"
+    >
+      <!--Main-->
+
+      <div class="container_ttctgv">
+        <div class="container_step bg_color_gray">
+          <div class="container_cai_dai_giao_vien">
+            <div class="main__left__taikhoan__baihoctieptheo pc">
+              <div class="user__giaovien__taikhoan__baihoctieptheo">
+                <div class="box__avt__user__giaovien">
+                  <img src="images/Ellipse 14.png" alt="" />
+                </div>
+
+                <span style="font-weight: 500">Trương Huyền</span>
+                <span class="color_green">GMT +7</span>
+                <span>Đến từ Việt Nam</span>
+              </div>
+              <div class="top__main__left__taikhoan__baihoctieptheo">
+                <div class="__baihoctieptheo__taikhoan__baihoc">
+                  <div class="__content__main__left__taikhoan__baihoctieptheo">
+                    <span>Bài học tiếp theo</span>
+
+                    <img src="images/book trang.png" alt="" />
+                  </div>
+                </div>
+
+                <div class="__anhbia__baihoc">
+                  <img src="images/Rectangle 207.png" alt="" />
+                </div>
+
+                <div
+                  class="__vi__taikhoan__khoahoc __content__main__left__taikhoan__baihoctieptheo"
+                >
+                  <span>Ví khuyến mại</span>
+                  <span>
+                    <span class="color_green" style="font-weight: 600"
+                      >120 000 vnđ</span
+                    >
+                    <img src="images/m2.png" alt="" />
+                  </span>
+                </div>
+
+                <div
+                  class="__vi__taikhoan__khoahoc __content__main__left__taikhoan__baihoctieptheo"
+                >
+                  <span>Ví của tôi</span>
+                  <span>
+                    <span class="color_green" style="font-weight: 600"
+                      >120 000 vnđ</span
+                    >
+                    <img src="images/m2.png" alt="" />
+                  </span>
+                </div>
+
+                <div class="__note__vi__taikhoan__khoahoc">
+                  Số dư ví dùng để thanh toán các khoá học tại TMarket. Xin vui
+                  lòng nạp tiền trước khi mua các khoá học của chúng tôi!
+                </div>
+
+                <div class="__napngay__taikhoan__khoahoc">
+                  <button>Nạp ngay</button>
+                </div>
+
+                <div class="__hotro__taikhoan__khoahoc">
+                  <span>Hỗ trợ</span>
+                  <img src="images/m10.png" alt="" />
+                </div>
+
+                <div class="item__hotro__taikhoan__khoahoc">
+                  Làm thế nào để sử dụng bài học tức thì để có một bài học ngay
+                  bây giờ?
+                </div>
+
+                <div class="item__hotro__taikhoan__khoahoc">
+                  Làm thế nào để tìm kiếm một giáo viên phù hợp với tôi nhất?
+                </div>
+
+                <div class="item__hotro__taikhoan__khoahoc">
+                  Làm cách nào để đăng ký Lịch italki để đồng bộ hóa các bài học
+                  của tôi?
+                </div>
+
+                <div class="item__hotro__taikhoan__khoahoc">
+                  Làm cách nào để thay đổi / đặt lại mật khẩu của tôi?
+                </div>
+
+                <div class="item__hotro__taikhoan__khoahoc">
+                  Tôi có thể sử dụng những phương thức thanh toán nào để thanh
+                  toán?
+                </div>
+              </div>
+
+              <div class="__dangxuat__taikhoan__khoahoc">
+                <button onclick="dangxuat__taikhoan()">Đăng xuất</button>
+              </div>
+            </div>
+
+            <div class="main__right__taikhoan__baihoctieptheo">
+              <div
+                style="
+                  text-align: left;
+                  padding-bottom: 20px;
+                  margin-bottom: 20px;
+                  font-size: 18px;
+                  border-bottom: 1px solid #aeaeae;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: flex-start;
+                "
+              >
+                Thông tin cá nhân
+                <img src="images/Rectangle 42.png" alt="" />
+              </div>
+
+              <div
+                class="content_cai_dat_giao_vien content_cai_dat_giao_vien__css_de"
+                style="margin-bottom: 20px"
+              >
+                <div
+                  class="avt_cai_dat_giao_vien"
+                  style="background-image: url(images/good_sample1\ 1.png)"
+                >
+                  <a href="#"><img src="images/camera369.png" alt="" /></a>
+                </div>
+
+                <div class="input1_cai_dat_giao_vien">
+                  <div class="input_cai_dat_giao_vien">
+                    <div class="title_input_cai_dat_giao_vien">
+                      Tên hiển thị
+                    </div>
+                    <input
+                      value="Huyền Trương"
+                      type="text"
+                      placeholder="Huyền Trương"
+                    />
+                  </div>
+                </div>
+
+                <div class="box_input2_cai_dat_giao_vien">
+                  <div class="input2_cai_dat_giao_vien">
+                    <div class="input_cai_dat_giao_vien">
+                      <div class="title_input_cai_dat_giao_vien">Họ</div>
+                      <input type="text" value="Trương" placeholder="Trương" />
+                    </div>
+                  </div>
+
+                  <div class="input2_cai_dat_giao_vien">
+                    <div class="input_cai_dat_giao_vien">
+                      <div class="title_input_cai_dat_giao_vien">Tên</div>
+                      <input type="text" value="Huyền" placeholder="Huyền" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="box_input2_cai_dat_giao_vien">
+                  <div class="input2_cai_dat_giao_vien">
+                    <div class="input_cai_dat_giao_vien">
+                      <div class="title_input_cai_dat_giao_vien">Ngày sinh</div>
+                      <input type="date" placeholder="Huyền Trương" />
+                    </div>
+                  </div>
+
+                  <div class="input2_cai_dat_giao_vien">
+                    <div class="input_cai_dat_giao_vien">
+                      <div class="title_input_cai_dat_giao_vien">Giới tính</div>
+                      <input type="text" placeholder="Nữ" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="box_input2_cai_dat_giao_vien">
+                  <div class="input2_cai_dat_giao_vien">
+                    <div class="input_cai_dat_giao_vien">
+                      <div class="title_input_cai_dat_giao_vien">Email</div>
+                      <input
+                        type="text"
+                        value="Huyentruong@gmail.com"
+                        placeholder="Trương"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="input2_cai_dat_giao_vien">
+                    <div class="input_cai_dat_giao_vien">
+                      <div class="title_input_cai_dat_giao_vien">
+                        Số điện thoại
+                      </div>
+                      <input
+                        value="0364 123 456"
+                        type="text"
+                        placeholder="Huyền"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="input1_cai_dat_giao_vien">
+                  <div class="input_cai_dat_giao_vien">
+                    <div class="title_input_cai_dat_giao_vien">Quốc gia</div>
+                    <select name="" id="">
+                      <option value="">Việt Nam</option>
+                      <option value="">Việt Nam</option>
+                      <option value="">Việt Nam</option>
+                      <option value="">Việt Nam</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="input1_cai_dat_giao_vien">
+                  <div class="input_cai_dat_giao_vien">
+                    <div class="title_input_cai_dat_giao_vien">
+                      Tỉnh/thành phố
+                    </div>
+                    <select name="" id="">
+                      <option value="">Hải Phòng</option>
+                      <option value="">Hải Phòng</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="cap_nhat_tt_cai_dat_giao_vien">
+                  <a onclick="popupChinh_xoa_bai_hoc()">Lưu lại</a>
+                </div>
+              </div>
+
+              <div class="thong_ke" style="margin-bottom: 20px">
+                <div class="font_size18 text_align-left">
+                  Quá trình học tập rèn luyện
+                </div>
+                <div class="text_align-left">
+                  <img src="images/Rectangle 42.png" alt="" />
+                </div>
+                <div class="width100 mobile_inline_flex_colum">
+                  <div class="ty_le">
+                    <div class="ty_le_1">
+                      <span>Tổng khoá học</span>
+                      <div class="color_green font_size20">120</div>
+                    </div>
+                  </div>
+
+                  <div class="ty_le">
+                    <div class="ty_le_1">
+                      <span>Bài học tiếp theo</span>
+                      <div class="color_green font_size20">30</div>
+                    </div>
+                  </div>
+
+                  <div class="ty_le">
+                    <div class="ty_le_1">
+                      <span>Tổng các bài đã test</span>
+                      <div class="color_green font_size20">100%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="thong_ke">
+                <div class="font_size18 text_align-left">Ví của tôi</div>
+                <div class="text_align-left">
+                  <img src="images/Rectangle 42.png" alt="" />
+                </div>
+                <div class="width100 mobile_inline_flex_colum">
+                  <div class="ty_le">
+                    <div class="ty_le_1">
+                      <span>Số tiền đã mua khoá học</span>
+                      <div class="color_green font_size20">12.000.000 vnđ</div>
+                    </div>
+                  </div>
+
+                  <div class="ty_le">
+                    <div class="ty_le_1">
+                      <span>Ví TMarket</span>
+                      <div class="color_green font_size20">12.000.000 vnđ</div>
+                    </div>
+                  </div>
+
+                  <div class="ty_le">
+                    <div class="ty_le_1">
+                      <span>Ví khuyến mại</span>
+                      <div class="color_green font_size20">12.000.000 vnđ</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/Main-->
+
+      <!--footer-->
+      <div class="footer" data-src="images/bg_footer.png" uk-img>
+        <div class="footer__top uk-section-small">
+          <div class="uk-container">
+            <div
+              class="uk-child-width-1-4@m uk-grid-small uk-grid-20-m"
+              uk-grid
+            >
+              <div>
+                <div class="item__7">
+                  <figure class="uk-margin-remove">
+                    <a href=""><img src="images/logo-market2.png" alt="" /></a>
+                  </figure>
+                </div>
+                <div class="item__7">
+                  <div class="info_cty">
+                    <ul class="uk-list footer__top__list">
+                      <li>
+                        <div class="footer__top__txt">
+                          <span>Địa chỉ:</span> Quán Nam, Kênh Dương,Lê Chân,
+                          TP. Hải Phòng
+                        </div>
+                      </li>
+                      <li>
+                        <div class="footer__top__txt">
+                          <span>Hotline:</span> 1900 1900
+                        </div>
+                      </li>
+                      <li>
+                        <div class="footer__top__txt">
+                          <span>Email:</span> Admin@tmarket.com
+                        </div>
+                      </li>
+                      <li>
+                        <div class="footer__top__txt">
+                          <span>Thời gian làm việc:</span> Từ 08:00 - 18:00, thứ
+                          2 đến thứ 7 hằng tuần
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="item__10">
+                  <h4 class="uk-h4 footer__top__title">Về TMarket</h4>
+                </div>
+                <div class="item__10">
+                  <ul class="uk-list footer__top__list">
+                    <li><a href="">Giới thiệu</a></li>
+                    <li><a href="">Tìm giáo viên</a></li>
+                    <li><a href="">Trở thành giáo viên</a></li>
+                    <li><a href="">Hướng dẫn đối với giáo viên</a></li>
+                    <li><a href="">Hướng dẫn đối với học viên</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <div class="item__10">
+                  <h4 class="uk-h4 footer__top__title">Thông tin</h4>
+                </div>
+                <div class="item__10">
+                  <ul class="uk-list footer__top__list">
+                    <li><a href="">Góp ý về chúng tôi</a></li>
+                    <li><a href="">Câu hỏi thường gặp</a></li>
+                    <li><a href="">Chat với chúng tôi</a></li>
+                    <li><a href="">Trợ giúp</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div>
+                <div class="item__15">
+                  <div class="item__10">
+                    <h4 class="uk-h4 footer__top__title">Quy đổi</h4>
+                  </div>
+                  <div class="item__10">
+                    <div
+                      class="uk-width-1-1"
+                      uk-form-custom="target: > * > span:first-child"
+                    >
+                      <select>
+                        <option value="">Tiếng Việt - Vnđ</option>
+                        <option value="1">Option 01</option>
+                        <option value="2">Option 02</option>
+                        <option value="3">Option 03</option>
+                        <option value="4">Option 04</option>
+                      </select>
+                      <button
+                        style="--background: url('images/vi_flag.png')"
+                        class="footer__top__btnSelect uk-button uk-button-default uk-width-1-1 uk-position-relative"
+                        type="button"
+                        tabindex="-1"
+                      >
+                        <span></span>
+                        <span
+                          class="uk-position-center-right"
+                          uk-icon="icon: chevron-down"
+                        ></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="item__15">
+                  <div class="item__10">
+                    <h4 class="uk-h4 footer__top__title">Theo dõi chúng tôi</h4>
+                  </div>
+                  <div class="item__10">
+                    <div
+                      class="uk-child-width-auto uk-grid-small uk-flex-middle"
+                      uk-grid
+                    >
+                      <div>
+                        <a
+                          href=""
+                          class="footer__top__icon footer__top__icon--fb"
+                        ></a>
+                      </div>
+                      <div>
+                        <a
+                          href=""
+                          class="footer__top__icon footer__top__icon--instagram"
+                        ></a>
+                      </div>
+                      <div>
+                        <a
+                          href=""
+                          class="footer__top__icon footer__top__icon--twiter"
+                        ></a>
+                      </div>
+                      <div>
+                        <a
+                          href=""
+                          class="footer__top__icon footer__top__icon--youtube"
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="uk-container">
+            <div class="footer__bottom__section uk-section-xsmall">
+              <div class="uk-flex-middle uk-flex-center uk-grid-small" uk-grid>
+                <div class="uk-width-auto">
+                  <div class="footer__bottom__txt">Hotline: 0966 555 666</div>
+                </div>
+                <div class="uk-width-auto uk-width-expand@m">
+                  <div class="footer__bottom__txt">Mail: Admin@gmail.com</div>
+                </div>
+                <div class="uk-width-auto">
+                  <div class="footer__bottom__txt">
+                    © 2021 Namecard Limited.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/footer-->
+    </div>
+    <!--/app-->
+
+    <!-- Xác nhận thay đổi thông tin cá nhân?  -->
+    <div id="overlay_xoa_bai_hoc" class="overlay_xoa_bai_hoc">
+      <div class="popup_xoa_bai_hoc">
+        <div class="title_popup_xoa_bai_hoa">Thông báo</div>
+        <img src="images/Rectangle 42.png" alt="" />
+        <div class="title_popup_xoa_bai_hoa2">
+          Xác nhận thay đổi thông tin cá nhân?
+        </div>
+        <div class="popup_dong_y_huy_bo">
+          <a class="popup_xoa_bai_hoc_huy" onclick="popupChinh_xoa_bai_hoc()"
+            >Huỷ bỏ</a
+          >
+          <a class="popup_xoa_bai_hoc_dong_y" onclick="popupChinh_xoa_bai_hoc()"
+            >Đồng ý</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- /Xác nhận thay đổi thông tin cá nhân?  -->
+
+    <!-- Xác nhận đăng xuất?  -->
+    <div id="overlay_dangxuat__taikhoan" class="overlay_xoa_bai_hoc">
+      <div class="popup_xoa_bai_hoc">
+        <div class="title_popup_xoa_bai_hoa">Thông báo</div>
+        <img src="images/Rectangle 42.png" alt="" />
+        <div class="title_popup_xoa_bai_hoa2">Xác nhận đăng xuất?</div>
+        <div class="popup_dong_y_huy_bo">
+          <a class="popup_xoa_bai_hoc_huy" onclick="dangxuat__taikhoan()">
+            Huỷ bỏ
+          </a>
+          <a class="popup_xoa_bai_hoc_dong_y" onclick="dangxuat__taikhoan()">
+            Đồng ý
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- /Xác nhận đăng xuất?  -->
+  </body>
+</html>
+
+<script>
+  function popupChinh_xoa_bai_hoc() {
+    document
+      .getElementById("overlay_xoa_bai_hoc")
+      .classList.toggle("active_overlay_de_xuat_khoa_hoc");
+  }
+
+  function dangxuat__taikhoan() {
+    document
+      .getElementById("overlay_dangxuat__taikhoan")
+      .classList.toggle("active_overlay_de_xuat_khoa_hoc");
+  }
+</script>

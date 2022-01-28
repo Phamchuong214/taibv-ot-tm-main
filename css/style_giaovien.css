@@ -243,6 +243,43 @@
   unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
     U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
+.__item__danhgia {
+  width: 96%;
+  padding: 2%;
+  background: #ffffff;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.__bot__item__danhgia {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.__avt__tk__danhgia {
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: 100% !important;
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+.__taikhoan__danhgia,
+.__sosao__danhgia {
+  display: flex;
+  align-items: center;
+}
+.__sosao__danhgia > img {
+  margin: 0 3px;
+}
+.__noidung__item__danhgia {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
 /* latin-ext */
 @font-face {
   font-family: "Lexend";
@@ -1478,7 +1515,8 @@ button {
   .ket_qua {
     width: 95%;
     font-size: 18px;
-    margin: 20px 0;
+    margin: auto;
+    padding-top: 20px;
   }
   .nhan_xet {
     width: 95%;
@@ -2372,7 +2410,7 @@ a:hover {
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
   overflow-x: hidden;
-  max-height: 70%;
+  max-height: 85%;
   display: none;
 }
 .menu_gv ul {
@@ -2887,6 +2925,12 @@ input:checked + .slider:before {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  position: relative;
+}
+.main__right__absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .mo_ta {
   width: 63%;
@@ -3795,6 +3839,10 @@ input:checked + .slider:before {
   padding: 30px 20px;
   background: #ffffff;
 }
+.content_cai_dat_giao_vien__css_de {
+  width: 90%;
+  padding: 5%;
+}
 .list_menu_cai_dai_giao_vien ul li ul li {
   border: none;
   display: flex;
@@ -4616,6 +4664,19 @@ input:checked + .slider:before {
   background: #ffffff;
   border-radius: 10px;
   padding: 35px;
+  position: relative;
+}
+.close_popup_chinh_sua_thoi_gian_ranh {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  background: #000;
+  border-radius: 50%;
+  color: #fff !important;
+  line-height: 20px;
+  text-align: center;
 }
 .popup_chinh_sua_thoi_gian_ranh a {
   color: #65af54;
@@ -4818,8 +4879,92 @@ input:checked + .slider:before {
   width: 90%;
   margin: auto;
 }
+.danhgia__giaovien___,
+.share__giaovien___ {
+  display: flex;
+  align-items: center;
+}
+.danhgia__giaovien___ img {
+  margin: 0;
+  margin-right: 5px;
+}
+.___css__de__popuphuybuoihoc {
+  margin-top: 20px;
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.__box__content___lydohuybuoihoc__popup {
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: #ebebeb 2px solid;
+}
+.___lydohuybuoihoc__popup {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: flex-start;
+}
+.____lydokhac {
+  position: relative;
+  border: 1px solid #65af54 !important;
+}
+.____lydokhac img {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+}
+.__title___lydohuybuoihoc__popup {
+  text-align: left;
+  width: 200px;
+  margin-top: 33px;
+}
+.__content___lydohuybuoihoc__popup {
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.__item__lydohuy__content___lydohuybuoihoc__popup {
+  background: #fafafc;
+  border: 1px solid #efefef;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 12px 21px;
+  margin: 20px 0;
+}
+.__content___lydohuybuoihoc__popup input {
+  height: 57px;
+  width: 100%;
+  padding-left: 20px;
+  background: #fafafc;
+  border: 1px solid #efefef;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  outline: none !important;
+}
 /* Mobile : width < 740px */
 @media only screen and (max-width: 740px) {
+  .__item__danhgia {
+    width: 90% !important;
+    padding: 5%;
+  }
+  .vao_hoc2 a {
+    width: 98%;
+    line-height: 18px;
+    margin: 10px 0 0 0;
+  }
+  .vao_hoc1 button {
+    width: 98%;
+    margin: 10px 0 0 0;
+  }
+  .danh_gia_item_danh_sach_bai_hoc > .vao_hoc > .vao_hoc1,
+  .danh_gia_item_danh_sach_bai_hoc > .vao_hoc > .vao_hoc2 {
+    width: 50%;
+  }
   .container_header {
     width: 100% !important;
   }
@@ -5781,6 +5926,7 @@ input:checked + .slider:before {
   }
   .item_gio_cai_thoi_gian_mobile > div {
     padding: 10px;
+    text-align: center;
   }
   .so_tien_vi {
     flex-direction: column;
@@ -5824,10 +5970,241 @@ input:checked + .slider:before {
     width: 90%;
     padding: 5% 20px;
   }
+  .___lydohuybuoihoc__popup {
+    flex-direction: column;
+  }
+  .__content___lydohuybuoihoc__popup,
+  .__title___lydohuybuoihoc__popup {
+    width: 100%;
+  }
+  .___lydohuybuoihoc__popup {
+    width: 90%;
+  }
+  .__item__lydohuy__content___lydohuybuoihoc__popup {
+    width: 45%;
+  }
+  .___css__de__popuphuybuoihoc {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .__hocvien__taikhoan__timgiaovien {
+    width: 90% !important;
+    padding: 5%;
+  }
+  .__container__taikhoan__timgiaovien {
+    margin-top: 100px;
+  }
+  .__trangthai__phuongthucthanhtoan {
+    flex-direction: column;
+  }
+}
+.__baihoctieptheo__taikhoan__baihoctieptheo {
+  display: flex;
+  align-items: center;
+}
+.__baihoctieptheo__taikhoan__baihoctieptheo a {
+  color: #000;
+}
+.__baihoctieptheo__taikhoan__baihoctieptheo span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin-right: 20px;
+}
+.__baihoctieptheo__taikhoan__baihoctieptheo font {
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 20px;
+}
+.__sotiennap__xacnhannaptien {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.___item__sotiennap {
+  width: 22%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #ebebeb;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin: 0 15px 15px 0;
+}
+.____sotienkhac__muonnap {
+  width: 100%;
+  position: relative;
+}
+.____sotienkhac__muonnap span {
+  position: absolute;
+  top: 8px;
+  right: 20px;
+}
+.___sokhac__sotiennap {
+  position: relative;
+  background: rgba(101, 175, 84, 0.1);
+  border: 1px solid #65af54;
 }
 
+.___sokhac__sotiennap > img {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+}
+.____sotienkhac__muonnap > input {
+  width: 100%;
+  height: 44px;
+  padding-left: 20px;
+  outline: none !important;
+  background: #fafafc;
+  border: 1px solid #ebebeb;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.___nhapmakhuyenmai__naptien {
+  width: 50%;
+  height: 44px;
+  background: #fafafc;
+  border: 1px solid #ebebeb;
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.___nhapmakhuyenmai__naptien input {
+  height: 100%;
+  width: 70%;
+  border: none;
+  outline: none !important;
+  background: none;
+  padding-left: 20px;
+}
+.___nhapmakhuyenmai__naptien button {
+  background: #65af54;
+  border: 1px solid #ebebeb;
+  box-sizing: border-box;
+  border-radius: 10px;
+  color: #fff;
+  line-height: 100%;
+  height: 100%;
+  text-align: center;
+  width: 30%;
+}
 /* đặt lịch học  */
-
+.__trangthai__phuongthucthanhtoan {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.__trangthai__phuongthucthanhtoan span {
+  display: flex;
+}
+.item__phuongthucthanhtoan font {
+  font-weight: 400;
+  color: #263238;
+}
+.__hocvien__taikhoan__timgiaovien {
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.top__hocvien__taikhoan__timgiaovien {
+  border-bottom: 2px solid #ebebeb;
+  width: 96%;
+  padding: 1% 2%;
+  border-bottom: #ebebeb 2px solid;
+  display: flex;
+}
+.__avt__giaovien__taikhoan__timgiaovien {
+  background-size: 100%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-right: 20px;
+}
+.__thongtingiaovien__timgiaovien {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.__name__giaovien__tiemgiaovien {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.__share__tim__timgiaovien__taikhoan {
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.___btn__taikhoan__timgiaovien {
+  width: 340px;
+  height: 50px;
+  background: #6eb54d;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  color: #fff;
+  margin: 30px 0;
+  max-width: 90%;
+}
+.bot__hocvien__taikhoan__timgiaovien {
+  width: 96%;
+  padding: 1% 2%;
+}
+.__thongtinkhoahoc__taikhoan__timgiaovien {
+  width: 100%;
+}
+.__tenkhoahoc__taikhoan__timgiaovien,
+.__tongtienkhoahoc__taikhoantimgiaovien {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.__name__khoahoc__taikhoan__timgiaovien {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.__datlichhoc__taikhoatimgiaovien {
+  /* max-width: 90%; */
+  width: 301px;
+  height: 42px;
+  color: #fff;
+  background: #65af54;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+.____line {
+  width: 100%;
+  text-align: left;
+}
+.__tongkhoahoc__taikhoantimgiaovien {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.__container__taikhoan__timgiaovien font {
+  font-weight: 600;
+}
+.__container__taikhoan__timgiaovien {
+  line-height: 35px;
+}
 .overlay_dat_lich_hoc {
   background: #00000070;
   height: 100%;
@@ -5849,6 +6226,13 @@ input:checked + .slider:before {
   overflow: auto;
   /* transform: translate(0, 30%); */
   /* position: relative; */
+}
+.__khongcoketqua__timkiem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
 }
 .title_popup_dat_lich_hoc {
   height: 60px;
@@ -6159,10 +6543,59 @@ input:checked + .slider:before {
   outline: none !important;
   padding-left: 5%;
 }
-
+.___thoigiankethuc_adsa {
+  display: flex;
+}
+.___thoigiankethuc_adsa font {
+  margin-left: 10px;
+}
 /* dat lich hoc mobile   */
-
+.___btn__quaylaitrangchu {
+  width: 100%;
+  margin: 20px 0;
+}
+.___btn__quaylaitrangchu > a {
+  margin: auto;
+  color: #fff;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 42px;
+  width: 50%;
+  background: #65af54;
+  border: 1px solid #aeaeae;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
 @media only screen and (max-width: 740px) {
+  .___btn__quaylaitrangchu > a {
+    width: 90%;
+  }
+  .___thoigiankethuc_adsa {
+    display: flex;
+    flex-direction: column;
+  }
+  .___thoigiankethuc_adsa font {
+    margin-left: 0;
+  }
+  ._____magiam__gia {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+    width: 100%;
+  }
+  .___nhapmakhuyenmai__naptien {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .__sotiennap__xacnhannaptien {
+    justify-content: space-between;
+  }
+  .___item__sotiennap {
+    width: 40%;
+  }
   .container_khoa_hoc_dat_lich_hoc > .khoa_hoc {
     width: 85% !important;
   }
@@ -6223,6 +6656,29 @@ input:checked + .slider:before {
   .step3_popup_dat_lich_hoc > .table_cai_dat_lich_giao_vien_mobile {
     width: 90%;
     margin: auto;
+  }
+  .__thongtingiaovien__timgiaovien,
+  .__tenkhoahoc__taikhoan__timgiaovien,
+  .__tongtienkhoahoc__taikhoantimgiaovien {
+    flex-direction: column;
+  }
+  .__tenkhoahoc__taikhoan__timgiaovien {
+    align-items: flex-start !important;
+  }
+  .__tongkhoahoc__taikhoantimgiaovien {
+    width: 100%;
+  }
+  .__tongkhoahoc__taikhoantimgiaovien > span {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .__name__khoahoc__taikhoan__timgiaovien > span {
+    text-align: left;
+    width: 100%;
+  }
+  .__datlichhoc__taikhoatimgiaovien {
+    width: 100%;
   }
 }
 
@@ -6498,6 +6954,7 @@ input:checked + .slider:before {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 100%;
 }
 .dongy__popup__thongbao {
   height: 50px;
@@ -6510,7 +6967,6 @@ input:checked + .slider:before {
 .dongy__popup__thongbao:hover {
   font-weight: 500;
   color: #fff;
-  
 }
 .thanhtoanthanhcong,
 .thongbao__vetrangchu {
@@ -6537,7 +6993,358 @@ input:checked + .slider:before {
 .close_popup_xoa_bai_hoc:hover {
   color: #65af54;
 }
+.main__left__taikhoan__baihoctieptheo {
+  width: 265px;
+  position: relative;
+}
+.top__main__left__taikhoan__baihoctieptheo {
+  background: #ffffff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 0 0 5px 5px;
+  padding-top: 210px;
+}
+.user__giaovien__taikhoan__baihoctieptheo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: -30px;
+  width: 100%;
+}
+.box__avt__user__giaovien {
+  width: 140px;
+  height: 140px;
+  border: #fff 5px solid;
+  border-radius: 50%;
+}
+.__baihoctieptheo__taikhoan__baihoc {
+  height: 51px;
+  width: 100%;
+  background: #65af54;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  line-height: 51px;
+}
+.__content__main__left__taikhoan__baihoctieptheo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 14px auto;
+  width: 90%;
+}
+.__hotro__taikhoan__khoahoc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+  border-bottom: 2px solid #ebebeb;
+  padding: 15px 0;
+}
+.__note__vi__taikhoan__khoahoc {
+  text-align: left;
+  margin: 14px auto;
+  width: 90%;
+}
+.__napngay__taikhoan__khoahoc {
+  border-bottom: 2px solid #ebebeb;
+  width: 100%;
+  padding: 15px 0;
+}
+.__napngay__taikhoan__khoahoc > button {
+  background: #ffffff;
+  border: 1px solid #65af54;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  width: 90%;
+  height: 42px;
+  margin: auto;
+  font-weight: 600;
+}
+.item__hotro__taikhoan__khoahoc {
+  width: 90%;
+  margin: auto;
+  text-align: left;
+  border-top: 2px solid #ebebeb;
+  padding: 15px 0;
+}
+.__dangxuat__taikhoan__khoahoc > button {
+  background: #65af54;
+  border: 1px solid #aeaeae;
+  box-sizing: border-box;
+  border-radius: 5px;
+  height: 40px;
+  width: 100%;
+  margin: 20px 0;
+  color: #fff;
+}
+.main__right__taikhoan__baihoctieptheo {
+  width: 833px;
+}
+.__hocngonngu__taikhoan__baihoctieptheo {
+  width: 96%;
+  background: #ffffff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  padding: 2%;
+}
+.__container__taikhoan__baihoctieptheo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.title__hocngonngu__taikhoan__baihoctieptheo,
+.content__hocngonngu__taikhoan__baihoctieptheo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title__hocngonngu__taikhoan__baihoctieptheo > font {
+  font-weight: 500;
+}
+.title__hocngonngu__taikhoan__baihoctieptheo span {
+  font-weight: 700;
+  color: #65af54;
+}
+.__baihoctieptheo__taikhoan__baihoctieptheo {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+  padding: 20px 0;
+  border-bottom: #aeaeae 2px solid;
+  margin-bottom: 20px;
+}
+.__item__baihoc__taikhoan__baihoctieptheo {
+  background: #ffffff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  width: 96%;
+  padding: 2%;
+  margin-bottom: 20px;
+}
+.__user__giaovien__taikhoan__baihoctieptheo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ebebeb;
+  margin-bottom: 20px;
+}
+.__avt__user__giaovien__taikhoan__baihoctieptheo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 20px;
+}
+.content__user__giaovien__taikhoan__baihoctieptheo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.username__user__giaovien__taikhoan__baihoctieptheo {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.username__user__giaovien__taikhoan__baihoctieptheo font {
+  font-weight: 500;
+}
+.__content__item__baihoc__taikhoan__baihoctieptheo {
+  display: flex;
+  justify-content: center;
+  /* align-items: flex-start; */
+}
+.__tenbaihoc__tk__bhtt {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 32%;
+  justify-content: space-between;
+  border-right: 2px solid #ebebeb;
+}
+.__tenbaihoc__tk__bhtt font {
+  color: #000;
+}
+.__tenbaihoc__tk__bhtt span {
+  color: #65af54;
+}
+.__ndbaihoc__tk__bhtt {
+  width: 64%;
+  display: flex;
+  justify-content: space-between;
+}
+.baihoc__ndbaihoc__tk__bhtt,
+.vaolop__ndbaihoc__tk__bhtt {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.baihoc__ndbaihoc__tk__bhtt {
+  color: #263238;
+  font-weight: 400;
+  border-right: 2px solid #ebebeb;
+}
+.vaolop__ndbaihoc__tk__bhtt > button {
+  width: 90%;
+  height: 42px;
+  background: #6eb54d;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  color: #fff;
+  outline: none !important;
+}
+.vaolop__ndbaihoc__tk__bhtt > .thoigian__batdausau {
+  font-size: 28px;
+  color: #65af54;
+}
+.vaolop__ndbaihoc__tk__bhtt .giobatdau {
+  font-size: 28px;
+  color: #000;
+  font-weight: 500;
+}
+.__hienthithem__baihoc__taikhoan__baihoctieptheo > button {
+  width: 340px;
+  height: 50px;
+  margin: auto;
+  outline: none !important;
+  background: #6eb54d;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  color: #fff;
+}
+.container__giaoviencothehocngay {
+  width: 100%;
+  background: #fff;
+  padding: 20px 0;
+}
+.__box__giaoviencothehocngay {
+  width: 1200px;
+  margin: auto;
+}
+.__title__giaoviencothehocngay {
+  border-bottom: 1px solid #aeaeae;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.__box__content__item__giaoviencothehocngay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.__content__item__giaoviencothehocngay {
+  width: 28%;
+  background: #ffffff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  padding: 2%;
+}
+.__video__cothehocngay {
+  position: relative;
+  width: 95%;
+}
+.__video__cothehocngay > div {
+  width: 100%;
+  margin: 10px 0;
+}
+.__item__play__cothehocngay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.__box__hocthu__hocthat {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.__hocthu__cothehocngay,
+.__hocthat__cothehocngay {
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+}
+.__hocthu__cothehocngay {
+  align-items: flex-start;
+}
+.__hocthat__cothehocngay {
+  align-items: flex-end;
+}
+.__sogiaovien__duoctimkiem {
+  width: 100%;
+  text-align: left;
+  /* padding: 20px 0; */
+  border-bottom: 1px solid #aeaeae;
+  margin-bottom: 20px;
+}
 @media only screen and (max-width: 740px) {
+  .__box__giaoviencothehocngay {
+    width: 95%;
+    margin: auto;
+  }
+  .__box__content__item__giaoviencothehocngay {
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
+  }
+  .__content__item__giaoviencothehocngay {
+    width: 90%;
+    margin-bottom: 20px;
+    padding: 5%;
+  }
+  .__content__item__baihoc__taikhoan__baihoctieptheo {
+    flex-direction: column;
+  }
+  .__tenbaihoc__tk__bhtt,
+  .__ndbaihoc__tk__bhtt {
+    width: 100%;
+  }
+  .__tenbaihoc__tk__bhtt {
+    border-right: none;
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 10px;
+  }
+  .baihoc__ndbaihoc__tk__bhtt {
+    align-items: flex-start;
+    text-align: left;
+  }
+  .vaolop__ndbaihoc__tk__bhtt {
+    align-items: center;
+    /* text-align: right; */
+  }
+  .main__right__taikhoan__baihoctieptheo,
+  .__hienthithem__baihoc__taikhoan__baihoctieptheo > button {
+    width: 100%;
+  }
+  .main__left__taikhoan__baihoctieptheo {
+    width: 100%;
+  }
+  .__anhbia__baihoc img {
+    width: 100%;
+  }
+  .__item__baihoc__taikhoan__baihoctieptheo {
+    width: 90%;
+    padding: 5%;
+  }
+  .container__giaoviencothehocngay {
+    background: repeat;
+  }
   .container_xacnhanthanhtoan {
     margin-top: 100px;
     flex-wrap: wrap;
@@ -6562,6 +7369,12 @@ input:checked + .slider:before {
   .khuvucthanhtoan__phuongthucthanhtoan {
     width: 100%;
     margin-top: 10px;
+  }
+  .__share__tim__timgiaovien__taikhoan {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
