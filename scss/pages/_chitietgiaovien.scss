@@ -1,112 +1,118 @@
-.chitietgiaovien{
-  &__section{
+.chitietgiaovien {
+  &__section {
     padding-top: 15px;
-    @include media-breakpoint-up('m'){
+    @include media-breakpoint-up("m") {
       padding-top: 20px;
       padding-bottom: 74px;
     }
-    &__boxVideo{
+    &__boxVideo {
       border-radius: 10px;
     }
-    &__card1{
+    &__card1 {
       box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
       border-radius: 10px;
-      &__sidebar{
-        &__table{
-          border: 1px solid #EBEBEB;
+      &__sidebar {
+        &__table {
+          border: 1px solid #ebebeb;
           box-sizing: border-box;
-          tr{
-            th{
+          tr {
+            th {
               text-align: center;
               color: #000000;
               @extend .fz-14;
-              font-family: $Lexend-Medium;
+              font-family: "Lexend";
               padding-top: 0;
               padding-bottom: 0;
               vertical-align: middle;
               width: 80px;
               box-sizing: border-box;
-              @include media-breakpoint-up('m'){
+              @include media-breakpoint-up("m") {
                 width: 91px;
               }
             }
-            td{
-              background: #EBEBEB;
-              border: 1px solid #FFFFFF;
+            td {
+              background: #ebebeb;
+              border: 1px solid #ffffff;
               box-sizing: border-box;
               width: 37px;
               height: 26px;
-              @include media-breakpoint-up('m'){
+              @include media-breakpoint-up("m") {
                 width: 37px;
                 height: 32px;
               }
               padding: 0;
-              &.uk-active{
-                background: #65AF54;
+              &.uk-active {
+                background: #65af54;
               }
-              &.uk-open{
-                background: #65AF54;
+              &.uk-open {
+                background: #65af54;
                 position: relative;
-                &:before{
+                &:before {
                   content: "";
                   position: absolute;
-                  $x:1px;
+                  $x: 1px;
                   top: #{$x};
                   left: #{$x};
                   right: #{$x};
                   bottom: #{$x};
-                  background: #EBEBEB;
-                  $w:8.5px;
-                  $h:6px;
-                  clip-path: polygon(calc(100% - #{$w}) 0, 100% #{$h}, 100% 100%, 0 100%, 0 0);
+                  background: #ebebeb;
+                  $w: 8.5px;
+                  $h: 6px;
+                  clip-path: polygon(
+                    calc(100% - #{$w}) 0,
+                    100% #{$h},
+                    100% 100%,
+                    0 100%,
+                    0 0
+                  );
                 }
               }
             }
           }
         }
-        &__txt{
+        &__txt {
           color: #000000;
           @extend .fz-16;
-          font-family: $Lexend-Medium;
+          font-family: "Lexend";
         }
-        &__btn{
-          $x:42px;
+        &__btn {
+          $x: 42px;
           line-height: calc(#{$x} - 2px);
           text-transform: inherit;
           box-sizing: border-box;
           box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
           border-radius: 10px;
-          span{
+          span {
             @extend .fz-16;
-            font-family: $Lexend-Medium;
+            font-family: "Lexend";
           }
-          &--default{
+          &--default {
             //background: #FFFFFF;
             //border: 1px solid #AEAEAE;
-            &:not(:hover){
-              border-color: #AEAEAE;
+            &:not(:hover) {
+              border-color: #aeaeae;
             }
           }
-          &--primary{
-            background: #65AF54;
-            border: 1px solid #AEAEAE;
-            @include media-breakpoint-up('m'){
+          &--primary {
+            background: #65af54;
+            border: 1px solid #aeaeae;
+            @include media-breakpoint-up("m") {
               min-width: 242px;
             }
-            &:hover{
-              border-color: #65AF54;
-              background: #FFFFFF;
-              color: #65AF54;
+            &:hover {
+              border-color: #65af54;
+              background: #ffffff;
+              color: #65af54;
             }
           }
         }
-        &__item{
+        &__item {
           position: relative;
-          $x:15px;
-          &:nth-child(n+2){
+          $x: 15px;
+          &:nth-child(n + 2) {
             margin-top: #{$x};
             padding-top: #{$x};
-            &:before{
+            &:before {
               content: "";
               width: 15px;
               height: 2px;
@@ -114,120 +120,120 @@
               left: 50%;
               transform: translateX(-50%);
               top: 0;
-              background: #65AF54;
+              background: #65af54;
               border-radius: 1px;
             }
           }
         }
       }
-      &__danhgia{
-        &__txt{
+      &__danhgia {
+        &__txt {
           color: #000000;
           @extend .fz-16;
-          font-family: $Lexend-Regular;
+          font-family: "Lexend";
         }
-        &__item{
-          &:nth-child(n+2){
+        &__item {
+          &:nth-child(n + 2) {
             margin-top: 15px;
-            @include media-breakpoint-up('m'){
+            @include media-breakpoint-up("m") {
               margin-top: 20px;
             }
           }
         }
-        &__box1{
+        &__box1 {
           padding: 10px;
-          @include media-breakpoint-up('m'){
+          @include media-breakpoint-up("m") {
             padding: 10px 15px;
           }
-          background: #FAFAFC;
+          background: #fafafc;
           box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
           border-radius: 10px;
           //min-height: 130px;
         }
-        &__txt1{
+        &__txt1 {
           color: #263238;
           @extend .fz-16;
         }
-        &__name{
+        &__name {
           color: #000000;
           @extend .fz-14;
         }
       }
-      &__khoahoc{
-        &__box1{
+      &__khoahoc {
+        &__box1 {
           @extend .chitietgiaovien__section__card1__thongke__box1;
-          &:nth-child(n+2){
+          &:nth-child(n + 2) {
             margin-top: 10px;
-            @include media-breakpoint-up('m'){
+            @include media-breakpoint-up("m") {
               margin-top: 15px;
             }
           }
         }
-        &__box2{
+        &__box2 {
           padding: 10px 15px;
           text-align: center;
           box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
           border-radius: 10px;
-          &.uk-card-default{
+          &.uk-card-default {
             background: rgba(255, 15, 0, 0.2);
           }
-          &.uk-card-primary{
+          &.uk-card-primary {
             background: rgba(101, 175, 84, 0.2);
           }
-          &__txt1{
+          &__txt1 {
             color: #263238 !important;
             @extend .fz-12;
-            font-family: $Lexend-Regular;
+            font-family: "Lexend";
           }
-          &__txt2{
+          &__txt2 {
             color: #000000 !important;
             @extend .fz-16;
-            font-family: $Lexend-Medium;
+            font-family: "Lexend";
           }
         }
       }
-      &__thongke{
-        &__box1{
-          background: #FAFAFC;
+      &__thongke {
+        &__box1 {
+          background: #fafafc;
           box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
           border-radius: 10px;
           padding: 8px 9px;
           min-height: 78px;
         }
-        &__box2{
-          background: #FFFFFF;
-          border: 1px solid #E0E0E0;
+        &__box2 {
+          background: #ffffff;
+          border: 1px solid #e0e0e0;
           box-sizing: border-box;
           border-radius: 500px;
-          &__progress{
+          &__progress {
             border-top-left-radius: 0 !important;
             border-bottom-left-radius: 0 !important;
             min-height: 21px;
             position: relative;
-            &:before{
+            &:before {
               content: "";
               width: var(--width);
               position: absolute;
               top: 0;
               bottom: 0;
               left: 0;
-              background: #65AF54;
+              background: #65af54;
               border-radius: 500px;
               border-top-left-radius: 0 !important;
               border-bottom-left-radius: 0 !important;
             }
-            &:after{
+            &:after {
               content: attr(data-txt);
               position: absolute;
               top: 50%;
               transform: translateY(-50%);
               left: 5px;
-              color: #FFFFFF;
+              color: #ffffff;
               @extend .fz-12;
               line-height: (15/12);
             }
           }
-          &__txt1{
+          &__txt1 {
             color: #878787;
             @extend .fz-12;
             line-height: (15/12);
@@ -235,17 +241,17 @@
           }
         }
       }
-      &__desc{
+      &__desc {
         color: #263238;
         @extend .fz-16;
       }
-      &__label{
+      &__label {
         color: #000000;
         @extend .fz-18;
         position: relative;
         padding-bottom: 7px;
-        font-family: $Lexend-Medium;
-        &:before{
+        font-family: "Lexend";
+        &:before {
           content: "";
           position: absolute;
           bottom: 0;
@@ -253,99 +259,99 @@
           width: 15px;
           height: 2px;
           display: flex;
-          background: #65AF54;
+          background: #65af54;
           border-radius: 1px;
         }
       }
-      &__flag{
-        border: 3px solid #FFFFFF;
+      &__flag {
+        border: 3px solid #ffffff;
         right: 7px;
         bottom: -5px;
       }
-      &__link{
+      &__link {
         text-decoration: underline;
         @extend .chitietgiaovien__section__card1__txt2;
       }
-      &__txt1{
+      &__txt1 {
         color: #878787;
         @extend .fz-14;
         line-height: (17/14);
-        font-family: $Lexend-Regular;
-        &--fz16{
+        font-family: "Lexend";
+        &--fz16 {
           @extend .fz-16;
         }
       }
-      &__txt2{
+      &__txt2 {
         @extend .fz-16;
         line-height: (20/16);
         color: #000000;
-        font-family: $Lexend-Regular;
+        font-family: "Lexend";
       }
-      &__txt3{
-        color: #6EB54D;
+      &__txt3 {
+        color: #6eb54d;
         @extend .fz-21;
-        font-family: $Lexend-SemiBold;
+        font-family: "Lexend";
         line-height: 1.25;
       }
-      &__txt4{
+      &__txt4 {
         @extend .chitietgiaovien__section__card1__txt2;
         margin-top: 7px;
-        .chitietgiaovien__section__card1__khoahoc__box1 &{
+        .chitietgiaovien__section__card1__khoahoc__box1 & {
           margin-top: 10px;
         }
       }
-      &__header{
+      &__header {
         @extend .chitietgiaovien__section__card1__dc;
       }
-      &__body{
+      &__body {
         @extend .chitietgiaovien__section__card1__dc;
-        border-top: 5px solid #FAFAFC;
+        border-top: 5px solid #fafafc;
       }
-      &__dc{
+      &__dc {
         padding: 15px;
-        @include media-breakpoint-up('m'){
+        @include media-breakpoint-up("m") {
           padding: 20px;
         }
       }
-      &__name{
+      &__name {
         margin: 0;
         color: #000000;
         @extend .fz-18;
         text-transform: uppercase;
       }
-      &__giaovien{
+      &__giaovien {
         @extend .fz-16;
         color: #000000;
         position: relative;
         padding-bottom: 7px;
         margin-top: 5px;
-        &:before{
+        &:before {
           content: "";
           width: 15px;
           height: 2px;
           display: flex;
-          background: #65AF54;
+          background: #65af54;
           border-radius: 1px;
           position: absolute;
           bottom: 0;
           left: 0;
         }
       }
-      &__btnrate{
+      &__btnrate {
         text-transform: inherit;
         box-sizing: border-box;
         border-radius: 5px;
-        border-color: #37474F;
-        $x:28px;
+        border-color: #37474f;
+        $x: 28px;
         line-height: calc(#{$x} - 2px);
         padding: 0 6px;
-        span{
-          color: #37474F;
+        span {
+          color: #37474f;
           @extend .fz-14;
-          font-family: $Lexend-Regular;
+          font-family: "Lexend";
         }
       }
-      &__iconshare{
+      &__iconshare {
         background-repeat: no-repeat;
         background-position: center;
         width: 17px;
@@ -353,7 +359,7 @@
         display: flex;
         background-image: url("data:image/svg+xml,%3Csvg width='17' height='16' viewBox='0 0 17 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.23334 1.14286C6.5463 1.14286 6.80001 1.3987 6.80001 1.71429C6.80001 1.99481 6.59955 2.22812 6.3352 2.27651L6.23334 2.28572H2.83334C1.94968 2.28572 1.22349 2.96558 1.14112 3.8349L1.13333 4V13.1429C1.13333 14.0339 1.80754 14.7662 2.66961 14.8493L2.83334 14.8571H11.9C12.7836 14.8571 13.5099 14.1772 13.5922 13.308L13.6 13.1429V12C13.6 11.6845 13.8538 11.4286 14.1667 11.4286C14.4448 11.4286 14.6762 11.6308 14.7242 11.8973L14.7333 12V13.1429C14.7333 14.6577 13.5643 15.8972 12.0863 15.9939L11.9 16H2.83334C1.33112 16 0.101956 14.8211 0.00602672 13.3307L0 13.1429V4C0 2.48516 1.16908 1.24567 2.64704 1.14894L2.83334 1.14286H6.23334ZM10.628 0.660367C10.628 0.148612 11.1514 -0.142766 11.5531 0.0706085L11.6371 0.124161L11.707 0.184744L16.8037 5.23752C17.0152 5.44713 17.0558 5.76969 16.9255 6.02267L16.8687 6.11392L16.8038 6.18871L11.7071 11.2431C11.3498 11.5974 10.7839 11.4087 10.6547 10.9613L10.634 10.8616L10.628 10.7675V8.37269L10.3359 8.3992C10.0538 8.4296 9.77342 8.47394 9.49462 8.53223C7.75634 8.896 6.07975 9.80331 4.45696 11.2645C4.01561 11.6619 3.33276 11.2862 3.40535 10.6858C3.95644 6.12817 6.21865 3.56496 10.0737 3.1401L10.3734 3.11164L10.628 3.09437V0.660367ZM11.7613 1.84119V4.16293L10.4565 4.25143C8.67296 4.39549 7.358 5.02201 6.4183 6.04402C5.66007 6.86866 5.08293 8.01989 4.74498 9.54914C6.34924 8.33677 8.04363 7.577 9.83099 7.31198L10.2249 7.26175L11.7613 7.12255V9.58651L15.667 5.7132L11.7613 1.84119Z' fill='%23212121'/%3E%3C/svg%3E%0A");
       }
-      &__iconwishlist{
+      &__iconwishlist {
         background-repeat: no-repeat;
         background-position: center;
         width: 16px;
@@ -364,3 +370,236 @@
     }
   }
 }
+
+/* vietnamese */
+@font-face {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("../fonts/wlpwgwvFAVdoq2_v9KQU4Wc.woff2") format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lexend/v12/wlpwgwvFAVdoq2_v9aQU4Wc.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lexend/v12/wlpwgwvFAVdoq2_v-6QU.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("../fonts/wlpwgwvFAVdoq2_v9KQU4Wc.woff2") format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lexend/v12/wlpwgwvFAVdoq2_v9aQU4Wc.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lexend/v12/wlpwgwvFAVdoq2_v-6QU.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/wlpwgwvFAVdoq2_v9KQU4Wc.woff2") format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lexend/v12/wlpwgwvFAVdoq2_v9aQU4Wc.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lexend/v12/wlpwgwvFAVdoq2_v-6QU.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/wlpwgwvFAVdoq2_v9KQU4Wc.woff2") format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lexend/v12/wlpwgwvFAVdoq2_v9aQU4Wc.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lexend/v12/wlpwgwvFAVdoq2_v-6QU.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/wlpwgwvFAVdoq2_v9KQU4Wc.woff2") format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lexend/v12/wlpwgwvFAVdoq2_v9aQU4Wc.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lexend/v12/wlpwgwvFAVdoq2_v-6QU.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/wlpwgwvFAVdoq2_v9KQU4Wc.woff2") format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lexend/v12/wlpwgwvFAVdoq2_v9aQU4Wc.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lexend/v12/wlpwgwvFAVdoq2_v-6QU.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/wlpwgwvFAVdoq2_v9KQU4Wc.woff2") format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lexend/v12/wlpwgwvFAVdoq2_v9aQU4Wc.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Lexend";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lexend/v12/wlpwgwvFAVdoq2_v-6QU.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+/* vietnamese */

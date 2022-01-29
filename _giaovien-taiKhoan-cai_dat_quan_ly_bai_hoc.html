@@ -499,6 +499,12 @@
                 class="overlay_de_xuat_khoa_hoc"
               >
                 <div class="popup_de_xuat_khoa_hoc">
+                  <a
+                    onclick="document.getElementById('overlay_de_xuat_khoa_hoc').classList.toggle('active_overlay_de_xuat_khoa_hoc')"
+                    class="close_popup_chinh_sua_thoi_gian_ranh"
+                  >
+                    &times;
+                  </a>
                   <div class="title_popup_de_xuat_khoa_hoc">
                     Đề xuất khóa học mới
                   </div>
@@ -650,271 +656,19 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis ligul
                     Tài liệu khóa học
                   </div>
 
-                  <a href="#" class="add_giay_to_content_cai_dat_giao_vien">
+                  <label
+                    for="upload_file"
+                    class="add_giay_to_content_cai_dat_giao_vien"
+                  >
                     <img src="images/Vector-add.png" alt="" />
-                  </a>
-
-                  <div style="text-align: center; margin: 20px 0">
-                    Tải Tải tài liệu khóa học
-                  </div>
-
-                  <!-- Tài liệu khóa học -->
-                  <div class="box_file_content_cai_dat_giao_vien">
-                    <div class="item_file_content_cai_dat_giao_vien">
-                      <img
-                        src="images/khoa-hoc-tieng-anh-giao-tiep-co-ban-benative 1.png"
-                        alt=""
-                      />
-                      <button class="exit_file_content_cai_dat_giao_vien">
-                        <img src="images/exit-icon.png" alt="" />
-                      </button>
-                    </div>
-
-                    <div class="item_file_content_cai_dat_giao_vien">
-                      <img
-                        src="images/khoa-hoc-tieng-anh-giao-tiep-co-ban-benative 1.png"
-                        alt=""
-                      />
-                      <button class="exit_file_content_cai_dat_giao_vien">
-                        <img src="images/exit-icon.png" alt="" />
-                      </button>
-                    </div>
-
-                    <div class="item_file_content_cai_dat_giao_vien">
-                      <img
-                        src="images/khoa-hoc-tieng-anh-giao-tiep-co-ban-benative 1.png"
-                        alt=""
-                      />
-                      <button class="exit_file_content_cai_dat_giao_vien">
-                        <img src="images/exit-icon.png" alt="" />
-                      </button>
-                    </div>
-
-                    <div class="item_file_content_cai_dat_giao_vien">
-                      <img
-                        src="images/khoa-hoc-tieng-anh-giao-tiep-co-ban-benative 1.png"
-                        alt=""
-                      />
-                      <button class="exit_file_content_cai_dat_giao_vien">
-                        <img src="images/exit-icon.png" alt="" />
-                      </button>
-                    </div>
-
-                    <div class="item_file_content_cai_dat_giao_vien">
-                      <img
-                        src="images/khoa-hoc-tieng-anh-giao-tiep-co-ban-benative 1.png"
-                        alt=""
-                      />
-                      <button class="exit_file_content_cai_dat_giao_vien">
-                        <img src="images/exit-icon.png" alt="" />
-                      </button>
-                    </div>
-
-                    <div class="item_file_content_cai_dat_giao_vien">
-                      <img src="images/pdf 1.png" alt="" />
-                      <button class="exit_file_content_cai_dat_giao_vien">
-                        <img src="images/exit-icon.png" alt="" />
-                      </button>
-                    </div>
-
-                    <div class="item_file_content_cai_dat_giao_vien">
-                      <img src="images/pdf 1.png" alt="" />
-                      <button class="exit_file_content_cai_dat_giao_vien">
-                        <img src="images/exit-icon.png" alt="" />
-                      </button>
-                    </div>
-
-                    <div class="item_file_content_cai_dat_giao_vien">
-                      <img src="images/pdf 1.png" alt="" />
-                      <button class="exit_file_content_cai_dat_giao_vien">
-                        <img src="images/exit-icon.png" alt="" />
-                      </button>
-                    </div>
-
-                    <div class="item_file_content_cai_dat_giao_vien">
-                      <img src="images/pdf 1.png" alt="" />
-                      <button class="exit_file_content_cai_dat_giao_vien">
-                        <img src="images/exit-icon.png" alt="" />
-                      </button>
-                    </div>
-
-                    <div class="item_file_content_cai_dat_giao_vien">
-                      <img src="images/pdf 1.png" alt="" />
-                      <button class="exit_file_content_cai_dat_giao_vien">
-                        <img src="images/exit-icon.png" alt="" />
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="cap_nhat_tt_cai_dat_giao_vien">
-                    <a
-                      style="width: 100% !important"
-                      onclick="document.getElementById('overlay_de_xuat_khoa_hoc').classList.toggle('active_overlay_de_xuat_khoa_hoc')"
-                      >Gửi</a
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <div
-                id="overlay_de_xuat_khoa_hoc"
-                class="overlay_de_xuat_khoa_hoc"
-              >
-                <div class="popup_de_xuat_khoa_hoc">
-                  <div class="title_popup_de_xuat_khoa_hoc">
-                    Đề xuất khóa học mới
-                  </div>
-
-                  <div class="title_content_popup_de_xuat_khoa_hoc">
-                    Tiêu đề
-                  </div>
+                  </label>
 
                   <input
-                    class="input_ten_khoa_hoc_setup"
-                    type="text"
-                    value="Conversation English lesson"
+                    type="file"
+                    name="photo"
+                    id="upload_file"
+                    style="display: none"
                   />
-
-                  <div class="title_content_popup_de_xuat_khoa_hoc">Mô tả</div>
-
-                  <textarea class="textarea_mo_ta_khoa_hoc_setup" name="" id="">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis ligula nec sodales tempus. Donec vel lorem ut felis convallis pellentesque ut at nisl. In nec egestas velit, at rutrum felis. Duis auctor quam quis dictum cursus. Nunc venenatis rutrum pellentesque. Sed sagittis lacus non magna vehicula, vitae rhoncus odio rutrum. Sed eu tristique odio.
-                  </textarea>
-
-                  <!-- Ngôn ngữ giảng dạy -->
-                  <div class="box_ngon_ngu_giang_day">
-                    <div class="title_content_popup_de_xuat_khoa_hoc">
-                      Ngôn ngữ giảng dạy
-                    </div>
-
-                    <div class="select_popup_de_xuat_khoa_hoc">
-                      <select name="" id="">
-                        <option value="">Tiếng anh</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <!-- Trình độ ngôn ngữ học viên -->
-                  <div class="box_trinh_do_ngon_ngu_hoc_vien">
-                    <div class="title_content_popup_de_xuat_khoa_hoc">
-                      Trình độ ngôn ngữ học viên
-                    </div>
-
-                    <div class="box_trinh_do_ngon_ngu_hoc_vien01">
-                      <div class="select_trinh_do_ngon_ngu_hoc_vien">
-                        <select name="" id="">
-                          <option value="">Tiếng anh</option>
-                        </select>
-                      </div>
-
-                      <div class="select_trinh_do_ngon_ngu_hoc_vien">
-                        <select name="" id="">
-                          <option value="">Tiếng anh</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Danh mục -->
-                  <div class="box_danh_muc_de_xuat">
-                    <div class="title_content_popup_de_xuat_khoa_hoc">
-                      Danh mục
-                    </div>
-
-                    <div class="select_popup_de_xuat_khoa_hoc">
-                      <select name="" id="">
-                        <option value="">Tiếng anh</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <!-- Thẻ bài học -->
-                  <div class="box_the_bai_hoc">
-                    <div class="title_content_popup_de_xuat_khoa_hoc">
-                      Thẻ bài học
-                    </div>
-
-                    <div class="select_popup_de_xuat_khoa_hoc">
-                      <select name="" id="">
-                        <option value="">Tiếng anh</option>
-                      </select>
-                    </div>
-                  </div>
-                  <!-- /Thẻ bài học -->
-
-                  <div class="clr"></div>
-                  <div class="title_content_popup_de_xuat_khoa_hoc">
-                    Học phí: Tối thiểu 300.000đ/bài học. Bắt buộc có các bài học
-                    dài 60p
-                  </div>
-
-                  <div class="pc">
-                    <div class="box_the_bai_hoc">Thẻ bài học</div>
-                    <div class="box_goi">Gói</div>
-                    <div class="box_tong">Tổng</div>
-                  </div>
-                  <div class="clr"></div>
-
-                  <!-- Bài học riêng lẻ -->
-                  <div class="box_the_bai_hoc">
-                    <div class="mobile">
-                      <div class="title_content_popup_de_xuat_khoa_hoc">
-                        Thẻ bài học
-                      </div>
-                    </div>
-
-                    <div class="input_bai_hoc_rineg_le">
-                      <input type="text" value="300.000" />
-                      /60 phút
-                    </div>
-                  </div>
-
-                  <!-- Gói -->
-                  <div class="box_goi">
-                    <div class="mobile">
-                      <div class="title_content_popup_de_xuat_khoa_hoc">
-                        Gói
-                      </div>
-                    </div>
-
-                    <div class="select_goi_cai_dat_quan_li">
-                      <select name="" id="">
-                        <option value="">Tiếng anh</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <!-- Tổng -->
-                  <div class="box_tong">
-                    <div class="mobile">
-                      <div class="title_content_popup_de_xuat_khoa_hoc">
-                        Tổng
-                      </div>
-                    </div>
-
-                    <div class="input_tong_cai_dat_quan_li">
-                      <input type="text" value="1.500.000" />
-                    </div>
-                  </div>
-
-                  <div class="clr"></div>
-
-                  <div class="trang_thai_cai_dat_quan_ly_popup">
-                    Trạng thái
-                    <label class="switch">
-                      <input type="checkbox" checked />
-                      <span class="slider round"></span>
-                    </label>
-                    Đang rảnh
-                  </div>
-
-                  <div style="text-align: left; margin: 20px 0">
-                    Tài liệu khóa học
-                  </div>
-
-                  <a href="#" class="add_giay_to_content_cai_dat_giao_vien">
-                    <img src="images/Vector-add.png" alt="" />
-                  </a>
 
                   <div style="text-align: center; margin: 20px 0">
                     Tải Tải tài liệu khóa học
@@ -1077,7 +831,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis ligul
       <!-- popup Chỉnh sửa bài học này  -->
       <div id="overlay_chinh_sau_bai_hoc" class="overlay_de_xuat_khoa_hoc">
         <div class="popup_de_xuat_khoa_hoc">
-          <div class="title_popup_de_xuat_khoa_hoc">Đề xuất khóa học mới</div>
+          <a
+            onclick="popupChinh_sua_bai_hoc()"
+            class="close_popup_chinh_sua_thoi_gian_ranh"
+          >
+            &times;
+          </a>
+          <div class="title_popup_de_xuat_khoa_hoc">Chỉnh sửa bài học này</div>
 
           <div class="title_content_popup_de_xuat_khoa_hoc">Tiêu đề</div>
 
@@ -1214,9 +974,19 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus venenatis ligul
 
           <div style="text-align: left; margin: 20px 0">Tài liệu khóa học</div>
 
-          <a href="#" class="add_giay_to_content_cai_dat_giao_vien">
+          <label
+            for="upload_file"
+            class="add_giay_to_content_cai_dat_giao_vien"
+          >
             <img src="images/Vector-add.png" alt="" />
-          </a>
+          </label>
+
+          <input
+            type="file"
+            name="photo"
+            id="upload_file"
+            style="display: none"
+          />
 
           <div style="text-align: center; margin: 20px 0">
             Tải Tải tài liệu khóa học

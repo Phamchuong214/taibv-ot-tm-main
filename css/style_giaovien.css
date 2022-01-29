@@ -809,6 +809,7 @@
   padding-top: 12px;
 }
 .title_ten_doi_tuong {
+  font-family: "Lexend";
   width: 125px;
   height: 40px;
   font-style: normal;
@@ -836,7 +837,105 @@
   pointer-events: auto;
   display: block !important;
 }
-.doi_tuong {
+.overlay_lambaitest {
+  position: fixed;
+  background: #00000060;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: none;
+}
+.close__popup___lambaitest {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
+  background: #000;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-decoration: none;
+}
+.close__popup___lambaitest:hover {
+  color: red;
+}
+
+.popup___lambaitest {
+  z-index: 3;
+  position: relative;
+  width: 500px;
+  max-width: 95%;
+  height: 230px;
+  background: #ffffff;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.popup___lambaitest > button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  outline: none !important;
+  width: 500px;
+  height: 50px;
+  background: #65af54;
+  border-radius: 0px 0px 10px 10px;
+  max-width: 100%;
+}
+.title___lambaitest {
+  width: 100%;
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  margin-bottom: 11px;
+}
+.__content__lambaitest {
+  width: 80%;
+  display: flex;
+  padding: 0 10%;
+}
+.__img__content_lambaitest {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+.__img__content_lambaitest img {
+  width: 100%;
+  border-radius: 10px;
+}
+.__text_content_lambaitest {
+  /* text-align: left; */
+
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.title___text_content_lambaitest {
+  text-align: left;
+  color: #263238;
+  font-weight: 500;
+}
+.__text_content_lambaitest span {
+  color: #000;
+  font-weight: 500;
+  margin-left: 20px;
+}
+.__content__lambaitest .doi_tuong {
   width: 500px;
   height: 226px;
   border-radius: 10px;
@@ -846,6 +945,19 @@
   margin: auto;
   margin-top: 30vh;
   z-index: 3;
+  position: relative;
+}
+.__close_doi_tuong {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px;
+  color: #fff;
+  background: #000;
+  top: 10px;
+  right: 10px;
 }
 .doi_tuong span {
   width: 100px;
@@ -3007,6 +3119,9 @@ input:checked + .slider:before {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
 }
+.item_danh_sach_bai_hoc:hover {
+  box-shadow: 0px 2px 2px #65af54;
+}
 .container_danh_sach_bai_hoc hr {
   margin: 0;
   padding: 0;
@@ -3123,6 +3238,7 @@ input:checked + .slider:before {
 }
 .danh_gia_item_danh_sach_bai_hoc {
   align-items: flex-end;
+  border-top: 1px solid #c4c4c4;
 }
 .danh_gia_item_danh_sach_bai_hoc p {
   text-align: left;
@@ -3526,6 +3642,9 @@ input:checked + .slider:before {
 .mobile {
   display: none !important;
   width: 100%;
+}
+.border_green {
+  border: #65af54 1px solid !important;
 }
 .container_chat {
   width: 1200px;
@@ -4447,6 +4566,7 @@ input:checked + .slider:before {
   transform: translate(-50%, 10%);
   text-align: left;
   font-family: "Lexend";
+  position: relative;
 }
 .title_popup_de_xuat_khoa_hoc {
   font-weight: 600;
@@ -4911,7 +5031,8 @@ input:checked + .slider:before {
   position: relative;
   border: 1px solid #65af54 !important;
 }
-.____lydokhac img {
+
+.__item__lydohuy__content___lydohuybuoihoc__popup img {
   position: absolute;
   top: -1px;
   right: -1px;
@@ -4934,6 +5055,7 @@ input:checked + .slider:before {
   border-radius: 10px;
   padding: 12px 21px;
   margin: 20px 0;
+  position: relative;
 }
 .__content___lydohuybuoihoc__popup input {
   height: 57px;
@@ -6049,7 +6171,7 @@ input:checked + .slider:before {
 .___sokhac__sotiennap {
   position: relative;
   background: rgba(101, 175, 84, 0.1);
-  border: 1px solid #65af54;
+  /* border: 1px solid #65af54; */
 }
 
 .___sokhac__sotiennap > img {
@@ -6224,6 +6346,7 @@ input:checked + .slider:before {
   background: #fff;
   z-index: 2;
   overflow: auto;
+  font-family: "lexend";
   /* transform: translate(0, 30%); */
   /* position: relative; */
 }
@@ -7260,7 +7383,7 @@ input:checked + .slider:before {
   width: 95%;
 }
 .__video__cothehocngay > div {
-  width: 100%;
+  /* width: 100%; */
   margin: 10px 0;
 }
 .__item__play__cothehocngay {

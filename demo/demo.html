@@ -1,85 +1,28 @@
-<!DOCTYPE html>
-<html>
-  <style>
-    /* The container__radio */
-    .container__radio {
-      display: block;
-      position: relative;
-      padding-left: 35px;
-      margin-bottom: 12px;
-      cursor: pointer;
-      font-size: 22px;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
-
-    /* Hide the browser's default radio button */
-    .container__radio input {
-      position: absolute;
-      opacity: 0;
-      cursor: pointer;
-    }
-
-    /* Create a custom radio button */
-    .checkmark__radio {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 16px;
-      width: 16px;
-      background-color: #fff;
-      border: 1px solid #65af54;
-      border-radius: 50%;
-    }
-
-    /* On mouse-over, add a grey background color */
-    .container__radio:hover input ~ .checkmark__radio {
-      background-color: rgb(250, 250, 250);
-    }
-
-    /* When the radio button is checked, add a blue background */
-    .container__radio input:checked ~ .checkmark__radio {
-      background-color: #fff;
-    }
-
-    /* Create the indicator (the dot/circle - hidden when not checked) */
-    .checkmark__radio:after {
-      content: "";
-      position: absolute;
-      display: none;
-    }
-
-    /* Show the indicator (dot/circle) when checked */
-    .container__radio input:checked ~ .checkmark__radio:after {
-      display: block;
-    }
-
-    /* Style the indicator (dot/circle) */
-    .container__radio .checkmark__radio:after {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: #65af54;
-    }
-  </style>
-  <body>
-    <h1>Custom Radio Buttons</h1>
-    <label class="container__radio">
-      <input type="radio" checked="checked" name="radio" />
-      <span class="checkmark__radio"></span>
-
-      <span>VNpay</span>
-    </label>
-
-    <label class="container__radio"
-      >One
-      <input type="radio" checked="checked" name="radio" />
-      <span class="checkmark__radio"></span>
-    </label>
-  </body>
-</html>
+<input
+  onclick="var result = document.getElementById('quantity'); var qty = result.value; if( !isNaN(qty)) result.value--;return false;"
+  type="button"
+  value="-"
+  min="1"
+  max="10"
+/>
+<input
+  id="quantity"
+  min="1"
+  max="100"
+  name="quantity"
+  type="text"
+  value="1"
+  style="
+    width: 50px;
+    text-align: center;
+    border: none;
+    outline: none !important;
+  "
+/>
+<input
+  onclick="var result = document.getElementById('quantity'); var qty = result.value; if( !isNaN(qty)) result.value++;return false;"
+  type="button"
+  value="+"
+  min="1"
+  max="10"
+/>

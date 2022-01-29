@@ -33,6 +33,9 @@
       function togglePopup() {
         document.getElementById("popup1").classList.toggle("active");
       }
+      function toggleBaihoc(idname) {
+        document.getElementById(idname).classList.toggle("active_block");
+      }
     </script>
 
     <!-- header  -->
@@ -50,15 +53,19 @@
               <div class="close_menu1" onclick="togglePopup()">&times;</div>
               <li class="uk-active pc"><a href="#">Giới thiệu</a></li>
               <li class="pc">
-                <a href="_giaovien-taiKhoan-lich_day.html" class="color_green">     
+                <a href="_giaovien-taiKhoan-lich_day.html" class="color_green">
                   Tìm giáo viên
                 </a>
               </li>
               <li class="pc">
-                <a href="_giaovien-taiKhoan-chat_voi_hoc_vien.html">Trở thành giáo viên</a>
+                <a href="_giaovien-taiKhoan-chat_voi_hoc_vien.html"
+                  >Trở thành giáo viên</a
+                >
               </li>
               <li class="pc">
-                <a href="_giaovien-taiKhoan-chat_voi_hoc_vien.html">Hướng dẫn</a>
+                <a href="_giaovien-taiKhoan-chat_voi_hoc_vien.html"
+                  >Hướng dẫn</a
+                >
               </li>
               <li class="pc">
                 <a href="_giaovien-taiKhoan-chat_voi_hoc_vien.html">Liên hệ</a>
@@ -141,7 +148,7 @@
                   href="_giaovien-taiKhoan-chat_voi_hoc_vien.html"
                   class="li_menu"
                 >
-                Giới thiệu
+                  Giới thiệu
                 </a>
               </li>
 
@@ -150,7 +157,7 @@
                   href="_giaovien-taiKhoan-chat_voi_hoc_vien.html"
                   class="li_menu color_green"
                 >
-                Tìm giáo viên 
+                  Tìm giáo viên
                 </a>
               </li>
 
@@ -159,7 +166,7 @@
                   href="_giaovien-taiKhoan-chat_voi_hoc_vien.html"
                   class="li_menu"
                 >
-                Trở thành giáo viên 
+                  Trở thành giáo viên
                 </a>
               </li>
 
@@ -168,7 +175,7 @@
                   href="_giaovien-taiKhoan-chat_voi_hoc_vien.html"
                   class="li_menu"
                 >
-                Hướng dẫn 
+                  Hướng dẫn
                 </a>
               </li>
 
@@ -177,15 +184,9 @@
                   href="_giaovien-taiKhoan-chat_voi_hoc_vien.html"
                   class="li_menu"
                 >
-                Liên hệ
+                  Liên hệ
                 </a>
               </li>
-              
-              
-              
-              
-              
-
             </ul>
           </div>
         </div>
@@ -203,114 +204,315 @@
     >
       <!--Main-->
       <div class="container_ttctgv">
-        <div class="container_chon_doi_tuong">
-            <div class="title_tieu_de">
-                Chọn thể loại
-                <div class="dau_ds">
-                    <img src="images/Rectangle 42.png" alt="">
-                </div>
+        <div class="container_chon_doi_tuong" style="margin-bottom: 100px">
+          <div class="title_tieu_de">
+            Chọn thể loại
+            <div class="dau_ds">
+              <img src="images/Rectangle 42.png" alt="" />
             </div>
-            <div class="box_doi_tuong">
-            <button class="box_doi_tuong_1" id="open">
-                <div class="anh_doi_tuong">
-                    <img src="images/Rectangle 71.png" alt="">  
-                </div>
-                <div class="title_ten_doi_tuong">
-                    Tiếng anh <br> giao tiếp trẻ em
-                </div>
+          </div>
+          <div class="box_doi_tuong">
+            <button
+              onclick="toggleBaihoc('popupdoituong1')"
+              class="box_doi_tuong_1"
+            >
+              <div class="anh_doi_tuong">
+                <img src="images/Rectangle 71.png" alt="" />
+              </div>
+              <div class="title_ten_doi_tuong">
+                Tiếng anh <br />
+                giao tiếp trẻ em
+              </div>
             </button>
-            <button class="box_doi_tuong_1">
-                <div class="anh_doi_tuong">
-                    <img src="images/Rectangle 71 (1).png" alt="">  
-                </div>
-                <div class="title_ten_doi_tuong">
-                    Tiếng anh <br> giao tiếp trẻ em
-                </div>
+            <button
+            onclick="toggleBaihoc('popupdoituong2')"
+            class="box_doi_tuong_1">
+              <div class="anh_doi_tuong">
+                <img src="images/Rectangle 71 (1).png" alt="" />
+              </div>
+              <div class="title_ten_doi_tuong">
+                Tiếng anh <br />
+                giao tiếp trẻ em
+              </div>
             </button>
-            <button class="box_doi_tuong_1">
-                <div class="anh_doi_tuong">
-                    <img src="images/Rectangle 71 (2).png" alt="">  
-                </div>
-                <div class="title_ten_doi_tuong">
-                    Tiếng anh <br> giao tiếp trẻ em
-                </div>
+            <button onclick="toggleBaihoc('popupdoituong3')" class="box_doi_tuong_1">
+              <div class="anh_doi_tuong">
+                <img src="images/Rectangle 71 (2).png" alt="" />
+              </div>
+              <div class="title_ten_doi_tuong">
+                Tiếng anh <br />
+                giao tiếp trẻ em
+              </div>
             </button>
-            <button class="box_doi_tuong_1">
-                <div class="anh_doi_tuong">
-                    <img src="images/Rectangle 71 (3).png" alt="">  
-                </div>
-                <div class="title_ten_doi_tuong">
-                    Tiếng anh <br> giao tiếp trẻ em
-                </div>
+            <button onclick="toggleBaihoc('popupdoituong4')" class="box_doi_tuong_1">
+              <div class="anh_doi_tuong">
+                <img src="images/Rectangle 71 (3).png" alt="" />
+              </div>
+              <div class="title_ten_doi_tuong">
+                Tiếng anh <br />
+                giao tiếp trẻ em
+              </div>
             </button>
-            <button class="box_doi_tuong_1">
-                <div class="anh_doi_tuong">
-                    <img src="images/Rectangle 71.png" alt="">  
-                </div>
-                <div class="title_ten_doi_tuong">
-                    Tiếng anh <br> giao tiếp trẻ em
-                </div>
+            <button onclick="toggleBaihoc('popupdoituong5')" class="box_doi_tuong_1">
+              <div class="anh_doi_tuong">
+                <img src="images/Rectangle 71.png" alt="" />
+              </div>
+              <div class="title_ten_doi_tuong">
+                Tiếng anh <br />
+                giao tiếp trẻ em
+              </div>
             </button>
-            <button class="box_doi_tuong_1">
-                <div class="anh_doi_tuong">
-                    <img src="images/Rectangle 71 (1).png" alt="">  
-                </div>
-                <div class="title_ten_doi_tuong">
-                    Tiếng anh <br> giao tiếp trẻ em
-                </div>
+            <button onclick="toggleBaihoc('popupdoituong6')" class="box_doi_tuong_1">
+              <div class="anh_doi_tuong">
+                <img src="images/Rectangle 71 (1).png" alt="" />
+              </div>
+              <div class="title_ten_doi_tuong">
+                Tiếng anh <br />
+                giao tiếp trẻ em
+              </div>
             </button>
 
-            <button class="box_doi_tuong_1">
-                <div class="anh_doi_tuong">
-                    <img src="images/Rectangle 71 (2).png" alt="">  
-                </div>
-                <div class="title_ten_doi_tuong">
-                    Tiếng anh <br> giao tiếp trẻ em
-                </div>
+            <button onclick="toggleBaihoc('popupdoituong7')" class="box_doi_tuong_1">
+              <div class="anh_doi_tuong">
+                <img src="images/Rectangle 71 (2).png" alt="" />
+              </div>
+              <div class="title_ten_doi_tuong">
+                Tiếng anh <br />
+                giao tiếp trẻ em
+              </div>
             </button>
-            <button class="box_doi_tuong_1">
-                <div class="anh_doi_tuong">
-                    <img src="images/Rectangle 71 (3).png" alt="">  
-                </div>
-                <div class="title_ten_doi_tuong">
-                    Tiếng anh <br> giao tiếp trẻ em
-                </div>
+            <button onclick="toggleBaihoc('popupdoituong8')" class="box_doi_tuong_1">
+              <div class="anh_doi_tuong">
+                <img src="images/Rectangle 71 (3).png" alt="" />
+              </div>
+              <div class="title_ten_doi_tuong">
+                Tiếng anh <br />
+                giao tiếp trẻ em
+              </div>
             </button>
+          </div>
         </div>
-        </div>
-        <div class="pop_up_doi_tuong" id="pop_up_doi_tuong">
-          <div class="doi_tuong">
-            <span>
+        <!-- popup doi tuong  -->
+        <!-- 1  -->
+        <div class="overlay_lambaitest" id="popupdoituong1">
+          <div class="popup___lambaitest">
+            <a 
+            onclick="toggleBaihoc('popupdoituong1')"
+            class="close__popup___lambaitest">&times;</a>
+            <div class="title___lambaitest">
               Làm bài test
-            </span>
-            <div class="dau_ds">
               <img src="images/Rectangle 42.png" alt="">
+            </div>
+            <div class="__content__lambaitest">
+              <div class="__img__content_lambaitest">
+                <img src="images/Rectangle 71.png" alt="">
+              </div>
+              <div class="__text_content_lambaitest">
+                <div class="title___text_content_lambaitest">Tiếng anh giao tiếp trẻ em</div>
+                <div>Thời gian: <span>30 phút</span></div>
+                <div>Số câu hỏi: <span>30 câu</span></div>
+              </div>
+            </div>
+
+            <button>
+              Đồng ý
+            </button>
+
           </div>
-          <div class="anh_the_doi_tuong">
-            <img src="images/Rectangle 71.png" alt="">  
+        </div>
+        <!-- 2  -->
+        <div class="overlay_lambaitest" id="popupdoituong2">
+          <div class="popup___lambaitest">
+            <a 
+            onclick="toggleBaihoc('popupdoituong2')"
+            class="close__popup___lambaitest">&times;</a>
+            <div class="title___lambaitest">
+              Làm bài test
+              <img src="images/Rectangle 42.png" alt="">
+            </div>
+            <div class="__content__lambaitest">
+              <div class="__img__content_lambaitest">
+                <img src="images/Rectangle 71 (1).png" alt="">
+              </div>
+              <div class="__text_content_lambaitest">
+                <div class="title___text_content_lambaitest">Tiếng anh giao tiếp trẻ em</div>
+                <div>Thời gian: <span>30 phút</span></div>
+                <div>Số câu hỏi: <span>30 câu</span></div>
+              </div>
+            </div>
+
+            <button>
+              Đồng ý
+            </button>
+
           </div>
-          <div class="thong_tin_doi_tuong">
-            <p>Tiếng anh giao tiếp trẻ em</p>
-            <table>
-              <tr>
-                <td>Thời gian:</td>
-                <td>30 phút</td>
-              </tr>
-              <tr>
-                <td>Số câu hỏi:</td>
-                <td>30 câu</td>
-              </tr>
-            </table>
+        </div>
+        <!-- 3  -->
+        <div class="overlay_lambaitest" id="popupdoituong3">
+          <div class="popup___lambaitest">
+            <a 
+            onclick="toggleBaihoc('popupdoituong3')"
+            class="close__popup___lambaitest">&times;</a>
+            <div class="title___lambaitest">
+              Làm bài test
+              <img src="images/Rectangle 42.png" alt="">
+            </div>
+            <div class="__content__lambaitest">
+              <div class="__img__content_lambaitest">
+                <img src="images/Rectangle 71 (2).png" alt="">
+              </div>
+              <div class="__text_content_lambaitest">
+                <div class="title___text_content_lambaitest">Tiếng anh giao tiếp trẻ em</div>
+                <div>Thời gian: <span>30 phút</span></div>
+                <div>Số câu hỏi: <span>30 câu</span></div>
+              </div>
+            </div>
+
+            <button>
+              Đồng ý
+            </button>
+
           </div>
-          <div class="dong_y" id="close">
-            <input type="submit" value="Đồng ý" >
+        </div>
+        <!-- 4  -->
+        <div class="overlay_lambaitest" id="popupdoituong4">
+          <div class="popup___lambaitest">
+            <a 
+            onclick="toggleBaihoc('popupdoituong4')"
+            class="close__popup___lambaitest">&times;</a>
+            <div class="title___lambaitest">
+              Làm bài test
+              <img src="images/Rectangle 42.png" alt="">
+            </div>
+            <div class="__content__lambaitest">
+              <div class="__img__content_lambaitest">
+                <img src="images/Rectangle 71 (3).png" alt="">
+              </div>
+              <div class="__text_content_lambaitest">
+                <div class="title___text_content_lambaitest">Tiếng anh giao tiếp trẻ em</div>
+                <div>Thời gian: <span>30 phút</span></div>
+                <div>Số câu hỏi: <span>30 câu</span></div>
+              </div>
+            </div>
+
+            <button>
+              Đồng ý
+            </button>
+
           </div>
+        </div>
+        <!-- 5  -->
+        <div class="overlay_lambaitest" id="popupdoituong5">
+          <div class="popup___lambaitest">
+            <a 
+            onclick="toggleBaihoc('popupdoituong5')"
+            class="close__popup___lambaitest">&times;</a>
+            <div class="title___lambaitest">
+              Làm bài test
+              <img src="images/Rectangle 42.png" alt="">
+            </div>
+            <div class="__content__lambaitest">
+              <div class="__img__content_lambaitest">
+                <img src="images/Rectangle 71.png" alt="">
+              </div>
+              <div class="__text_content_lambaitest">
+                <div class="title___text_content_lambaitest">Tiếng anh giao tiếp trẻ em</div>
+                <div>Thời gian: <span>30 phút</span></div>
+                <div>Số câu hỏi: <span>30 câu</span></div>
+              </div>
+            </div>
+
+            <button>
+              Đồng ý
+            </button>
+
           </div>
+        </div>
+        <!-- 6  -->
+        <div class="overlay_lambaitest" id="popupdoituong6">
+          <div class="popup___lambaitest">
+            <a 
+            onclick="toggleBaihoc('popupdoituong6')"
+            class="close__popup___lambaitest">&times;</a>
+            <div class="title___lambaitest">
+              Làm bài test
+              <img src="images/Rectangle 42.png" alt="">
+            </div>
+            <div class="__content__lambaitest">
+              <div class="__img__content_lambaitest">
+                <img src="images/Rectangle 71 (1).png" alt="">
+              </div>
+              <div class="__text_content_lambaitest">
+                <div class="title___text_content_lambaitest">Tiếng anh giao tiếp trẻ em</div>
+                <div>Thời gian: <span>30 phút</span></div>
+                <div>Số câu hỏi: <span>30 câu</span></div>
+              </div>
+            </div>
+
+            <button>
+              Đồng ý
+            </button>
+
+          </div>
+        </div>
+        <!-- 7  -->
+        <div class="overlay_lambaitest" id="popupdoituong7">
+          <div class="popup___lambaitest">
+            <a 
+            onclick="toggleBaihoc('popupdoituong7')"
+            class="close__popup___lambaitest">&times;</a>
+            <div class="title___lambaitest">
+              Làm bài test
+              <img src="images/Rectangle 42.png" alt="">
+            </div>
+            <div class="__content__lambaitest">
+              <div class="__img__content_lambaitest">
+                <img src="images/Rectangle 71 (2).png" alt="">
+              </div>
+              <div class="__text_content_lambaitest">
+                <div class="title___text_content_lambaitest">Tiếng anh giao tiếp trẻ em</div>
+                <div>Thời gian: <span>30 phút</span></div>
+                <div>Số câu hỏi: <span>30 câu</span></div>
+              </div>
+            </div>
+
+            <button>
+              Đồng ý
+            </button>
+
+          </div>
+        </div>
+        <!-- 8  -->
+        <div class="overlay_lambaitest" id="popupdoituong8">
+          <div class="popup___lambaitest">
+            <a 
+            onclick="toggleBaihoc('popupdoituong8')"
+            class="close__popup___lambaitest">&times;</a>
+            <div class="title___lambaitest">
+              Làm bài test
+              <img src="images/Rectangle 42.png" alt="">
+            </div>
+            <div class="__content__lambaitest">
+              <div class="__img__content_lambaitest">
+                <img src="images/Rectangle 71 (3).png" alt="">
+              </div>
+              <div class="__text_content_lambaitest">
+                <div class="title___text_content_lambaitest">Tiếng anh giao tiếp trẻ em</div>
+                <div>Thời gian: <span>30 phút</span></div>
+                <div>Số câu hỏi: <span>30 câu</span></div>
+              </div>
+            </div>
+
+            <button>
+              Đồng ý
+            </button>
+
+          </div>
+        </div>
+          <!-- /popup doi tuong  -->
         </div>
       </div>
-      
-    </div>
-      <script>
+      <!-- <script>
         const open = document.getElementById('open');
         const pop_up_doi_tuong = document.getElementById('pop_up_doi_tuong');
         const close = document.getElementById('close');
@@ -321,7 +523,7 @@
         close.addEventListener('click',() => {
           pop_up_doi_tuong.classList.remove('show');
         });
-      </script>
+      </script> -->
 
       <!--/Main-->
 

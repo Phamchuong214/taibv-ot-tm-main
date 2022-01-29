@@ -30,6 +30,9 @@
   </head>
   <body class="">
     <script>
+      function toggleBlock(idNone) {
+        document.getElementById(idNone).classList.toggle("active_block");
+      }
       function togglePopup() {
         document.getElementById("popup1").classList.toggle("active");
       }
@@ -659,7 +662,10 @@
           <div class="container_danh_sach_bai_hoc">
             <div class="bai_hoc_hien_tai">
               <div class="item_danh_sach_bai_hoc">
-                <div class="box_item_danh_sach_bai_hoc">
+                <div
+                  onclick="toggleBlock('bai3')"
+                  class="box_item_danh_sach_bai_hoc"
+                >
                   <div class="item_left_danh_sach_bai_hoc">
                     <img src="images/e-learning 1.png" alt="" />
                     <div>
@@ -674,8 +680,11 @@
                     <span class="gio_item_bai_hoc">00 h 00m 00s</span>
                   </div>
                 </div>
-                <hr />
-                <div class="danh_gia_item_danh_sach_bai_hoc">
+                <div
+                  id="bai3"
+                  style="display: none"
+                  class="danh_gia_item_danh_sach_bai_hoc"
+                >
                   <div class="vao_hoc">
                     <div class="vao_hoc1">
                       <button
@@ -700,92 +709,10 @@
               </div>
 
               <div class="item_danh_sach_bai_hoc">
-                <div class="box_item_danh_sach_bai_hoc">
-                  <div class="item_left_danh_sach_bai_hoc">
-                    <img src="images/e-learning 1.png" alt="" />
-                    <div>
-                      <div class="title_bai_hoc_hien_tai">Bài 1</div>
-                      <span> 02:30 - 03:00, thứ 3/ 20-10-2021 </span>
-                    </div>
-                  </div>
-
-                  <div class="item_right_danh_sach_bai_hoc">
-                    <div class="da_hoan_thanh">Đã hoàn thành</div>
-                    <span>Đã xác nhận:</span> 03:01, thứ 3/ 20-10-2021
-                  </div>
-                </div>
-              </div>
-
-              <div class="item_danh_sach_bai_hoc">
-                <div class="box_item_danh_sach_bai_hoc">
-                  <div class="item_left_danh_sach_bai_hoc">
-                    <img src="images/e-learning 1.png" alt="" />
-                    <div>
-                      <div class="title_bai_hoc_hien_tai">Bài 2</div>
-                      <span> 02:30 - 03:00, thứ 3/ 20-10-2021 </span>
-                    </div>
-                  </div>
-
-                  <div class="item_right_danh_sach_bai_hoc">
-                    <div class="da_hoan_thanh">Đã hoàn thành</div>
-                    <span>Đã xác nhận:</span> 03:01, thứ 3/ 20-10-2021
-                  </div>
-                </div>
-              </div>
-
-              <div class="item_danh_sach_bai_hoc">
-                <div class="box_item_danh_sach_bai_hoc">
-                  <div class="item_left_danh_sach_bai_hoc">
-                    <img src="images/e-learning 1.png" alt="" />
-                    <div>
-                      <div class="title_bai_hoc_hien_tai">Bài 3</div>
-                      <span> 02:30 - 03:00, thứ 3/ 20-10-2021 </span>
-                    </div>
-                  </div>
-
-                  <div class="item_right_danh_sach_bai_hoc">
-                    <div class="da_hoan_thanh">Đã hoàn thành</div>
-                    <span>Đã xác nhận:</span> 03:01, thứ 3/ 20-10-2021
-                  </div>
-                </div>
-              </div>
-
-              <div class="item_danh_sach_bai_hoc">
-                <div class="box_item_danh_sach_bai_hoc">
-                  <div class="item_left_danh_sach_bai_hoc">
-                    <img src="images/e-learning 1.png" alt="" />
-                    <div>
-                      <div class="title_bai_hoc_hien_tai">Bài 4</div>
-                      <span> 02:30 - 03:00, thứ 3/ 20-10-2021 </span>
-                    </div>
-                  </div>
-
-                  <div class="item_right_danh_sach_bai_hoc">
-                    <div class="da_hoan_thanh">Đã hoàn thành</div>
-                    <span>Đã xác nhận:</span> 03:01, thứ 3/ 20-10-2021
-                  </div>
-                </div>
-              </div>
-
-              <div class="item_danh_sach_bai_hoc">
-                <div class="box_item_danh_sach_bai_hoc">
-                  <div class="item_left_danh_sach_bai_hoc">
-                    <img src="images/e-learning 1.png" alt="" />
-                    <div>
-                      <div class="title_bai_hoc_hien_tai">Bài 5</div>
-                      <span> 02:30 - 03:00, thứ 3/ 20-10-2021 </span>
-                    </div>
-                  </div>
-
-                  <div class="item_right_danh_sach_bai_hoc">
-                    <div class="da_hoan_thanh">Đã hoàn thành</div>
-                    <span>Đã xác nhận:</span> 03:01, thứ 3/ 20-10-2021
-                  </div>
-                </div>
-              </div>
-
-              <div class="item_danh_sach_bai_hoc">
-                <div class="box_item_danh_sach_bai_hoc">
+                <div
+                  onclick="toggleBlock('bai6_dahoanthanh')"
+                  class="box_item_danh_sach_bai_hoc"
+                >
                   <div class="item_left_danh_sach_bai_hoc">
                     <img src="images/e-learning 1.png" alt="" />
                     <div>
@@ -799,8 +726,11 @@
                     <span>Đã xác nhận:</span> 03:01, thứ 3/ 20-10-2021
                   </div>
                 </div>
-                <hr />
-                <div class="danh_gia_item_danh_sach_bai_hoc">
+                <div
+                  style="display: none"
+                  id="bai6_dahoanthanh"
+                  class="danh_gia_item_danh_sach_bai_hoc"
+                >
                   <div class="title_danh_gia">Đánh giá của giáo viên</div>
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
@@ -811,7 +741,138 @@
               </div>
 
               <div class="item_danh_sach_bai_hoc">
-                <div class="box_item_danh_sach_bai_hoc">
+                <div
+                  onclick="toggleBlock('bai6_dahoanthanh2')"
+                  class="box_item_danh_sach_bai_hoc"
+                >
+                  <div class="item_left_danh_sach_bai_hoc">
+                    <img src="images/e-learning 1.png" alt="" />
+                    <div>
+                      <div class="title_bai_hoc_hien_tai">Bài 6</div>
+                      <span> 02:30 - 03:00, thứ 3/ 20-10-2021 </span>
+                    </div>
+                  </div>
+
+                  <div class="item_right_danh_sach_bai_hoc">
+                    <div class="da_hoan_thanh">Đã hoàn thành</div>
+                    <span>Đã xác nhận:</span> 03:01, thứ 3/ 20-10-2021
+                  </div>
+                </div>
+                <div
+                  style="display: none"
+                  id="bai6_dahoanthanh2"
+                  class="danh_gia_item_danh_sach_bai_hoc"
+                >
+                  <div class="title_danh_gia">Đánh giá của giáo viên</div>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s,
+                  </p>
+                </div>
+              </div>
+
+              <div class="item_danh_sach_bai_hoc">
+                <div
+                  onclick="toggleBlock('bai6_dahoanthanh3')"
+                  class="box_item_danh_sach_bai_hoc"
+                >
+                  <div class="item_left_danh_sach_bai_hoc">
+                    <img src="images/e-learning 1.png" alt="" />
+                    <div>
+                      <div class="title_bai_hoc_hien_tai">Bài 6</div>
+                      <span> 02:30 - 03:00, thứ 3/ 20-10-2021 </span>
+                    </div>
+                  </div>
+
+                  <div class="item_right_danh_sach_bai_hoc">
+                    <div class="da_hoan_thanh">Đã hoàn thành</div>
+                    <span>Đã xác nhận:</span> 03:01, thứ 3/ 20-10-2021
+                  </div>
+                </div>
+                <div
+                  style="display: none"
+                  id="bai6_dahoanthanh3"
+                  class="danh_gia_item_danh_sach_bai_hoc"
+                >
+                  <div class="title_danh_gia">Đánh giá của giáo viên</div>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s,
+                  </p>
+                </div>
+              </div>
+
+              <div class="item_danh_sach_bai_hoc">
+                <div
+                  onclick="toggleBlock('bai6_dahoanthanh4')"
+                  class="box_item_danh_sach_bai_hoc"
+                >
+                  <div class="item_left_danh_sach_bai_hoc">
+                    <img src="images/e-learning 1.png" alt="" />
+                    <div>
+                      <div class="title_bai_hoc_hien_tai">Bài 6</div>
+                      <span> 02:30 - 03:00, thứ 3/ 20-10-2021 </span>
+                    </div>
+                  </div>
+
+                  <div class="item_right_danh_sach_bai_hoc">
+                    <div class="da_hoan_thanh">Đã hoàn thành</div>
+                    <span>Đã xác nhận:</span> 03:01, thứ 3/ 20-10-2021
+                  </div>
+                </div>
+                <div
+                  style="display: none"
+                  id="bai6_dahoanthanh4"
+                  class="danh_gia_item_danh_sach_bai_hoc"
+                >
+                  <div class="title_danh_gia">Đánh giá của giáo viên</div>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s,
+                  </p>
+                </div>
+              </div>
+
+              <div class="item_danh_sach_bai_hoc">
+                <div
+                  onclick="toggleBlock('bai6_dahoanthanh5')"
+                  class="box_item_danh_sach_bai_hoc"
+                >
+                  <div class="item_left_danh_sach_bai_hoc">
+                    <img src="images/e-learning 1.png" alt="" />
+                    <div>
+                      <div class="title_bai_hoc_hien_tai">Bài 6</div>
+                      <span> 02:30 - 03:00, thứ 3/ 20-10-2021 </span>
+                    </div>
+                  </div>
+
+                  <div class="item_right_danh_sach_bai_hoc">
+                    <div class="da_hoan_thanh">Đã hoàn thành</div>
+                    <span>Đã xác nhận:</span> 03:01, thứ 3/ 20-10-2021
+                  </div>
+                </div>
+                <div
+                  style="display: none"
+                  id="bai6_dahoanthanh5"
+                  class="danh_gia_item_danh_sach_bai_hoc"
+                >
+                  <div class="title_danh_gia">Đánh giá của giáo viên</div>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s,
+                  </p>
+                </div>
+              </div>
+
+              <div class="item_danh_sach_bai_hoc">
+                <div
+                  onclick="toggleBlock('bai6_lydohuy')"
+                  class="box_item_danh_sach_bai_hoc"
+                >
                   <div class="item_left_danh_sach_bai_hoc">
                     <img src="images/e-learning 1.png" alt="" />
                     <div>
@@ -825,8 +886,11 @@
                     <span>Đã xác nhận:</span> 03:01, thứ 3/ 20-10-2021
                   </div>
                 </div>
-                <hr />
-                <div class="danh_gia_item_danh_sach_bai_hoc">
+                <div
+                  id="bai6_lydohuy"
+                  style="display: none"
+                  class="danh_gia_item_danh_sach_bai_hoc"
+                >
                   <div class="title_danh_gia">Lý do huỷ</div>
                   <p>
                     Lorem Ipsum is simply dummy text of the printing and
@@ -837,7 +901,10 @@
               </div>
 
               <div class="item_danh_sach_bai_hoc">
-                <div class="box_item_danh_sach_bai_hoc">
+                <div
+                  onclick="toggleBlock('bai8')"
+                  class="box_item_danh_sach_bai_hoc"
+                >
                   <div class="item_left_danh_sach_bai_hoc">
                     <img src="images/e-learning 1.png" alt="" />
                     <div>
@@ -852,8 +919,11 @@
                     <span class="gio_item_bai_hoc">00 h 00m 00s</span>
                   </div>
                 </div>
-                <hr />
-                <div class="danh_gia_item_danh_sach_bai_hoc">
+                <div
+                  id="bai8"
+                  style="display: none"
+                  class="danh_gia_item_danh_sach_bai_hoc"
+                >
                   <div class="vao_hoc">
                     <!-- <div class="vao_hoc1">
                     <a href="#">Huỷ buổi học</a>
@@ -866,7 +936,10 @@
               </div>
 
               <div class="item_danh_sach_bai_hoc">
-                <div class="box_item_danh_sach_bai_hoc">
+                <div
+                  onclick="toggleBlock('bai3b')"
+                  class="box_item_danh_sach_bai_hoc"
+                >
                   <div class="item_left_danh_sach_bai_hoc">
                     <img src="images/e-learning 1.png" alt="" />
                     <div>
@@ -881,8 +954,11 @@
                     <span class="gio_item_bai_hoc">00 h 00m 00s</span>
                   </div>
                 </div>
-                <hr />
-                <div class="danh_gia_item_danh_sach_bai_hoc">
+                <div
+                  id="bai3b"
+                  style="display: none"
+                  class="danh_gia_item_danh_sach_bai_hoc"
+                >
                   <div class="vao_hoc">
                     <div class="vao_hoc1">
                       <button
@@ -899,7 +975,10 @@
               </div>
 
               <div class="item_danh_sach_bai_hoc">
-                <div class="box_item_danh_sach_bai_hoc">
+                <div
+                  onclick="toggleBlock('bai6_lydohuy1')"
+                  class="box_item_danh_sach_bai_hoc"
+                >
                   <div class="item_left_danh_sach_bai_hoc">
                     <img src="images/e-learning 1.png" alt="" />
                     <div>
@@ -913,10 +992,25 @@
                     <span>Đã xác nhận:</span> 03:01, thứ 3/ 20-10-2021
                   </div>
                 </div>
+                <div
+                  id="bai6_lydohuy1"
+                  style="display: none"
+                  class="danh_gia_item_danh_sach_bai_hoc"
+                >
+                  <div class="title_danh_gia">Lý do huỷ</div>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s,
+                  </p>
+                </div>
               </div>
 
               <div class="item_danh_sach_bai_hoc">
-                <div class="box_item_danh_sach_bai_hoc">
+                <div
+                  onclick="toggleBlock('bai6_lydohuy2')"
+                  class="box_item_danh_sach_bai_hoc"
+                >
                   <div class="item_left_danh_sach_bai_hoc">
                     <img src="images/e-learning 1.png" alt="" />
                     <div>
@@ -930,10 +1024,25 @@
                     <span>Đã xác nhận:</span> 03:01, thứ 3/ 20-10-2021
                   </div>
                 </div>
+                <div
+                  id="bai6_lydohuy2"
+                  style="display: none"
+                  class="danh_gia_item_danh_sach_bai_hoc"
+                >
+                  <div class="title_danh_gia">Lý do huỷ</div>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s,
+                  </p>
+                </div>
               </div>
 
               <div class="item_danh_sach_bai_hoc">
-                <div class="box_item_danh_sach_bai_hoc">
+                <div
+                  onclick="toggleBlock('bai6_lydohuy3')"
+                  class="box_item_danh_sach_bai_hoc"
+                >
                   <div class="item_left_danh_sach_bai_hoc">
                     <img src="images/e-learning 1.png" alt="" />
                     <div>
@@ -946,6 +1055,18 @@
                     <div class="da_huy_bai_hoc">Đã huỷ</div>
                     <span>Đã xác nhận:</span> 03:01, thứ 3/ 20-10-2021
                   </div>
+                </div>
+                <div
+                  id="bai6_lydohuy3"
+                  style="display: none"
+                  class="danh_gia_item_danh_sach_bai_hoc"
+                >
+                  <div class="title_danh_gia">Lý do huỷ</div>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s,
+                  </p>
                 </div>
               </div>
             </div>

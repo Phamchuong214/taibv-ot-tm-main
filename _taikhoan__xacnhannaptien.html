@@ -30,6 +30,14 @@
   </head>
   <body class="">
     <script>
+      function __nhapsotienkhac() {
+        document
+          .getElementById("__nhapsotienkhac")
+          .classList.toggle("active_block");
+      }
+      function napTien(idname) {
+        document.getElementById(idname).classList.toggle("border_green");
+      }
       function togglePopup() {
         document.getElementById("popup1").classList.toggle("active");
       }
@@ -358,24 +366,68 @@
                 <div class="title">Số tiền nạp</div>
                 <hr />
                 <div class="__sotiennap__xacnhannaptien">
-                  <button class="___item__sotiennap">10.000 vnđ</button>
+                  <button
+                    id="menhgia1"
+                    onclick="napTien('menhgia1')"
+                    class="___item__sotiennap"
+                  >
+                    10.000 vnđ
+                  </button>
 
-                  <button class="___item__sotiennap">20.000 vnđ</button>
+                  <button
+                    id="menhgia2"
+                    onclick="napTien('menhgia2')"
+                    class="___item__sotiennap"
+                  >
+                    20.000 vnđ
+                  </button>
 
-                  <button class="___item__sotiennap">50.000 vnđ</button>
+                  <button
+                    id="menhgia3"
+                    onclick="napTien('menhgia3')"
+                    class="___item__sotiennap"
+                  >
+                    50.000 vnđ
+                  </button>
 
-                  <button class="___item__sotiennap">100.000 vnđ</button>
+                  <button
+                    id="menhgia4"
+                    onclick="napTien('menhgia4')"
+                    class="___item__sotiennap"
+                  >
+                    100.000 vnđ
+                  </button>
 
-                  <button class="___item__sotiennap">200.000 vnđ</button>
+                  <button
+                    id="menhgia5"
+                    onclick="napTien('menhgia5')"
+                    class="___item__sotiennap"
+                  >
+                    200.000 vnđ
+                  </button>
 
-                  <button class="___item__sotiennap">500.000 vnđ</button>
+                  <button
+                    id="menhgia6"
+                    onclick="napTien('menhgia6')"
+                    class="___item__sotiennap"
+                  >
+                    500.000 vnđ
+                  </button>
 
-                  <div class="___item__sotiennap ___sokhac__sotiennap">
+                  <div
+                    id="menhgiakhac"
+                    onclick="napTien('menhgiakhac'),__nhapsotienkhac()"
+                    class="___item__sotiennap ___sokhac__sotiennap"
+                  >
                     <img src="images/Rectangle 244.png" alt="" />
                     Số khác
                   </div>
 
-                  <div class="____sotienkhac__muonnap">
+                  <div
+                    id="__nhapsotienkhac"
+                    style="display: none"
+                    class="____sotienkhac__muonnap"
+                  >
                     <span>vnđ</span>
                     <input
                       type="text"

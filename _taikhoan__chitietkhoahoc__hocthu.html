@@ -30,6 +30,9 @@
   </head>
   <body class="">
     <script>
+      function toggleBlock(idNone) {
+        document.getElementById(idNone).classList.toggle("active_block");
+      }
       function togglePopup() {
         document.getElementById("popup1").classList.toggle("active");
       }
@@ -360,34 +363,61 @@
                   Lý do hủy buổi học:
                 </div>
                 <div class="__content___lydohuybuoihoc__popup">
-                  <div class="__item__lydohuy__content___lydohuybuoihoc__popup">
+                  <div
+                    id="lydo1"
+                    onclick="lyDo('lydo1')"
+                    class="__item__lydohuy__content___lydohuybuoihoc__popup"
+                  >
                     Sức khoẻ không tốt
                   </div>
 
-                  <div class="__item__lydohuy__content___lydohuybuoihoc__popup">
+                  <div
+                    id="lydo2"
+                    onclick="lyDo('lydo2')"
+                    class="__item__lydohuy__content___lydohuybuoihoc__popup"
+                  >
                     Có việc bận
                   </div>
 
-                  <div class="__item__lydohuy__content___lydohuybuoihoc__popup">
+                  <div
+                    id="lydo3"
+                    onclick="lyDo('lydo3')"
+                    class="__item__lydohuy__content___lydohuybuoihoc__popup"
+                  >
                     Việc gia đình
                   </div>
 
-                  <div class="__item__lydohuy__content___lydohuybuoihoc__popup">
-                    Sự cố bất ngờ
-                  </div>
-
-                  <div class="__item__lydohuy__content___lydohuybuoihoc__popup">
+                  <div
+                    id="lydo4"
+                    onclick="lyDo('lydo4')"
+                    class="__item__lydohuy__content___lydohuybuoihoc__popup"
+                  >
                     Sự cố bất ngờ
                   </div>
 
                   <div
-                    class="____lydokhac __item__lydohuy__content___lydohuybuoihoc__popup"
+                    class="__item__lydohuy__content___lydohuybuoihoc__popup"
+                    id="lydo5"
+                    onclick="lyDo('lydo5')"
+                  >
+                    Sự cố bất ngờ
+                  </div>
+
+                  <div
+                    id="____lydokhac"
+                    onclick="lydokhac()"
+                    class="__item__lydohuy__content___lydohuybuoihoc__popup"
                   >
                     <img src="images/Rectangle 13.png" alt="" />
                     Lý do khác
                   </div>
 
-                  <input type="text" placeholder="Nhập lý do huỷ" />
+                  <input
+                    style="display: none"
+                    id="nhapLyDoHuy"
+                    type="text"
+                    placeholder="Nhập lý do huỷ"
+                  />
                 </div>
               </div>
             </div>
@@ -1215,7 +1245,10 @@
           <div class="container_danh_sach_bai_hoc">
             <div class="bai_hoc_hien_tai">
               <div class="item_danh_sach_bai_hoc">
-                <div class="box_item_danh_sach_bai_hoc">
+                <div
+                  onclick="toggleBlock('bai3')"
+                  class="box_item_danh_sach_bai_hoc"
+                >
                   <div class="item_left_danh_sach_bai_hoc">
                     <img src="images/e-learning 1.png" alt="" />
                     <div>
@@ -1230,8 +1263,11 @@
                     <span class="gio_item_bai_hoc">00 h 00m 00s</span>
                   </div>
                 </div>
-                <hr />
-                <div class="danh_gia_item_danh_sach_bai_hoc">
+                <div
+                  id="bai3"
+                  style="display: none"
+                  class="danh_gia_item_danh_sach_bai_hoc"
+                >
                   <div class="vao_hoc">
                     <div class="vao_hoc1">
                       <button
@@ -1633,6 +1669,9 @@
   </body>
 </html>
 <script>
+  function lyDo(idname) {
+    document.getElementById(idname).classList.toggle("border_green");
+  }
   function openCity(evt, cityName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -1683,5 +1722,9 @@
     document
       .getElementById("popup_chinh_sua_thoi_gian_ranh")
       .classList.toggle("active_block");
+  }
+  function lydokhac() {
+    document.getElementById("____lydokhac").classList.toggle("____lydokhac");
+    document.getElementById("nhapLyDoHuy").classList.toggle("active_block");
   }
 </script>

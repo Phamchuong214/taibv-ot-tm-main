@@ -3334,11 +3334,37 @@
                   <div class="box_so_luong_hoc_vien_step2">
                     <div class="so_luong_hoc_vien_step2">
                       <span>Số lượng học viên</span>
-                      <button class="item_cong_tru">
+                      <button
+                        onclick="var result = document.getElementById('quantity'); var qty = result.value; if( !isNaN(qty)) result.value--;return false;"
+                        type="button"
+                        value="-"
+                        class="item_cong_tru"
+                        style="margin-right: 0"
+                      >
                         <img src="images/tru Rectangle 52.png" alt="" />
                       </button>
-                      <span> 1 </span>
-                      <button class="item_cong_tru">
+                      <input
+                        id="quantity"
+                        min="1"
+                        max="100"
+                        name="quantity"
+                        type="text"
+                        value="1"
+                        style="
+                          width: 50px;
+                          text-align: center;
+                          border: none;
+                          outline: none !important;
+                          font-size: 16px;
+                          font-family: Lexend;
+                          font-weight: 600;
+                        "
+                      />
+                      <button
+                        onclick="var result = document.getElementById('quantity'); var qty = result.value; if( !isNaN(qty)) result.value++;return false;"
+                        type="button"
+                        class="item_cong_tru"
+                      >
                         <img src="images/cong Group 167.png" alt="" />
                       </button>
                     </div>
@@ -3618,9 +3644,6 @@
                         Conversation English lesson
                       </span>
                       <span>12 bài học</span>
-                    </div>
-                    <div class="item_next_step_dat_lich_hoc">
-                      <img src="images/Subtract22222.png" alt="" />
                     </div>
                   </div>
 
@@ -4265,7 +4288,10 @@
                         1.500.000 vnđ
                       </span>
                     </div>
-                    <button onclick="popupChinh_xoa_bai_hoc()" class="tablinks">
+                    <button
+                      onclick="openCity(event, 'step4_popup_dat_lich_hoc')"
+                      class="tablinks"
+                    >
                       Tiếp theo
                     </button>
                   </div>
@@ -4308,7 +4334,7 @@
                   <div class="box_cong_cu_giao_tiep_dat_lich_hoc2">
                     <div
                       class="zoom_class_room tablinks_class_room"
-                      onclick="openClassRoom(event, 'id_class_room_khac')"
+                      onclick="openClassRoom(event, 'id_zoom_class_room')"
                     >
                       <img src="images/Zoom-Logo-Vector- 1.png" alt="" />
                       Zoom class room
@@ -4316,7 +4342,7 @@
 
                     <div
                       class="google_meet_class_room tablinks_class_room"
-                      onclick="openClassRoom(event, 'id_class_room_khac')"
+                      onclick="openClassRoom(event, 'id_ggMeet_class_room')"
                     >
                       <img src="images/google-meet-logo-1 1.png" alt="" />
                       Google Meet class room
@@ -4332,7 +4358,7 @@
 
                     <div
                       class="skype_class_room tablinks_class_room"
-                      onclick="openClassRoom(event, 'id_class_room_khac')"
+                      onclick="openClassRoom(event, 'id_sky_class_room')"
                     >
                       <img
                         src="images/1280px-Skype_logo_(fully_transparent) 1.png"
@@ -4430,9 +4456,121 @@
               </div>
 
               <div
-                id="id_class_room_khac"
+                id="id_zoom_class_room"
                 class="container_dat_lich_hoc_id_cua_ban tabcontent_class_room"
-              ></div>
+              >
+                <div class="box_dat_lich_hoc_id_cua_ban">
+                  <div class="text_dat_lich_hoc_id_cua_ban">
+                    Zoom class room:
+                  </div>
+
+                  <div class="input_dat_lich_hoc_id_cua_ban">
+                    Giáo viên sẽ gửi ID cho bạn sau
+                  </div>
+
+                  <div class="text_dat_lich_hoc_id_cua_ban">
+                    Google Meet class room:
+                  </div>
+
+                  <div class="input_dat_lich_hoc_id_cua_ban">
+                    Giáo viên sẽ gửi ID cho bạn sau
+                  </div>
+
+                  <div class="text_dat_lich_hoc_id_cua_ban">
+                    Số zalo của bạn:
+                  </div>
+
+                  <div class="input_dat_lich_hoc_id_cua_ban">
+                    <input type="text" placeholder="Nhập sô điện thoại:" />
+                  </div>
+
+                  <div class="text_dat_lich_hoc_id_cua_ban">
+                    Số skype của bạn:
+                  </div>
+
+                  <div class="input_dat_lich_hoc_id_cua_ban">
+                    <input type="text" placeholder="Nhập sô điện thoại:" />
+                  </div>
+                </div>
+              </div>
+
+              <div
+                id="id_ggMeet_class_room"
+                class="container_dat_lich_hoc_id_cua_ban tabcontent_class_room"
+              >
+                <div class="box_dat_lich_hoc_id_cua_ban">
+                  <div class="text_dat_lich_hoc_id_cua_ban">
+                    Google Meet class room:
+                  </div>
+
+                  <div class="input_dat_lich_hoc_id_cua_ban">
+                    Giáo viên sẽ gửi ID cho bạn sau
+                  </div>
+
+                  <div class="text_dat_lich_hoc_id_cua_ban">
+                    Google Meet class room:
+                  </div>
+
+                  <div class="input_dat_lich_hoc_id_cua_ban">
+                    Giáo viên sẽ gửi ID cho bạn sau
+                  </div>
+
+                  <div class="text_dat_lich_hoc_id_cua_ban">
+                    Số zalo của bạn:
+                  </div>
+
+                  <div class="input_dat_lich_hoc_id_cua_ban">
+                    <input type="text" placeholder="Nhập sô điện thoại:" />
+                  </div>
+
+                  <div class="text_dat_lich_hoc_id_cua_ban">
+                    Số skype của bạn:
+                  </div>
+
+                  <div class="input_dat_lich_hoc_id_cua_ban">
+                    <input type="text" placeholder="Nhập sô điện thoại:" />
+                  </div>
+                </div>
+              </div>
+
+              <div
+                id="id_sky_class_room"
+                class="container_dat_lich_hoc_id_cua_ban tabcontent_class_room"
+              >
+                <div class="box_dat_lich_hoc_id_cua_ban">
+                  <div class="text_dat_lich_hoc_id_cua_ban">
+                    Sky class room:
+                  </div>
+
+                  <div class="input_dat_lich_hoc_id_cua_ban">
+                    Giáo viên sẽ gửi ID cho bạn sau
+                  </div>
+
+                  <div class="text_dat_lich_hoc_id_cua_ban">
+                    Google Meet class room:
+                  </div>
+
+                  <div class="input_dat_lich_hoc_id_cua_ban">
+                    Giáo viên sẽ gửi ID cho bạn sau
+                  </div>
+
+                  <div class="text_dat_lich_hoc_id_cua_ban">
+                    Số zalo của bạn:
+                  </div>
+
+                  <div class="input_dat_lich_hoc_id_cua_ban">
+                    <input type="text" placeholder="Nhập sô điện thoại:" />
+                  </div>
+
+                  <div class="text_dat_lich_hoc_id_cua_ban">
+                    Số skype của bạn:
+                  </div>
+
+                  <div class="input_dat_lich_hoc_id_cua_ban">
+                    <input type="text" placeholder="Nhập sô điện thoại:" />
+                  </div>
+                </div>
+              </div>
 
               <div class="container_giao_vien_popup_khoa_hoc">
                 <div class="box_giao_vien">
