@@ -362,51 +362,66 @@
                 <div class="__title___lydohuybuoihoc__popup">
                   Lý do hủy buổi học:
                 </div>
+
+                <script>
+                  function tabActiveBorder(evt) {
+                    var i, tabItem;
+                    tabItem = document.getElementsByClassName("tabItem");
+                    for (i = 0; i < tabItem.length; i++) {
+                      tabItem[i].className = tabItem[i].className.replace(
+                        " activeBorder",
+                        ""
+                      );
+                    }
+                    evt.currentTarget.className += " activeBorder";
+                  }
+                </script>
+
                 <div class="__content___lydohuybuoihoc__popup">
                   <div
                     id="lydo1"
-                    onclick="lyDo('lydo1')"
-                    class="__item__lydohuy__content___lydohuybuoihoc__popup"
+                    onclick="tabActiveBorder(event)"
+                    class="__item__lydohuy__content___lydohuybuoihoc__popup tabItem"
                   >
                     Sức khoẻ không tốt
                   </div>
 
                   <div
                     id="lydo2"
-                    onclick="lyDo('lydo2')"
-                    class="__item__lydohuy__content___lydohuybuoihoc__popup"
+                    onclick="tabActiveBorder(event)"
+                    class="__item__lydohuy__content___lydohuybuoihoc__popup tabItem"
                   >
                     Có việc bận
                   </div>
 
                   <div
                     id="lydo3"
-                    onclick="lyDo('lydo3')"
-                    class="__item__lydohuy__content___lydohuybuoihoc__popup"
+                    onclick="tabActiveBorder(event)"
+                    class="__item__lydohuy__content___lydohuybuoihoc__popup tabItem"
                   >
                     Việc gia đình
                   </div>
 
                   <div
                     id="lydo4"
-                    onclick="lyDo('lydo4')"
-                    class="__item__lydohuy__content___lydohuybuoihoc__popup"
+                    onclick="tabActiveBorder(event)"
+                    class="__item__lydohuy__content___lydohuybuoihoc__popup tabItem"
                   >
                     Sự cố bất ngờ
                   </div>
 
                   <div
-                    class="__item__lydohuy__content___lydohuybuoihoc__popup"
+                    class="__item__lydohuy__content___lydohuybuoihoc__popup tabItem"
                     id="lydo5"
-                    onclick="lyDo('lydo5')"
+                    onclick="tabActiveBorder(event)"
                   >
                     Sự cố bất ngờ
                   </div>
 
                   <div
                     id="____lydokhac"
-                    onclick="lydokhac()"
-                    class="__item__lydohuy__content___lydohuybuoihoc__popup"
+                    onclick="tabActiveBorder(event),lydokhac()"
+                    class="__item__lydohuy__content___lydohuybuoihoc__popup tabItem"
                   >
                     <img src="images/Rectangle 13.png" alt="" />
                     Lý do khác
@@ -1724,7 +1739,6 @@
       .classList.toggle("active_block");
   }
   function lydokhac() {
-    document.getElementById("____lydokhac").classList.toggle("____lydokhac");
     document.getElementById("nhapLyDoHuy").classList.toggle("active_block");
   }
 </script>

@@ -368,56 +368,56 @@
                 <div class="__sotiennap__xacnhannaptien">
                   <button
                     id="menhgia1"
-                    onclick="napTien('menhgia1')"
-                    class="___item__sotiennap"
+                    onclick="tabActiveBorder(event)"
+                    class="___item__sotiennap tabItem"
                   >
                     10.000 vnđ
                   </button>
 
                   <button
                     id="menhgia2"
-                    onclick="napTien('menhgia2')"
-                    class="___item__sotiennap"
+                    onclick="tabActiveBorder(event)"
+                    class="___item__sotiennap tabItem"
                   >
                     20.000 vnđ
                   </button>
 
                   <button
                     id="menhgia3"
-                    onclick="napTien('menhgia3')"
-                    class="___item__sotiennap"
+                    onclick="tabActiveBorder(event)"
+                    class="___item__sotiennap tabItem"
                   >
                     50.000 vnđ
                   </button>
 
                   <button
                     id="menhgia4"
-                    onclick="napTien('menhgia4')"
-                    class="___item__sotiennap"
+                    onclick="tabActiveBorder(event)"
+                    class="___item__sotiennap tabItem"
                   >
                     100.000 vnđ
                   </button>
 
                   <button
                     id="menhgia5"
-                    onclick="napTien('menhgia5')"
-                    class="___item__sotiennap"
+                    onclick="tabActiveBorder(event)"
+                    class="___item__sotiennap tabItem"
                   >
                     200.000 vnđ
                   </button>
 
                   <button
                     id="menhgia6"
-                    onclick="napTien('menhgia6')"
-                    class="___item__sotiennap"
+                    onclick="tabActiveBorder(event)"
+                    class="___item__sotiennap tabItem"
                   >
                     500.000 vnđ
                   </button>
 
                   <div
                     id="menhgiakhac"
-                    onclick="napTien('menhgiakhac'),__nhapsotienkhac()"
-                    class="___item__sotiennap ___sokhac__sotiennap"
+                    onclick="tabActiveBorder(event),__nhapsotienkhac()"
+                    class="___item__sotiennap ___sokhac__sotiennap tabItem"
                   >
                     <img src="images/Rectangle 244.png" alt="" />
                     Số khác
@@ -436,6 +436,20 @@
                   </div>
                 </div>
               </div>
+
+              <script>
+                function tabActiveBorder(evt) {
+                  var i, tabItem;
+                  tabItem = document.getElementsByClassName("tabItem");
+                  for (i = 0; i < tabItem.length; i++) {
+                    tabItem[i].className = tabItem[i].className.replace(
+                      " activeBorder",
+                      ""
+                    );
+                  }
+                  evt.currentTarget.className += " activeBorder";
+                }
+              </script>
 
               <div class="item__phuongthucthanhtoan">
                 <div class="top__item__phuongthucthanhtoan _____magiam__gia">
