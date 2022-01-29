@@ -3,6 +3,9 @@
 /* @import url("../fonts/wlpwgwvFAVdoq2_v9KQU4Wc.woff2"); */
 
 /* vietnamese */
+* {
+  font-family: "Lexend" !important;
+}
 @font-face {
   font-family: "Lexend";
   font-style: normal;
