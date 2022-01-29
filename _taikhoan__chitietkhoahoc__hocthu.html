@@ -380,7 +380,7 @@
                 <div class="__content___lydohuybuoihoc__popup">
                   <div
                     id="lydo1"
-                    onclick="tabActiveBorder(event)"
+                    onclick="tabActiveBorder(event),removeLydokhac()"
                     class="__item__lydohuy__content___lydohuybuoihoc__popup tabItem"
                   >
                     Sức khoẻ không tốt
@@ -388,7 +388,7 @@
 
                   <div
                     id="lydo2"
-                    onclick="tabActiveBorder(event)"
+                    onclick="tabActiveBorder(event),removeLydokhac()"
                     class="__item__lydohuy__content___lydohuybuoihoc__popup tabItem"
                   >
                     Có việc bận
@@ -396,7 +396,7 @@
 
                   <div
                     id="lydo3"
-                    onclick="tabActiveBorder(event)"
+                    onclick="tabActiveBorder(event),removeLydokhac()"
                     class="__item__lydohuy__content___lydohuybuoihoc__popup tabItem"
                   >
                     Việc gia đình
@@ -404,7 +404,7 @@
 
                   <div
                     id="lydo4"
-                    onclick="tabActiveBorder(event)"
+                    onclick="tabActiveBorder(event),removeLydokhac()"
                     class="__item__lydohuy__content___lydohuybuoihoc__popup tabItem"
                   >
                     Sự cố bất ngờ
@@ -413,7 +413,7 @@
                   <div
                     class="__item__lydohuy__content___lydohuybuoihoc__popup tabItem"
                     id="lydo5"
-                    onclick="tabActiveBorder(event)"
+                    onclick="tabActiveBorder(event),removeLydokhac()"
                   >
                     Sự cố bất ngờ
                   </div>
@@ -1739,6 +1739,9 @@
       .classList.toggle("active_block");
   }
   function lydokhac() {
-    document.getElementById("nhapLyDoHuy").classList.toggle("active_block");
+    document.getElementById("nhapLyDoHuy").classList.add("active_block");
+  }
+  function removeLydokhac() {
+    document.getElementById("nhapLyDoHuy").classList.remove("active_block");
   }
 </script>
