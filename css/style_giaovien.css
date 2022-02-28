@@ -4100,7 +4100,7 @@ input:checked + .slider:before {
   font-size: 20px;
 }
 .add_giay_to_content_cai_dat_giao_vien {
-  width: 205px;
+  width: 150px;
   height: 140.69px;
   background: #fafafc;
   display: flex;
@@ -7577,5 +7577,12 @@ input:checked + .slider:before {
   border-radius: 50%;
   background: #65af54;
 }
-
+.giayto-item{
+  width: 100%;
+}
 /* / radio  */
+@media (max-width:768px) {
+  .list-giayto{
+    flex-direction: column;
+  }
+}
